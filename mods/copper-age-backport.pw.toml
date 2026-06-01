@@ -1,0 +1,8 @@
+name = "Copper Age Backport"
+filename = "copperagebackport-fabric-1.21.1-0.1.5.jar"
+side = "both"
+
+[download]
+url = "https://assets.aluki.gay/CompiledMods/TavernOrigins/copperagebackport-fabric-1.21.1-0.1.5.jar"
+hash-format = "sha256"
+hash = "1f664aa5b7caa7edd85c1a48ba1ee69038f2d941446fe64cbdf4d1138567fd98"

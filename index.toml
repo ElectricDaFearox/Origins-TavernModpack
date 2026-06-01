@@ -1,6 +1,22 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/reliable_remover.json"
+hash = "40cce3aa70ddc63d80bf333d7c44e8053832c68965badeba89c30d7048a73f48"
+
+[[files]]
+file = "datapacks/Tweaks/data/tweaks/civil_zone_policies/bastille.json"
+hash = "c0525ad34c20e769f34156bb356188aca0b1ce9c94981f07f20c016ef5bc9936"
+
+[[files]]
+file = "datapacks/Tweaks/data/tweaks/civil_zone_policies/pillager_camp.json"
+hash = "bc1a4d7b61c385e57f42b0ad7e592c4eb8879ce283f60b679b636a45e8800b0e"
+
+[[files]]
+file = "datapacks/Tweaks/pack.mcmeta"
+hash = "0a8b983b66f18caf183d6046b04996b6364b4a8fe41d7e252a386a3d4285b731"
+
+[[files]]
 file = "mods/altorigingui.pw.toml"
 hash = "f7b23d48b83ab42bb9d08ad1f42c0987ea4fc001696f6c544061e92d8f6ebfc5"
 metafile = true
@@ -17,7 +33,7 @@ metafile = true
 
 [[files]]
 file = "mods/better-nether-map.pw.toml"
-hash = "823d504f7256c8223cd30f2617753a8e5b6dc67dd223897fd16273421ef57960"
+hash = "514481fc4f12367693f94991655a570e501c043c70064d50e39e22ef7c41519a"
 metafile = true
 
 [[files]]
@@ -38,6 +54,11 @@ metafile = true
 [[files]]
 file = "mods/cloth-config.pw.toml"
 hash = "446c173c87b7908daee86b0dee89c6b628c77beb7a0bc091ff5252b7c0062080"
+metafile = true
+
+[[files]]
+file = "mods/copper-age-backport.pw.toml"
+hash = "f2105c917ddf8b9dc12d2de5ffc991923a2a2a3230507a9dcc53ccde7a7c8737"
 metafile = true
 
 [[files]]
@@ -86,8 +107,18 @@ hash = "4e94f635510d86d01a94bbc78eb471632ebe203b58b88490a73a785d733e42ed"
 metafile = true
 
 [[files]]
+file = "mods/ferrite-core.pw.toml"
+hash = "1d5799cd3b6ea714602c18546b99ba894e7511835b77803304792468fb7ee187"
+metafile = true
+
+[[files]]
 file = "mods/figura.pw.toml"
 hash = "4ed0328f3789ce169f8a338f2889f47ebb3b2de44dc9a3fe5934ddf2f4141179"
+metafile = true
+
+[[files]]
+file = "mods/fixed.pw.toml"
+hash = "3194aa82b4306685c84f05ec168268dbed7d4e4a321a0aa08384afca4806c88b"
 metafile = true
 
 [[files]]
@@ -118,6 +149,11 @@ metafile = true
 [[files]]
 file = "mods/immersive-winds.pw.toml"
 hash = "8053381400929774954f569baf89dfd0e14c1e21177b830f26fa17eb9870eb01"
+metafile = true
+
+[[files]]
+file = "mods/immersivethunder-reforged.pw.toml"
+hash = "3c41e1a5bc16222717350322a85e26575073e3bbfda5d9076ee6b043c7f58143"
 metafile = true
 
 [[files]]
@@ -232,7 +268,12 @@ metafile = true
 
 [[files]]
 file = "mods/sodium.pw.toml"
-hash = "b75e08bb2f806d7daf197b3e704b0dedbce5806c261cc7627d9f9866550430c7"
+hash = "0748794618eaa2d89951ae01cfbe41d780c69137e92306a934b062de0dc3b0a2"
+metafile = true
+
+[[files]]
+file = "mods/sound-physics-remastered.pw.toml"
+hash = "4ea85fa7d750bf5a167fe9652f2ac896d12ab068dacb8b04539e316ba5b74042"
 metafile = true
 
 [[files]]
@@ -256,6 +297,21 @@ hash = "541ec6716fce485f7477407c97dae7d070f9d807d2bd3f70918340c1d6171328"
 metafile = true
 
 [[files]]
+file = "mods/village-healthcare.pw.toml"
+hash = "b4542f89d551c721c155008f23ae9bc5e83d40dbda267aa981296a12278ee1d3"
+metafile = true
+
+[[files]]
+file = "mods/voxy-server.pw.toml"
+hash = "6666139aaf53dbcf0867ab44f2062b0c13b280281104a932d9818daae6399bbe"
+metafile = true
+
+[[files]]
+file = "mods/voxy.pw.toml"
+hash = "477f187e5b6e6b41b3aba79c367d9c7e2e5934080da964d0a4dcd82c9291c808"
+metafile = true
+
+[[files]]
 file = "mods/wilder-wild.pw.toml"
 hash = "41fa2e2fabc81ff476dbe940ab94818c25cb5553c81d8f3441396a80bfdbdb41"
 metafile = true
@@ -263,6 +319,11 @@ metafile = true
 [[files]]
 file = "mods/wills-lively-villages.pw.toml"
 hash = "b1c51ca2439ef16847d387c5f41a7f39dbbb75d91c242b4d6b57bb2b19f8487b"
+metafile = true
+
+[[files]]
+file = "mods/yacl.pw.toml"
+hash = "af20070dd9497817a83162c17b181a0a44f7213ea302d059a81c5aed02d0c877"
 metafile = true
 
 [[files]]
