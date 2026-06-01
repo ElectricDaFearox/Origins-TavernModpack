@@ -1,0 +1,13 @@
+name = "Reliable Backpacks"
+filename = "reliable_backpacks-fabric-1.21.1-1.7.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/GVh7zzwG/versions/lSISvtjj/reliable_backpacks-fabric-1.21.1-1.7.1.jar"
+hash-format = "sha512"
+hash = "a113e619db0f636f3fe3319b676e4b4767899af5da73f62ca8ca71617509669bf91ddd272b1a9867abe6604a277ff33f6ca25276419674c907fae7fe64da7939"
+
+[update]
+[update.modrinth]
+mod-id = "GVh7zzwG"
+version = "lSISvtjj"

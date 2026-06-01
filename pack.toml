@@ -1,0 +1,13 @@
+name = "OriginsSMP: Revival"
+author = "OhItsElectric"
+version = "0.0.1"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "64083b0b154b2277c62cb1dbf11a0e9bc101e4dd114224c1e941ea3eb907e833"
+
+[versions]
+fabric = "0.19.2"
+minecraft = "1.21.1"

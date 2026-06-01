@@ -1,0 +1,13 @@
+name = "Dungeons Dimensions: Nether"
+filename = "mcd_d_nether-fabric-1.21.1-1.3.2.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/sf8l9B73/versions/yoTNAznn/mcd_d_nether-fabric-1.21.1-1.3.2.jar"
+hash-format = "sha512"
+hash = "3a3d8a81d127d2fc85ac3991b8bfae4993d93f99b110b12b7d2255f28c00a6f60adfa34533c1b628a2e9fe5c6e3fedef1e7d673dadd2d72e11362b89da29192e"
+
+[update]
+[update.modrinth]
+mod-id = "sf8l9B73"
+version = "yoTNAznn"

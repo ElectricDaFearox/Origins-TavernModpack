@@ -1,0 +1,13 @@
+name = "It Takes a Pillage Continuation"
+filename = "takesapillage-fabric-1.0.10+mc1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/QOJOg1gE/versions/EM1arfEM/takesapillage-fabric-1.0.10%2Bmc1.21.1.jar"
+hash-format = "sha512"
+hash = "c3fe248405ad7ee28c9a2bbad9ea5fc0857026b5913660591a8de75860bde694ab9b237daf284029cbb934d5b5a8a4828bac176cdff8a8ba6764a0a75fb6df32"
+
+[update]
+[update.modrinth]
+mod-id = "QOJOg1gE"
+version = "EM1arfEM"

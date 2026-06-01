@@ -1,0 +1,13 @@
+name = "Will's Lively Villages"
+filename = "wills-lively-villages-1.0.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/zdpxQqUq/versions/DV5WYL6J/wills-lively-villages-1.0.1.jar"
+hash-format = "sha512"
+hash = "b4f5fce4cf8fd9a227ab498acc4955043c3875d6b68bb2a6c86d78ab64f06644522efa50af685ef3105344f1181f60730f3352dbbcdfc25304d0730c7cb99fc6"
+
+[update]
+[update.modrinth]
+mod-id = "zdpxQqUq"
+version = "DV5WYL6J"
