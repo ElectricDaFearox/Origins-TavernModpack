@@ -308,7 +308,7 @@ metafile = true
 
 [[files]]
 file = "mods/voxy.pw.toml"
-hash = "477f187e5b6e6b41b3aba79c367d9c7e2e5934080da964d0a4dcd82c9291c808"
+hash = "2d1894492bf8563d92f55d059b02eab8b06721a12b9a0d06bc7767d12d3ce59e"
 metafile = true
 
 [[files]]
@@ -328,7 +328,7 @@ metafile = true
 
 [[files]]
 file = "mods/yungs-api.pw.toml"
-hash = "4d98bdba90cdeae788a747bb6fe7d438ba49fdc4eb67c38d4573304eec4a2ef8"
+hash = "8243c4167ac48756685832dd3ae186bd0a5348c13054383678dea26670f7ea4e"
 metafile = true
 
 [[files]]
