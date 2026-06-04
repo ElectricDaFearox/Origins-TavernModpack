@@ -12,12 +12,18 @@
   "removeItemsFromInfoTabs": true,
   "removeItemsFromTrades": true,
   "removeMobEquipment": true,
-  "enableEmiRemoval": false,
+  "enableEmiRemoval": true,
   "showEmiToast": true,
   "showEmiChatMessages": true,
   "reloadAfterRemoval": false,
   "blacklistedItems": [
     "supplmentaries:lunch_basket",
-    ""
+    "",
+    "beansbackpacks:empty_ender_pouch",
+    "beansbackpacks:bundle",
+    "beansbackpacks:lunch_box",
+    "beansbackpacks:quiver",
+    "fixedminecraft:azalea_boat",
+    "supplementaries:lunch_basket"
   ]
 }

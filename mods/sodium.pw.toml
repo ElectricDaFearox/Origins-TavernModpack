@@ -1,8 +1,9 @@
 name = "Sodium"
-filename = "sodium-fabric-0.6.13+mc1.21.1.jar"
 side = "both"
+filename = "sodium-fabric-0.6.13+mc1.21.1.jar"
+pin = true
 
 [download]
-url = "https://cdn.modrinth.com/data/AANobbMI/versions/u1OEbNKx/sodium-fabric-0.6.13%2Bmc1.21.1.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=fabric"
 hash-format = "sha256"
+url = "https://cdn.modrinth.com/data/AANobbMI/versions/u1OEbNKx/sodium-fabric-0.6.13%2Bmc1.21.1.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=fabric"
 hash = "e04599514d88e41765f710eeba59e3814909833396bc11b977f48fc2e7e50353"
