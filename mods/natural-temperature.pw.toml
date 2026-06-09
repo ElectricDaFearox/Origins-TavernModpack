@@ -1,0 +1,13 @@
+name = "Natural Temperature"
+filename = "natural-temperature-1.1.4-FABRIC-MC-1.21.1-5.jar"
+side = "server"
+
+[download]
+url = "https://cdn.modrinth.com/data/QZt2fevq/versions/WC0xOgaE/natural-temperature-1.1.4-FABRIC-MC-1.21.1-5.jar"
+hash-format = "sha512"
+hash = "4fa0b3d7ca15c16d5b7ed56e0aa76d91c639cdc9fc9bea4007c139966e89d2c1e11653328c9ba16b776a1b29fa1c9064644bbbb72567e3b89aae3da4ea385251"
+
+[update]
+[update.modrinth]
+mod-id = "QZt2fevq"
+version = "WC0xOgaE"

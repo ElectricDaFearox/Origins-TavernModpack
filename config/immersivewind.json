@@ -1,6 +1,6 @@
 {
   "enableWind": true,
-  "enableWindWisps": true,
+  "enableWindWisps": false,
   "enableRainHitParticles": true,
   "enableSplashParticles": true,
   "fogRainMultiplier": 0.0,

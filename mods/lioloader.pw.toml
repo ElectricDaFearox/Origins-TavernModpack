@@ -1,0 +1,8 @@
+name = "LioLoader"
+filename = "LioLoader-fabric-0.0.6.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/KtuNjNi3/versions/qOnFkMxe/LioLoader-fabric-0.0.6.jar?mr_download_reason=standalone"
+hash-format = "sha256"
+hash = "f13c93d863d61f61271c1b7ae9c78a4e96fba50b48746116cdeee2ae17967127"

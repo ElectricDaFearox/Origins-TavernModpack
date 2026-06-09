@@ -1,8 +1,0 @@
-name = "Voxy"
-filename = "voxy-0.2.15-beta-b829f708cab22d01a292f2a894026d96a5e98913.jar"
-side = "both"
-
-[download]
-url = "https://assets.aluki.gay/CompiledMods/TavernOrigins/voxy-0.2.15-beta-b829f708cab22d01a292f2a894026d96a5e98913.jar"
-hash-format = "sha256"
-hash = "f954de7a188a98e79f7f936a39241ac8d57bd91769ce37488a6a410eaeeee6a5"
