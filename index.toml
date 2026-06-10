@@ -7137,8 +7137,8 @@ hash = "4ed0328f3789ce169f8a338f2889f47ebb3b2de44dc9a3fe5934ddf2f4141179"
 metafile = true
 
 [[files]]
-file = "mods/fixed.pw.toml"
-hash = "3194aa82b4306685c84f05ec168268dbed7d4e4a321a0aa08384afca4806c88b"
+file = "mods/fixed-minecraft.pw.toml"
+hash = "ce70113f1fa441dc1eeb9c4f3841e30587daff3a5cf0a66c6aa0b567d5df9b56"
 metafile = true
 
 [[files]]
@@ -7297,11 +7297,6 @@ hash = "d3f633dd12cd039a4e58dd398d1c80a324b0d78b9da5b3972b69640bfed211ed"
 metafile = true
 
 [[files]]
-file = "mods/sable.pw.toml"
-hash = "4dc21d069337d4f86b4cd93385d4af8473c016298f4b6fa12f11d033f0188c23"
-metafile = true
-
-[[files]]
 file = "mods/scholar.pw.toml"
 hash = "44e3273e781e2172e753f0e4407fb925015f1b9e51c2a518cab5bf3399605f69"
 metafile = true
@@ -7344,11 +7339,6 @@ metafile = true
 [[files]]
 file = "mods/trailier-tales.pw.toml"
 hash = "b45fcd239d9787c7f3d104c300cc61979e7f0cd8363d59716b603d4adb36b202"
-metafile = true
-
-[[files]]
-file = "mods/tree-physics.pw.toml"
-hash = "909b68f45e30e17538b33c504db3572a1c90c6ed1929e7455a7b696c8128c49e"
 metafile = true
 
 [[files]]
