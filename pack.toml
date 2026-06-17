@@ -1,7 +1,7 @@
-name = "AmberSMP"
+name = "Echoing Hearths SMP"
 author = "OhItsElectric"
 version = "0.0.9"
-description = "OriginsSMP..."
+description = "Echoing HearthsSMP, a modpack for group of Friends of the Tavern"
 pack-format = "packwiz:1.1.0"
 
 [index]
