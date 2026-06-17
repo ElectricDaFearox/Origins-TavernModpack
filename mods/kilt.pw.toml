@@ -1,0 +1,13 @@
+name = "Kilt"
+filename = "Kilt-21.1.2.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/t87XZEqv/versions/LxArmYX7/Kilt-21.1.2.jar"
+hash-format = "sha512"
+hash = "d845c743706dd0e7499d1258f9e82a30833e8d841bdad522fe8eb155b686a579131ea25c0f78c1064d3dd842166603e24028ec36c05a515166489037b1206a4d"
+
+[update]
+[update.modrinth]
+mod-id = "t87XZEqv"
+version = "LxArmYX7"

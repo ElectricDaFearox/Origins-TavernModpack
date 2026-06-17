@@ -23,7 +23,7 @@
   "witchesVillager": true,
   "blackSmithHealing": true,
   "convertVillagerIfHaveHotv": false,
-  "guardVillagerHelpRange": 50.0,
+  "guardVillagerHelpRange": 150.0,
   "illagersRunFromPolarBears": true,
   "villagersRunFromPolarBears": true,
   "guardArrowsHurtVillagers": true,
