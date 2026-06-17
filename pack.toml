@@ -1,13 +1,13 @@
-name = "OriginsSMP: Revival"
+name = "AmberSMP"
 author = "OhItsElectric"
-version = "0.0.8"
+version = "0.0.9"
 description = "OriginsSMP..."
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "ca454814ae4f3450a8d32b30787fed104ecf7e8c0addfa66725cda39cd460f7a"
+hash = "56ad13e9cc922634d39514347a428b8d9389834dce07021ad3ddd095bfcf1313"
 
 [versions]
 fabric = "0.19.3"

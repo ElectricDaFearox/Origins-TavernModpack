@@ -7005,6 +7005,14 @@ file = "datapacks/ruinedportals/pack.png"
 hash = "581e2ba1cbd3e0d2d0afb975c7cd2c2f195bf59131252d3c9bc2b4592bc52668"
 
 [[files]]
+file = "datapacks/tweaks/data/minecraft/recipe/map.json"
+hash = "b71bdd47009e3cdfdc8dbdd9235d8bf5cd2338adca754736ffb4f3ffa63c9c39"
+
+[[files]]
+file = "datapacks/tweaks/data/minecraft/recipe/mapink.json"
+hash = "6ff98550f945c46218ada2d318d7a5ded48819edeb5af6cf3e89750c63e840e0"
+
+[[files]]
 file = "datapacks/tweaks/data/tweaks/civil_zone_policies/bastille.json"
 hash = "c0525ad34c20e769f34156bb356188aca0b1ce9c94981f07f20c016ef5bc9936"
 
