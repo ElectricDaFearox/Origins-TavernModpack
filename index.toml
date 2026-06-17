@@ -7315,6 +7315,11 @@ hash = "d3f633dd12cd039a4e58dd398d1c80a324b0d78b9da5b3972b69640bfed211ed"
 metafile = true
 
 [[files]]
+file = "mods/sable-aabb-fix-neoforge.pw.toml"
+hash = "3c4657b2f48625b786f1ec80857d50eb997f388491aed21cc9cb4265f2169da2"
+metafile = true
+
+[[files]]
 file = "mods/sable-neoforge.pw.toml"
 hash = "7531323c6530a937f4f1e7e6c83c42bc339ed4959e8273a96dc4960c94410a1a"
 metafile = true
