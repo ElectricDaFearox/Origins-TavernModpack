@@ -1,13 +1,12 @@
 name = "Mob Civil War"
+side = "server"
 filename = "civil-war-1.1.0-mc1.21.1.jar"
-side = "both"
 
-[download]
-url = "https://cdn.modrinth.com/data/JS7W12Jd/versions/caCdCidv/civil-war-1.1.0-mc1.21.1.jar"
-hash-format = "sha512"
-hash = "125a33ccd92beacece06faac2e611632ca137a8ec8cf847fff554df67c9ed367269b124f1f1c375619b17fb6c8d3542ebae73532281d45bf1a47d869168ea53d"
-
-[update]
 [update.modrinth]
 mod-id = "JS7W12Jd"
 version = "caCdCidv"
+
+[download]
+hash-format = "sha512"
+url = "https://cdn.modrinth.com/data/JS7W12Jd/versions/caCdCidv/civil-war-1.1.0-mc1.21.1.jar"
+hash = "125a33ccd92beacece06faac2e611632ca137a8ec8cf847fff554df67c9ed367269b124f1f1c375619b17fb6c8d3542ebae73532281d45bf1a47d869168ea53d"

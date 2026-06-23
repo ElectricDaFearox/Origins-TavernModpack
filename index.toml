@@ -7190,6 +7190,11 @@ hash = "4502b6661d0281b5a3d44138ab4e06c3c5dc2838f93037d29d2cd6136d99a1f2"
 metafile = true
 
 [[files]]
+file = "mods/handcrafted.pw.toml"
+hash = "2600fb5f2efa6dffd1bcc04eea4c2646c101da4320da0c88d5616d5c2f41a439"
+metafile = true
+
+[[files]]
 file = "mods/hopo-better-mineshaft.pw.toml"
 hash = "eda0881f5e9f375207119edf13b65cc2fa957372db7b10b6380cc0e9bf61e532"
 metafile = true
@@ -7251,7 +7256,7 @@ metafile = true
 
 [[files]]
 file = "mods/mob-civil-war.pw.toml"
-hash = "7bf851c18956f996bcc604f960da9aa5896c4ef70df813900e5f9032ace96e9d"
+hash = "96e370a890b1d449a51ce909dff55481b572f61bd67b7ab4cfc4c9006f23bc59"
 metafile = true
 
 [[files]]
