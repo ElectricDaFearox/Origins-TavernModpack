@@ -1,0 +1,8 @@
+name = "Block Pack"
+filename = "bf_blockpack-fabric-1.21.1-1.0.6.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/An633Gxh/versions/3m0IqOqU/bf_blockpack-fabric-1.21.1-1.0.6.jar"
+hash-format = "sha256"
+hash = "3ab38220e1d09b7af4cc2b5ac93b46676385de663bc29ab373c68a3a09fe6fd8"

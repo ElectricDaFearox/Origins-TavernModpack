@@ -7050,8 +7050,18 @@ hash = "514481fc4f12367693f94991655a570e501c043c70064d50e39e22ef7c41519a"
 metafile = true
 
 [[files]]
+file = "mods/better-village.pw.toml"
+hash = "e36daad58bfc4d12148e207177bfe2052f4759b6b2bb6beeaeb7d645cae948c6"
+metafile = true
+
+[[files]]
 file = "mods/betterdays.pw.toml"
 hash = "90b20da761c0ec799b348871b32751dc954bcb1cca80c7b759cb5caf5dfce8f3"
+metafile = true
+
+[[files]]
+file = "mods/block-pack.pw.toml"
+hash = "ecbb1480de5ae43515356e2d14c741536b90e51a5a9081c1c261f1ece4877e98"
 metafile = true
 
 [[files]]
@@ -7101,7 +7111,7 @@ metafile = true
 
 [[files]]
 file = "mods/entityculling.pw.toml"
-hash = "8e6af5505235c508829395d9c0268b7e62ddf54331eb6c5f3e607dbe98862917"
+hash = "f23a0d6d48cc27e24e8c4cacf9231fe146f82e9ff27c90b2fd96e1de4482e765"
 metafile = true
 
 [[files]]
@@ -7141,7 +7151,7 @@ metafile = true
 
 [[files]]
 file = "mods/figura.pw.toml"
-hash = "4ed0328f3789ce169f8a338f2889f47ebb3b2de44dc9a3fe5934ddf2f4141179"
+hash = "177dc9572f464fdb10ae8a9e3de3566c4cec7195146f5336f3fa4bf441fbd17e"
 metafile = true
 
 [[files]]
@@ -7165,6 +7175,11 @@ hash = "1d6e976fdd44ef22a1e4479662e2dd409707b81d34a428c083df3201d31e244c"
 metafile = true
 
 [[files]]
+file = "mods/geckolib.pw.toml"
+hash = "c085da042f533d52da7a0b49327db54491b405a775ee68c6f76383d111f599a3"
+metafile = true
+
+[[files]]
 file = "mods/glitchcore.pw.toml"
 hash = "e7a737720192a1ec35fbc8d8061f7373fd0a900806882d43e30511967e9a06d0"
 metafile = true
@@ -7172,11 +7187,6 @@ metafile = true
 [[files]]
 file = "mods/guard-villagers-(fabricquilt).pw.toml"
 hash = "4502b6661d0281b5a3d44138ab4e06c3c5dc2838f93037d29d2cd6136d99a1f2"
-metafile = true
-
-[[files]]
-file = "mods/handcrafted.pw.toml"
-hash = "2600fb5f2efa6dffd1bcc04eea4c2646c101da4320da0c88d5616d5c2f41a439"
 metafile = true
 
 [[files]]
@@ -7196,12 +7206,12 @@ metafile = true
 
 [[files]]
 file = "mods/it-takes-a-pillage-continuation.pw.toml"
-hash = "c0a6babe8816f40b245457c8873172b977f691c94b5b47105ef417952f67eb0e"
+hash = "a0a5d3084008e93a08d09de7ceccbb6c255dc8f2e42367a1a13d38c2bf016496"
 metafile = true
 
 [[files]]
 file = "mods/kilt.pw.toml"
-hash = "1a3c819c69c142fe9e0dbeb0e20f3240b19c89163876311e822500a3a37fb2eb"
+hash = "887e6409e2a34fe93e572305d0517318b374b5471d8f8c2ae6c526f50cb45a91"
 metafile = true
 
 [[files]]
@@ -7256,7 +7266,7 @@ metafile = true
 
 [[files]]
 file = "mods/moonlight.pw.toml"
-hash = "7162622b0e7a2f9fdf6d893c178953c64957bcb4a8ea546f45deaf21c8e2652c"
+hash = "dd2d2160b5537f4aa2aeae4f9d7e9bb1b6af7d5fcd7fb73a8faae9436ba6db10"
 metafile = true
 
 [[files]]
@@ -7266,7 +7276,7 @@ metafile = true
 
 [[files]]
 file = "mods/my-nethers-delight-refabricated.pw.toml"
-hash = "f97c81eb19dc444c3276e1e4d506310d037bde71ba2da6311ec3ec7ccb2d34d8"
+hash = "ed1e9b74fbdf9b401bf25e4ad4b17511fc2ac0bd6e79f6d46e939252378c82a9"
 metafile = true
 
 [[files]]
@@ -7346,7 +7356,7 @@ metafile = true
 
 [[files]]
 file = "mods/simple-voice-chat.pw.toml"
-hash = "bf8b9973e815ac011303a45a22df9f3c2b6b6341ff3ba55924633ee02b5b3e28"
+hash = "cf11a6410ad4097983f806684ac343085053eca1d4106f2b45d75147ae4b5f94"
 metafile = true
 
 [[files]]
@@ -7361,12 +7371,7 @@ metafile = true
 
 [[files]]
 file = "mods/supplementaries.pw.toml"
-hash = "ec6f35a1b30090f4cf4003c66978bcd0b39e40f8bf907040d9f1a41eae8485a6"
-metafile = true
-
-[[files]]
-file = "mods/the-silver-age.pw.toml"
-hash = "6827b9fd9a9f801a2b33d2e2446fb03fa96064fc9c7bbc558ef824b7c1901fcc"
+hash = "d11ba6eed5574b8ab37951137a6757213ee8019e04a9fccba2042d0e39aab696"
 metafile = true
 
 [[files]]
@@ -7387,6 +7392,11 @@ metafile = true
 [[files]]
 file = "mods/vanillabackport.pw.toml"
 hash = "0865bcf91d32cd710ac30a282a3c2202816670942c5175f7f475a29aeb3fe19b"
+metafile = true
+
+[[files]]
+file = "mods/wayfinder.pw.toml"
+hash = "800a4c3795befa1b3d4b9f92c85e2316a2700690ccc4851f3d85e684154db964"
 metafile = true
 
 [[files]]
