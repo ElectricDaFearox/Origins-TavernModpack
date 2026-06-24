@@ -13,6 +13,10 @@ file = "config/reliable_remover.json"
 hash = "651625cfce1576fc90106829a50830fc1c7322a4cedc2c246d846d988cf00687"
 
 [[files]]
+file = "config/wayfinder/wayfinder.json"
+hash = "e8de6af42afc0080cf62bef2b4a6fdad5b24e5174e8b61c7282729d0c4d96dde"
+
+[[files]]
 file = "datapacks/mineshafts/LICENSE"
 hash = "83f343cab49e8d87b53cc6572b8421811b20d788d9060b7429b9f88e2655d8d4"
 
@@ -7025,6 +7029,11 @@ file = "datapacks/tweaks/pack.mcmeta"
 hash = "0a8b983b66f18caf183d6046b04996b6364b4a8fe41d7e252a386a3d4285b731"
 
 [[files]]
+file = "mods/addadd.pw.toml"
+hash = "b451c2ee9e2a093073c3b7c99053b8974733b703516f03504f8a35e879f51b19"
+metafile = true
+
+[[files]]
 file = "mods/altorigingui.pw.toml"
 hash = "f7b23d48b83ab42bb9d08ad1f42c0987ea4fc001696f6c544061e92d8f6ebfc5"
 metafile = true
@@ -7032,11 +7041,6 @@ metafile = true
 [[files]]
 file = "mods/architectury-api.pw.toml"
 hash = "1102440dd2533ba3a154419bb95ff1f81b858201eb0c44d2a2eea486c74e565a"
-metafile = true
-
-[[files]]
-file = "mods/backported-spears.pw.toml"
-hash = "aa2f89677ca50cd654e59459ae85732063cfc0adcde28d0dec2d68c78e4685f6"
 metafile = true
 
 [[files]]
@@ -7062,11 +7066,6 @@ metafile = true
 [[files]]
 file = "mods/block-pack.pw.toml"
 hash = "ecbb1480de5ae43515356e2d14c741536b90e51a5a9081c1c261f1ece4877e98"
-metafile = true
-
-[[files]]
-file = "mods/chunky.pw.toml"
-hash = "f4b5fee7d5956ef7c1cbc906c5abe36e49506d9579bfc9cb1227a38bc04f6925"
 metafile = true
 
 [[files]]
