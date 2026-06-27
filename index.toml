@@ -7339,6 +7339,11 @@ hash = "81a03b7b62c655a39921ddb10a9a49b3e9dcc1b81f50009633448c00e5b0a7bc"
 metafile = true
 
 [[files]]
+file = "mods/resourceful-config.pw.toml"
+hash = "1585b5eab8834e8ed6775426e22f6572a773e2f8766e33ceda6b042d066eab8f"
+metafile = true
+
+[[files]]
 file = "mods/resourceful-lib-neoforge.pw.toml"
 hash = "a4cf334366b93aac29f74bcdc025efcfe1943b941843e995de007f4c6d9af9bc"
 metafile = true
