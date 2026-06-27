@@ -7049,11 +7049,6 @@ hash = "fc0f9d112fbf97303fae1a3595d8a145303c0e42680ab4a2b66db0a92b552781"
 metafile = true
 
 [[files]]
-file = "mods/better-archeology.pw.toml"
-hash = "911e998bf066d9284b7cfcbb361c6733542cc75637915d8bdf86fc65b51a9590"
-metafile = true
-
-[[files]]
 file = "mods/better-nether-map.pw.toml"
 hash = "514481fc4f12367693f94991655a570e501c043c70064d50e39e22ef7c41519a"
 metafile = true
@@ -7336,11 +7331,6 @@ metafile = true
 [[files]]
 file = "mods/reliable-remover.pw.toml"
 hash = "81a03b7b62c655a39921ddb10a9a49b3e9dcc1b81f50009633448c00e5b0a7bc"
-metafile = true
-
-[[files]]
-file = "mods/resourceful-config.pw.toml"
-hash = "1585b5eab8834e8ed6775426e22f6572a773e2f8766e33ceda6b042d066eab8f"
 metafile = true
 
 [[files]]
