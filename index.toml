@@ -7049,6 +7049,11 @@ hash = "fc0f9d112fbf97303fae1a3595d8a145303c0e42680ab4a2b66db0a92b552781"
 metafile = true
 
 [[files]]
+file = "mods/better-archeology.pw.toml"
+hash = "911e998bf066d9284b7cfcbb361c6733542cc75637915d8bdf86fc65b51a9590"
+metafile = true
+
+[[files]]
 file = "mods/better-nether-map.pw.toml"
 hash = "514481fc4f12367693f94991655a570e501c043c70064d50e39e22ef7c41519a"
 metafile = true
@@ -7065,7 +7070,12 @@ metafile = true
 
 [[files]]
 file = "mods/block-pack.pw.toml"
-hash = "ecbb1480de5ae43515356e2d14c741536b90e51a5a9081c1c261f1ece4877e98"
+hash = "b764318ec2706614ff181628c103aeb1129fe926c029654f3263b4edb10a6482"
+metafile = true
+
+[[files]]
+file = "mods/bountiful.pw.toml"
+hash = "67c1118cf73f03d05acf04cecd18990f8e7be6f2b7a80a40f1e4b9a58f3fb8f6"
 metafile = true
 
 [[files]]
@@ -7139,6 +7149,11 @@ hash = "9d37d326d9557fdd25c97d72ac1bbd1e74c524aa5dca437a91d0de645dff6545"
 metafile = true
 
 [[files]]
+file = "mods/fairylights.pw.toml"
+hash = "43f13e02a07f55f14a6f7827ba9b22d490e4c2dda0c0c35f588f68638937112d"
+metafile = true
+
+[[files]]
 file = "mods/farmers-delight-refabricated.pw.toml"
 hash = "4e94f635510d86d01a94bbc78eb471632ebe203b58b88490a73a785d733e42ed"
 metafile = true
@@ -7164,13 +7179,13 @@ hash = "238b3ceb4214a682480ce00eefae5d34efa299ff6ff667e4b2f2ed503c6e76ee"
 metafile = true
 
 [[files]]
-file = "mods/frozenlib.pw.toml"
-hash = "a55e547f30226037a2bc5bd534904234f91189b5102a61f13596941cbf8d5654"
+file = "mods/friends-and-foes.pw.toml"
+hash = "0c2f42374022bcbd3b15b6432cca31dda311e2bd26ab5b02f3d036c90c32e399"
 metafile = true
 
 [[files]]
-file = "mods/gabous-libs.pw.toml"
-hash = "1d6e976fdd44ef22a1e4479662e2dd409707b81d34a428c083df3201d31e244c"
+file = "mods/frozenlib.pw.toml"
+hash = "a55e547f30226037a2bc5bd534904234f91189b5102a61f13596941cbf8d5654"
 metafile = true
 
 [[files]]
@@ -7221,6 +7236,11 @@ metafile = true
 [[files]]
 file = "mods/lambdynamiclights.pw.toml"
 hash = "d77c41bf5a8dd470d65e7946d507657a910b54d2e76f4b3ced4fe4addc2d52d4"
+metafile = true
+
+[[files]]
+file = "mods/lenient-death.pw.toml"
+hash = "f075e4a3e7b8bf2a9847eedf8c49ca8c6100f7c6c221ae21314dc6f32338caf9"
 metafile = true
 
 [[files]]
@@ -7284,11 +7304,6 @@ hash = "ed1e9b74fbdf9b401bf25e4ad4b17511fc2ac0bd6e79f6d46e939252378c82a9"
 metafile = true
 
 [[files]]
-file = "mods/natural-temperature.pw.toml"
-hash = "0f9091b59547e53c6b60ee5275dc6acca8885bd4e0b52802b0a358397627d9f4"
-metafile = true
-
-[[files]]
 file = "mods/origins.pw.toml"
 hash = "55c77068f58d1301b4ab3e6287629b63e427df4994a52b6e1eecc844ce62b6d3"
 metafile = true
@@ -7346,16 +7361,6 @@ metafile = true
 [[files]]
 file = "mods/scholar.pw.toml"
 hash = "44c4ddcfe65e8fa97826e5aa2016cb54d4ad5baa3908d511af00c94235230e19"
-metafile = true
-
-[[files]]
-file = "mods/serene-seasons-plus.pw.toml"
-hash = "493b24d409188d802e765e6082e0e39cae639e20c69775deecb0a78a0dce982e"
-metafile = true
-
-[[files]]
-file = "mods/serene-seasons.pw.toml"
-hash = "4739fd0f979dd5fefecc5c47a07ef61ca78d1bdf525cd4e544e1a331ede3ca61"
 metafile = true
 
 [[files]]

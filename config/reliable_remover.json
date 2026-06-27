@@ -24,6 +24,11 @@
     "beansbackpacks:lunch_box",
     "beansbackpacks:quiver",
     "fixedminecraft:azalea_boat",
-    "supplementaries:lunch_basket"
+    "supplementaries:lunch_basket",
+    "beansbackpacks:netherite_lunch_box",
+    "additionaladditions:copper_patina",
+    "additionaladditions:patina_block",
+    "supplementaries:wrench",
+    "additionaladditions:wrench"
   ]
 }
