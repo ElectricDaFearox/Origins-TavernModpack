@@ -7229,6 +7229,11 @@ hash = "a0a5d3084008e93a08d09de7ceccbb6c255dc8f2e42367a1a13d38c2bf016496"
 metafile = true
 
 [[files]]
+file = "mods/kambrik.pw.toml"
+hash = "39c8caa5ad25fa8f6d341ef1f829602f6eaa14831209f8a1744b61c05dce1382"
+metafile = true
+
+[[files]]
 file = "mods/kilt.pw.toml"
 hash = "887e6409e2a34fe93e572305d0517318b374b5471d8f8c2ae6c526f50cb45a91"
 metafile = true
