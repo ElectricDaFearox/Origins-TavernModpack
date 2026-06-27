@@ -10,7 +10,7 @@ hash = "b5bf52db39dcf7e52e4c2feefd80dd104d977c8e71d827a76d1f5b5138baa265"
 
 [[files]]
 file = "config/reliable_remover.json"
-hash = "651625cfce1576fc90106829a50830fc1c7322a4cedc2c246d846d988cf00687"
+hash = "90a0b63cb7ec3fec181ca95f07b8d467334a4e3e1a1331e5d7eada7bcf4b95ba"
 
 [[files]]
 file = "config/wayfinder/wayfinder.json"
