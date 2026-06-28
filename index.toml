@@ -7185,7 +7185,7 @@ metafile = true
 
 [[files]]
 file = "mods/geckolib.pw.toml"
-hash = "c085da042f533d52da7a0b49327db54491b405a775ee68c6f76383d111f599a3"
+hash = "d7c13dfec5f62eef0906adf8814e989fd914f5b9c2f4b9c3064b6fa3a4c5bd78"
 metafile = true
 
 [[files]]
@@ -7230,12 +7230,12 @@ metafile = true
 
 [[files]]
 file = "mods/kilt.pw.toml"
-hash = "887e6409e2a34fe93e572305d0517318b374b5471d8f8c2ae6c526f50cb45a91"
+hash = "31b937bc5fb96370b4c0b4fb8eff289973bac7df91f80843195b57aa9782ba50"
 metafile = true
 
 [[files]]
 file = "mods/lambdynamiclights.pw.toml"
-hash = "d77c41bf5a8dd470d65e7946d507657a910b54d2e76f4b3ced4fe4addc2d52d4"
+hash = "b85d562b35f68cdbb0f79bbdebc11cb938002c727d9f982ed5743c8488c74ac7"
 metafile = true
 
 [[files]]
@@ -7265,7 +7265,7 @@ metafile = true
 
 [[files]]
 file = "mods/lithium.pw.toml"
-hash = "23de0cbbfd28d752eb662c00a907406bac3e3ad529dd2ac250b41b4b0ef734ce"
+hash = "e10e639f71700a67d7f9b9d747e1685f838d703dadd432464b54e31b26f4742b"
 metafile = true
 
 [[files]]
@@ -7290,7 +7290,7 @@ metafile = true
 
 [[files]]
 file = "mods/moonlight.pw.toml"
-hash = "dd2d2160b5537f4aa2aeae4f9d7e9bb1b6af7d5fcd7fb73a8faae9436ba6db10"
+hash = "0a94890fd4c2bd4be2c7bcf46dfe4eb459fb721384ac987d794664aa217bb29a"
 metafile = true
 
 [[files]]
@@ -7315,7 +7315,7 @@ metafile = true
 
 [[files]]
 file = "mods/penchant.pw.toml"
-hash = "d8e833581c0fc24d3e8c202bfe19505775b25b33f35ee79ac7f732de52384934"
+hash = "c4a03804c75e558448594b4c2a967a10e501e99d12bbfae5fabc1706a68d22d9"
 metafile = true
 
 [[files]]
@@ -7330,7 +7330,7 @@ metafile = true
 
 [[files]]
 file = "mods/reliable-remover.pw.toml"
-hash = "81a03b7b62c655a39921ddb10a9a49b3e9dcc1b81f50009633448c00e5b0a7bc"
+hash = "d25f73fe00c251d13fe356c777c43d426cbee8454511b93d3064aa0689d76a9a"
 metafile = true
 
 [[files]]
@@ -7349,18 +7349,13 @@ hash = "3c4657b2f48625b786f1ec80857d50eb997f388491aed21cc9cb4265f2169da2"
 metafile = true
 
 [[files]]
-file = "mods/sable-neoforge.pw.toml"
-hash = "7531323c6530a937f4f1e7e6c83c42bc339ed4959e8273a96dc4960c94410a1a"
-metafile = true
-
-[[files]]
 file = "mods/sable.pw.toml"
-hash = "ac2bc0faacad5e9f1cec609186db641b3ae9ef53868f728e4a098b9601234bad"
+hash = "45ddb6939d33d5c4ec4c861746ce986afe5a0f06c5ea45b27c9380b72777a4ce"
 metafile = true
 
 [[files]]
 file = "mods/scholar.pw.toml"
-hash = "44c4ddcfe65e8fa97826e5aa2016cb54d4ad5baa3908d511af00c94235230e19"
+hash = "029429520421d3642bc9b4fefbec58b4431eba12ca46700512fea6c60ba3a0ca"
 metafile = true
 
 [[files]]
@@ -7370,7 +7365,7 @@ metafile = true
 
 [[files]]
 file = "mods/sodium.pw.toml"
-hash = "b6debf937cdddf206367ddefb8113c840fe656e99d0c2279766ae9fbab164d30"
+hash = "019188864eb8efd6803ba70ceb00d5a195dac16e332883a515cee1e4e15bb39f"
 metafile = true
 
 [[files]]

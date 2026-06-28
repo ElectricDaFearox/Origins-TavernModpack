@@ -1,13 +1,13 @@
 name = "Scholar"
-filename = "scholar-fabric-1.21.1-1.2.2.jar"
+filename = "scholar-fabric-1.21.1-1.2.3.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/fX4dIQCo/versions/2DoRlPyd/scholar-fabric-1.21.1-1.2.2.jar"
+url = "https://cdn.modrinth.com/data/fX4dIQCo/versions/35rEDgt4/scholar-fabric-1.21.1-1.2.3.jar"
 hash-format = "sha512"
-hash = "59ac6174ad10b2f8cd88e1c1be892a0ea5c5e7d807af5c133f6d6593eb6151f497873e1fc94370dcbcdd04537b53f7d2a725f60ba2a60ccb26d003b11a79bc57"
+hash = "6ee2329e1171c4a7bd838b65f919981946b3a803f81f5257d1db2b060fe469cc4c5e78e66dfdcb288d93aa6b969b5adf03e8c0339e7f4de2419b4eaeb6513ce6"
 
 [update]
 [update.modrinth]
 mod-id = "fX4dIQCo"
-version = "2DoRlPyd"
+version = "35rEDgt4"
