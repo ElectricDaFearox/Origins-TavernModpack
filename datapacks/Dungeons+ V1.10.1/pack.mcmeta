@@ -1,0 +1,18 @@
+{
+	"pack": {
+		"pack_format": 80,
+		"supported_formats": {"min_inclusive":41,"max_inclusive":81},
+		"description": "Vanilla Dungeon expansion!"
+	},
+	"filter": {
+		"block": [{
+				"namespace": "minecraft",
+				"path": "worldgen/placed_feature/monster_room"
+			},
+			{
+				"namespace": "minecraft",
+				"path": "worldgen/placed_feature/monster_room_deep"
+			}
+		]
+	}
+}

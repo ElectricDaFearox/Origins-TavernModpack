@@ -17,6 +17,398 @@ file = "config/wayfinder/wayfinder.json"
 hash = "e8de6af42afc0080cf62bef2b4a6fdad5b24e5174e8b61c7282729d0c4d96dde"
 
 [[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/function/load.mcfunction"
+hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/function/tick.mcfunction"
+hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/structure/dungeons/cold_dungeon.nbt"
+hash = "39717935314939ea7db3e2a736c2395ca43b7f90acaa15173e050c5d40c01c25"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/structure/dungeons/cold_dungeon_2.nbt"
+hash = "7374e86b6a4b77f91a5a3822fe34d3b33cecb63d9101499553355c5e4a4cc40f"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/structure/dungeons/cold_dungeon_3.nbt"
+hash = "709e3ef7b803a356e460f2029f4f9f5ac6720aedabf18add14833e3d4ecef4c9"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/structure/dungeons/deepwater_dungeon.nbt"
+hash = "e25fcff63e00aa0d5e2bbacc5bfa5e85ff7a6a1148bf65e32bc03a2722389509"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/structure/dungeons/deepwater_dungeon_2.nbt"
+hash = "181ae5933635ca5d07c27d350244619621f056f22406dfa369e7cfb66c776176"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/structure/dungeons/deepwater_dungeon_3.nbt"
+hash = "43f96ee220717dd71e26978bcc0f4ac8ad9f33ba3bb93edef7c746e4ed8c6758"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/structure/dungeons/dusty_tomb.nbt"
+hash = "ceaa42e8ee73631ba4115549c9b8bfbca4f9d71ab3f988097dfe5fea09ad6858"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/structure/dungeons/dusty_tomb_2.nbt"
+hash = "2553e96203712254f70c5c84bd7cae1915e1db0355d3780826781d125c6e0ffc"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/structure/dungeons/dusty_tomb_3.nbt"
+hash = "91126b6496d82f39b350a8b48f0dda696fdc1569e4e6a470671b540c39b50f69"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/structure/dungeons/frozen_dungeon.nbt"
+hash = "c806d294300c05982a960072cedf8e524d9bac8c7196c0bccb22398888651607"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/structure/dungeons/frozen_dungeon_2.nbt"
+hash = "dd5e5ed2ee210e658fa7c87fe7a0f66936a59b6c92a69258ee85eadcfdde00e3"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/structure/dungeons/frozen_dungeon_3.nbt"
+hash = "152004f2eeffbb9eb1246f2ce32e174a81dff53dac759accf3f0b2203a859a46"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/structure/dungeons/infested_dungeon.nbt"
+hash = "836ed95c1d6b21a88c86c2408268fe7e80652f175569f333d3b881069efe7766"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/structure/dungeons/infested_dungeon_2.nbt"
+hash = "8a6b8217eb06170e03dd72a7498af9d538ec5cb1aec446ae330f49ab61e63fab"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/structure/dungeons/infested_dungeon_3.nbt"
+hash = "927f20600c7bebf38aec69506893a548b612ec04f3974f67f3cb6545315aa12d"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/structure/dungeons/lush_dungeon.nbt"
+hash = "246cd88b8e85e6c26d8f66968760d9441d71075c76d8b4457697ea186bd95394"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/structure/dungeons/lush_dungeon_2.nbt"
+hash = "794220e9391996d830a882efeac8ca54679dc3f2d7a359004facf006895159d7"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/structure/dungeons/lush_dungeon_3.nbt"
+hash = "8bb22cd4a53d489d5a5107440b06f75007db85953d65e8aa2dd7f915080acd03"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/structure/dungeons/mouldy_dungeon.nbt"
+hash = "1829e32c7cb39ac5c19db46747a255f19ce944eb1f6e8b100df9b3b9da3784b1"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/structure/dungeons/mouldy_dungeon_2.nbt"
+hash = "8988c14dfb1d8985d17e4540a51b703bdc6955745bfee50f58d90db6d5616aad"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/structure/dungeons/mouldy_dungeon_3.nbt"
+hash = "3033d317528b784453a04104557ec05b86014f3bdcbb6051b037ee5fdd7c0447"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/structure/dungeons/muddy_dungeon.nbt"
+hash = "1aedce55aaac854ebbe2d9a9405f6ecc01dcbb344bdf2eac780964c27a0ff3e1"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/structure/dungeons/muddy_dungeon_2.nbt"
+hash = "00da518ad6b3e3aa0deb1b01a637330beb94e8b5a40288c6ddb86ac25692a8cd"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/structure/dungeons/muddy_dungeon_3.nbt"
+hash = "b5546fd24b4bfe4a31ee95fc5b36de869d1ed9d27d41ff20aff980a3fff0f71b"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/structure/dungeons/scorched_tomb.nbt"
+hash = "50044bcabc68b7940e28d6c86e0708230272fc23c90345c04b6057fd581d4664"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/structure/dungeons/scorched_tomb_2.nbt"
+hash = "139d001727bca6e751ebc614b4f4cc3c2e9a1532a3cb674052f5cac25d401653"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/structure/dungeons/scorched_tomb_3.nbt"
+hash = "699b5048b3797dadbdc2cd597196e0585f032a542179683a56f9fb95aa3f78d1"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/structure/dungeons/webbed_dungeon.nbt"
+hash = "d46f3e9f3841fd9ff3bd60819e8cc75f83482024eaf4315a480b5bcfbae996ed"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/structure/dungeons/webbed_dungeon_2.nbt"
+hash = "0ac3888440917bfc5a02a4a4e4c02b0f5d0fae084251f59ede798f5d6666f300"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/structure/dungeons/webbed_dungeon_3.nbt"
+hash = "f7cf0c5c66cfa4ce932818b2e48df8c7232eea8355cd9fe383465620994f0cef"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/structure/other/dungeon_ruins_1.nbt"
+hash = "458760688f864b6b613d8eea39ba40efa92e94b3ed9fdcd45f32e586a15c3a21"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/structure/other/dungeon_ruins_10.nbt"
+hash = "2aa455e80eda05a6372795206dc32dffdca170dbcb8a9f3b1ceaed9b072869dd"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/structure/other/dungeon_ruins_2.nbt"
+hash = "6d5c78d1de2d7fd255eaa09d4d002ae3592a5c302fbdc99b3394b56ce4bb5f05"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/structure/other/dungeon_ruins_3.nbt"
+hash = "9b547e089acb5bbc6f7c6871e50f27ece75091fc1de334b26bf0320721bf381c"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/structure/other/dungeon_ruins_4.nbt"
+hash = "893eb4e2a8665ae8363f7420de9cff27cec692103a0c5f7a9ac28a4fa7e886c2"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/structure/other/dungeon_ruins_5.nbt"
+hash = "55ecc0ad615bcf99e6c5341b5f4a98df1721293c9fd1ebc39d42cb931baed3c5"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/structure/other/dungeon_ruins_6.nbt"
+hash = "2a9b1fdf2589fdde5465cb2653646d13902111cb878756d79d332453ae92d9b5"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/structure/other/dungeon_ruins_7.nbt"
+hash = "f591ca715e849a105d3cf862cf5f048b019a885db0169f9de8b0241ee8c4d274"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/structure/other/dungeon_ruins_8.nbt"
+hash = "c09a73227065e8af9c8ded759916514cd57e79984f398b342a4adc50cb801d1e"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/structure/other/dungeon_ruins_9.nbt"
+hash = "53530751b6b39da2592e137bc9a9020f5d369b93611e6255145182a8e52eb020"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/tags/worldgen/biome/has_structure/cold_dungeon.json"
+hash = "ca08fbbd6f98d1d408e8fe73c1f7380b81f5e640a1ae7663f640b7f13755bab1"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/tags/worldgen/biome/has_structure/deepwater_dungeon.json"
+hash = "d93c89ff7983d04564787df28e15a957ec3b2e722ed2c9463cef907926f5da61"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/tags/worldgen/biome/has_structure/dusty_tomb.json"
+hash = "818a349ce6282e48bd2020b6717afbb9097be7061a4136c1d2033faa16ad7db5"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/tags/worldgen/biome/has_structure/frozen_dungeon.json"
+hash = "175d0aca35db6892e26783d6e869f45fc047f0b4ed8d4caa4eaab93317956687"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/tags/worldgen/biome/has_structure/infested_dungeon.json"
+hash = "15ab91151dd764165d954cca317534503c0fd120075e2f86cbc90b20a1558bc1"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/tags/worldgen/biome/has_structure/lush_dungeon.json"
+hash = "899e62152fe974a2d11932679984f064bdb0f12b9e66dae00c4902839acca194"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/tags/worldgen/biome/has_structure/mouldy_dungeon.json"
+hash = "27ba87faa42c36ce73ad504262e42b1c05d21306c43e55894e0588ca9304ef07"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/tags/worldgen/biome/has_structure/muddy_dungeon.json"
+hash = "29db5d3f73cc54ed86eac9d946626ef53224984be302cffdaa74d3433360d0eb"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/tags/worldgen/biome/has_structure/scorched_tomb.json"
+hash = "575648f79078140a8a3db287b434523562bbe1b3442e85b3225dda26c641b06c"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/tags/worldgen/biome/has_structure/webbed_dungeon.json"
+hash = "a7368489a637e6fa2d18ac7e3dcf6eed801338424b4d054260d4a0b411acd480"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/tags/worldgen/biome/has_structure/witch_shack.json"
+hash = "0efb76346d7c1c069da44e4c108efbfe5e46c1f063fcb47cecdc7aa79464a326"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/tags/worldgen/biome/is_cold.json"
+hash = "0a4cece0f5d090524c6a71cbb8b2c7362feac4cff29df1507753c07058328431"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/tags/worldgen/structure/dungeon.json"
+hash = "bff37d23fb61df8c7a2c12fdf83a90b37674c251ab3615e305616e0f63617214"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/worldgen/processor_list/dungeon/6_chest_dungeon_rot.json"
+hash = "634e2237e6a62a6c438f6fa99f6e90c63f69116db29aa9600815a29cc175e270"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/worldgen/processor_list/dungeon/8_chest_dungeon_rot.json"
+hash = "b6ef6c8fdd45ff1a8eb0e6dfa077703eb3f6b721074e8ae4807b2a26e8dc962a"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/worldgen/processor_list/dungeon/drowned_dungeon_rot.json"
+hash = "13cdb8c9630ac8d25a6d6aba1a969f0bd2b0bc80fb53182e80364e3e5905c117"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/worldgen/processor_list/dungeon/infested_dungeon_rot.json"
+hash = "7b9c8b2e05e976f411604327ff0b9a3f5f3b928c7c34d4ccb1ea1ef64384aa73"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/worldgen/processor_list/dungeon/infested_dungeon_rot_keep_chests.json"
+hash = "911b066266774e06d47584f714d235cc888b355dde26b83f87cb6c4e4dfa8ee7"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/worldgen/processor_list/dungeon/large_spider_dungeon_rot.json"
+hash = "0cdc02f8139627517bbccb5569baf4e20d5a491e1a3a67781b9bc4d0f33ec9e3"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/worldgen/processor_list/dungeon/muddy_dungeon_rot.json"
+hash = "9f21cc187f7d6a3ce59699489e983e91c72b12d80f61c6ee30d16dd1008555e0"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/worldgen/processor_list/dungeon/small_spider_dungeon_rot.json"
+hash = "5b6f224fa3edcf1d49f9c87029c6b36dfb969b9433b577ac51a92e0d9c788601"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/worldgen/processor_list/dungeon/tomb_rot.json"
+hash = "614dfff644ff9bb850d5bb184a94ac39d392e6e87436053cc9fc63597fa0ea17"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/worldgen/processor_list/dungeon/tomb_rot_keep_chests.json"
+hash = "7faa77da5cecee0a71c5e8417c3c21734cadaa2bbf05438c1b52e0a9319e497c"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/worldgen/processor_list/ruins/ruins_rot_1_lantern.json"
+hash = "ec2df1675d209deadcb70c30f0a2780f58019516b58ef5f9d47c639c3c7c6a1f"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/worldgen/processor_list/ruins/ruins_rot_4_lanterns.json"
+hash = "64ed18f9552ca3968d5c8becd5aaebbbc368e60d0c443c2396dfe04ac979482a"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/worldgen/processor_list/ruins/ruins_rot_7_lanterns.json"
+hash = "234637c0d8ab3de7e9df2097c4f65f5605d0088461b0334b3bf236d8f6b41b06"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/worldgen/structure/cold_dungeon.json"
+hash = "dc25e2ec42284dc30a2b361cb67f6d29e92669b18edb9e64ee429c98e3ab25f7"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/worldgen/structure/deepwater_dungeon.json"
+hash = "49b57d111e8b802fed39a3486b586ada5689d95f85db59371ceca88280ecf058"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/worldgen/structure/dungeon_ruins.json"
+hash = "7714cea373ee145acea458949603f3bba3a75937d8d35f2d191c13fbe668deab"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/worldgen/structure/dusty_tomb.json"
+hash = "c6d93d714dc437972974db9c2cdced85f66be549f130fb3f537bf8389eae491a"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/worldgen/structure/frozen_dungeon.json"
+hash = "222dc34d01e48d755b322779baf7511caabe72b3b62d16d891e99d76b227b276"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/worldgen/structure/infested_dungeon.json"
+hash = "add767c9f6e952fb8c75bff0997e1eb994b97ec3932a2c5c4d722e001416f664"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/worldgen/structure/lush_dungeon.json"
+hash = "67bf78320c108d92298e15d75282a03df093420048b675e47363f978a757bcdc"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/worldgen/structure/mouldy_dungeon.json"
+hash = "413238fffbf9d67bc6a91ef586d64037c9ed098667ba4ab382a403c8299602d9"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/worldgen/structure/muddy_dungeon.json"
+hash = "ce19a25f7aa9e1b41caa6ea8fb495b1e55c04370af28c5731f87dc4485553d11"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/worldgen/structure/scorched_tomb.json"
+hash = "3dbed5df829649cc0c449592eb253592be2e82dbac1f91505332fae918a16c93"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/worldgen/structure/webbed_dungeon.json"
+hash = "5353d94d44a58d17c9a56de6cb84487b3e6fba566bb890e32fd2a57cb5ec296a"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/worldgen/structure_set/dungeons.json"
+hash = "66dbe1b8b726354eb3a0560931f06a76b1d466e2f0f0cb1e7e4e21b0e6ee2a59"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/worldgen/structure_set/ruins.json"
+hash = "7232c99ad51e9d452834651ce34de9a1c0beb4237ff30ae1f8bafb9158fb10fb"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/worldgen/template_pool/cold_dungeon.json"
+hash = "68dc0e619b30cf8bd8b131b36cfedf957c4aee4a160cacb7ac29aefd4378fc9c"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/worldgen/template_pool/deepwater_dungeon.json"
+hash = "9e3eba034a8b4a5377d79767054082ed19c55e517c5682ea65d6eca375eba798"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/worldgen/template_pool/dungeon_ruins.json"
+hash = "668b2dec97c75d0d7a55801498a90cabacfd81ada44d91c4a52c01350ae9376b"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/worldgen/template_pool/dusty_tomb.json"
+hash = "79bbded8e6f7819d4045422a4fe48b0be1a61c8e45370085e42e642ea3c92c51"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/worldgen/template_pool/frozen_dungeon.json"
+hash = "e541f0a3eb18ac15fc1bccb28acbeb0c53c4b97840b75916c9ce3421140b7806"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/worldgen/template_pool/infested_dungeon.json"
+hash = "c221835a6b3b1203de7c652fd5302ee5ddaf688ef3377d43c3cb34639657f9f3"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/worldgen/template_pool/lush_dungeon.json"
+hash = "0e4fa385ee4556c9184df574143d30365b6e9b74f9904480c5f9b843314948de"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/worldgen/template_pool/mouldy_dungeon.json"
+hash = "0db9c38ec0ab84d7376c8eb4f69f476cc1420dab6a20f6d9a92430d53ad65f2b"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/worldgen/template_pool/muddy_dungeon.json"
+hash = "54d6ab2735b34e4f26e139ee0351c69256505b2e71dada263d5e20a5d8ea82d9"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/worldgen/template_pool/scorched_tomb.json"
+hash = "985efd9c52c2f9adc2901a8b36322340d13866e9e03d81f46295135fd91c9551"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/worldgen/template_pool/webbed_dungeon.json"
+hash = "aa979c85362316df68a4052246cd58471fbaaeca4c0e9d90b923faec28ec2f37"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/minecraft/tags/function/load.json"
+hash = "0aab9234f8f74464ec68363182ae783412a567fa46bebe3c5203197d4946e55e"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/minecraft/tags/function/tick.json"
+hash = "a0aa32fd3c08af514f48d43e56aab4143ca107d6af0da7d7e7adfbe191c049f8"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/minecraft/worldgen/placed_feature/monster_room.json"
+hash = "87aba8a8a02d455f23a7d5a7343b39f75ca0d320aeab906628ec29dcb3e43f74"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/data/minecraft/worldgen/placed_feature/monster_room_deep.json"
+hash = "87aba8a8a02d455f23a7d5a7343b39f75ca0d320aeab906628ec29dcb3e43f74"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/pack.mcmeta"
+hash = "bbe805d18b30dac98419f0071031d340c15963739bc39ba4ff9f032a589c6a57"
+
+[[files]]
+file = "datapacks/Dungeons+ V1.10.1/pack.png"
+hash = "84ae8771f6cdde43e176b9ff59e3de2046b6b3f92ab87171cd8b787e254a366a"
+
+[[files]]
 file = "datapacks/mineshafts/LICENSE"
 hash = "83f343cab49e8d87b53cc6572b8421811b20d788d9060b7429b9f88e2655d8d4"
 
@@ -7374,8 +7766,18 @@ hash = "4ea85fa7d750bf5a167fe9652f2ac896d12ab068dacb8b04539e316ba5b74042"
 metafile = true
 
 [[files]]
+file = "mods/stormies-spiders.pw.toml"
+hash = "5c605bdbebf29a2f291c630b694ff05e225b1944b4fe4d224a05a9cdba7143ea"
+metafile = true
+
+[[files]]
 file = "mods/supplementaries.pw.toml"
 hash = "d11ba6eed5574b8ab37951137a6757213ee8019e04a9fccba2042d0e39aab696"
+metafile = true
+
+[[files]]
+file = "mods/the-ancient-towns.pw.toml"
+hash = "9430075eafadb6ce07dcd1636618b4b8f2b1ac3204ade704eb6e9c7e8cffa32a"
 metafile = true
 
 [[files]]
