@@ -1,0 +1,13 @@
+name = "Chunksmith"
+filename = "Chunksmith-Fabric-1.21.1-2.1.2.jar"
+side = "server"
+
+[download]
+url = "https://cdn.modrinth.com/data/4BeAEBIb/versions/TJJxWrs1/Chunksmith-Fabric-1.21.1-2.1.2.jar"
+hash-format = "sha512"
+hash = "3d3cbc23aad7a83bf569f19062df1e884a3c5e1f85696d1c3b203f8dcdd872f32c184ea0442b004054533fd33e3883654c9276b40446a4463ce32006ccab9718"
+
+[update]
+[update.modrinth]
+mod-id = "4BeAEBIb"
+version = "TJJxWrs1"

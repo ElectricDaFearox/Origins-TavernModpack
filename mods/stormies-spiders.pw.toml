@@ -1,13 +1,13 @@
 name = "Stormie's Spiders"
-filename = "stormiespiders-fabric-1.21.1-3.2.0.jar"
+filename = "stormiespiders-fabric-1.21.1-3.3.0.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/3dsI6Hle/versions/Siyu0Rz0/stormiespiders-fabric-1.21.1-3.2.0.jar"
+url = "https://cdn.modrinth.com/data/3dsI6Hle/versions/eO0cqtJh/stormiespiders-fabric-1.21.1-3.3.0.jar"
 hash-format = "sha512"
-hash = "55b49b8082c5f809eab497a05157494c9b581f918469fa86875cff5b77bc17be7e45018feeb81e138d657f1954c272e8cd1178c0c1aa8f3e4d2bb214ebed6241"
+hash = "5e3fb221c32623c9e3ba1208bd4853c031aac887424e261594a27c48266ae0776fc7e728e8ab795a9ede1cbd12a377dea006b80fd55848a8a5a1fdd828dc9ae2"
 
 [update]
 [update.modrinth]
 mod-id = "3dsI6Hle"
-version = "Siyu0Rz0"
+version = "eO0cqtJh"

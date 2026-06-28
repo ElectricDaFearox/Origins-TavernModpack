@@ -7466,6 +7466,11 @@ hash = "67c1118cf73f03d05acf04cecd18990f8e7be6f2b7a80a40f1e4b9a58f3fb8f6"
 metafile = true
 
 [[files]]
+file = "mods/chunksmith.pw.toml"
+hash = "826bba2c652107e8b8bec60111d2b5294c388d61c9626f3a8131e85a67423877"
+metafile = true
+
+[[files]]
 file = "mods/civillis.pw.toml"
 hash = "a0bc89951fbe84d090311998dbc1379f041cec19a3dbe13243b2b8a07bd04fb5"
 metafile = true
@@ -7486,6 +7491,11 @@ hash = "d056036f71ac0fe66147f415e0142c1fd8889c065b7f1e5880ad3d46c583136f"
 metafile = true
 
 [[files]]
+file = "mods/defaulted.pw.toml"
+hash = "d03a75b8fe96f5f08fe178a41a0fc668395797f45b453ec4a542b3922f7df2a5"
+metafile = true
+
+[[files]]
 file = "mods/distraction-free-recipes.pw.toml"
 hash = "8b1b8f60b0b3f437eb213c47f0a76eb1c32bdcff3a4d6e1d7e60a8e3ac5822c6"
 metafile = true
@@ -7498,6 +7508,11 @@ metafile = true
 [[files]]
 file = "mods/emi.pw.toml"
 hash = "a0a3d38daafb58117aaf29bb0b0520534abb7175e8d98f63cb47a65c75afac79"
+metafile = true
+
+[[files]]
+file = "mods/enderscape.pw.toml"
+hash = "19fad0686ce50d6f894e70cfd3c1302624dd549c818f8ff021624730c0d273f1"
 metafile = true
 
 [[files]]
@@ -7576,6 +7591,11 @@ hash = "a55e547f30226037a2bc5bd534904234f91189b5102a61f13596941cbf8d5654"
 metafile = true
 
 [[files]]
+file = "mods/gabous-libs.pw.toml"
+hash = "1d6e976fdd44ef22a1e4479662e2dd409707b81d34a428c083df3201d31e244c"
+metafile = true
+
+[[files]]
 file = "mods/geckolib.pw.toml"
 hash = "d7c13dfec5f62eef0906adf8814e989fd914f5b9c2f4b9c3064b6fa3a4c5bd78"
 metafile = true
@@ -7593,11 +7613,6 @@ metafile = true
 [[files]]
 file = "mods/handcrafted.pw.toml"
 hash = "2600fb5f2efa6dffd1bcc04eea4c2646c101da4320da0c88d5616d5c2f41a439"
-metafile = true
-
-[[files]]
-file = "mods/hopo-better-mineshaft.pw.toml"
-hash = "eda0881f5e9f375207119edf13b65cc2fa957372db7b10b6380cc0e9bf61e532"
 metafile = true
 
 [[files]]
@@ -7658,6 +7673,11 @@ metafile = true
 [[files]]
 file = "mods/lithium.pw.toml"
 hash = "e10e639f71700a67d7f9b9d747e1685f838d703dadd432464b54e31b26f4742b"
+metafile = true
+
+[[files]]
+file = "mods/lithostitched.pw.toml"
+hash = "6add40e6a73c43702fbc8447c49bee381389b9bfd0b3edd9b54ce3da2ef59788"
 metafile = true
 
 [[files]]
@@ -7756,6 +7776,16 @@ hash = "029429520421d3642bc9b4fefbec58b4431eba12ca46700512fea6c60ba3a0ca"
 metafile = true
 
 [[files]]
+file = "mods/serene-seasons-plus.pw.toml"
+hash = "493b24d409188d802e765e6082e0e39cae639e20c69775deecb0a78a0dce982e"
+metafile = true
+
+[[files]]
+file = "mods/serene-seasons.pw.toml"
+hash = "4739fd0f979dd5fefecc5c47a07ef61ca78d1bdf525cd4e544e1a331ede3ca61"
+metafile = true
+
+[[files]]
 file = "mods/simple-voice-chat.pw.toml"
 hash = "cf11a6410ad4097983f806684ac343085053eca1d4106f2b45d75147ae4b5f94"
 metafile = true
@@ -7772,17 +7802,12 @@ metafile = true
 
 [[files]]
 file = "mods/stormies-spiders.pw.toml"
-hash = "5c605bdbebf29a2f291c630b694ff05e225b1944b4fe4d224a05a9cdba7143ea"
+hash = "2a0a92bb371850213eaf8c3bd96c4c6090949f6cac333db3a6cd28683b8903e8"
 metafile = true
 
 [[files]]
 file = "mods/supplementaries.pw.toml"
 hash = "d11ba6eed5574b8ab37951137a6757213ee8019e04a9fccba2042d0e39aab696"
-metafile = true
-
-[[files]]
-file = "mods/the-ancient-towns.pw.toml"
-hash = "9430075eafadb6ce07dcd1636618b4b8f2b1ac3204ade704eb6e9c7e8cffa32a"
 metafile = true
 
 [[files]]
