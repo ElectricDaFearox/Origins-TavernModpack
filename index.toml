@@ -7741,6 +7741,11 @@ hash = "3c4657b2f48625b786f1ec80857d50eb997f388491aed21cc9cb4265f2169da2"
 metafile = true
 
 [[files]]
+file = "mods/sable-neoforge.pw.toml"
+hash = "f5442766a134f03184569f5938c021f15de6cc3f7dde91cf16f4461003578f97"
+metafile = true
+
+[[files]]
 file = "mods/sable.pw.toml"
 hash = "45ddb6939d33d5c4ec4c861746ce986afe5a0f06c5ea45b27c9380b72777a4ce"
 metafile = true
