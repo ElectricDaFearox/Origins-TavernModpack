@@ -1,0 +1,27 @@
+{
+  "add": {
+    "minecraft:tool": {
+      "default_mining_speed": 1.0,
+      "damage_per_block": 1,
+      "rules": [
+        {
+          "blocks": [
+            "minecraft:copper_ore",
+            "minecraft:deepslate_copper_ore"
+          ],
+          "speed": 2.0,
+          "correct_for_drops": true
+        },
+        {
+          "blocks": "#minecraft:incorrect_for_wooden_tool",
+          "correct_for_drops": false
+        },
+        {
+          "blocks": "#minecraft:mineable/pickaxe",
+          "speed": 2.0,
+          "correct_for_drops": true
+        }
+      ]
+    }
+  }
+}
