@@ -1,0 +1,34 @@
+name: Build Modpack
+
+on:
+  push:
+    branches:
+      - main # Change to your default branch name
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: "stable"
+
+      # Install packwiz to compile the mrpack
+      - name: Install packwiz
+        run: go install github.com/packwiz/packwiz@latest
+
+      # Export to .mrpack (assumes packwiz files are in the repository root)
+      - name: Export Modpack
+        run: ~/go/bin/packwiz mr export --output build.mrpack
+
+      # Upload the compiled file as a workflow artifact
+      - name: Upload Modpack Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: modpack-mrpack
+          path: build.mrpack
