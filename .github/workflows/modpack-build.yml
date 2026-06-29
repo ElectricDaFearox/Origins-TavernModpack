@@ -3,7 +3,7 @@ name: Build Modpack
 on:
   push:
     branches:
-      - main # Change to your default branch name
+      - dev
 
 jobs:
   build:
