@@ -1,13 +1,8 @@
-name = "Kilt"
-filename = "Kilt-21.1.4.jar"
+name = "Kilt (Locally Compiled)"
+filename = "Kilt-21.1.5+build.03319c-local.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/t87XZEqv/versions/Ek9CLFrE/Kilt-21.1.4.jar"
-hash-format = "sha512"
-hash = "a75c39a5e05ce6ad06c7a68610b51d090bf1c8e5255bd950d3da4fc9d2faaf62c9c17a24e1b6e5cc76f90d749577a4c2ee2079820d1610bdb70ce3667b6c1464"
-
-[update]
-[update.modrinth]
-mod-id = "t87XZEqv"
-version = "Ek9CLFrE"
+url = "https://assets.aluki.gay/CompiledMods/TavernOrigins/Kilt-21.1.5%2Bbuild.03319c-local.jar"
+hash-format = "sha256"
+hash = "7d3930abe6acbef7d2ef5632cd767ca322e7d65154af69e8616f69f308dcac63"
