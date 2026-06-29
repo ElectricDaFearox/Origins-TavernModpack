@@ -7426,7 +7426,7 @@ hash = "d53b49fc468cdb1390618691e9f5731456fe66f791f53ab1e56a35beb5eb9e84"
 
 [[files]]
 file = "datapacks/tweaks/data/minecraft/default_components/copper_sword.json"
-hash = "ffb2eb19c461ecf92d430c570036fdef38db896e30e8d540518cc010c2cc57d0"
+hash = "0ae55d22a279a6a10825dc208c5474bca6eabbcca1675c3cd67b9f336fac2f30"
 
 [[files]]
 file = "datapacks/tweaks/data/minecraft/default_components/wooden_pickaxe.json"
@@ -7679,7 +7679,7 @@ metafile = true
 
 [[files]]
 file = "mods/lenient-death.pw.toml"
-hash = "a2c662fddf2c0cf78bce3318acf6765b5aa5f0803245630ddcdd045d0d1f9b35"
+hash = "82bfb10bd1c988a7d2f0b76e47269b2ef7904a492af326f6a430485fc8b39b67"
 metafile = true
 
 [[files]]

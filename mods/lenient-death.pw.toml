@@ -1,8 +1,8 @@
 name = "Lenient Death (Neoforge)"
+side = "server"
 filename = "lenientdeath-1.1.2.jar"
-side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/gSeMR87k/versions/sEg91zNX/lenientdeath-1.1.2.jar?mr_download_reason=standalone"
 hash-format = "sha256"
+url = "https://cdn.modrinth.com/data/gSeMR87k/versions/sEg91zNX/lenientdeath-1.1.2.jar?mr_download_reason=standalone"
 hash = "654172e748fbeccb0187838ea41471470cc0b5db9b99c9b2906285943af497df"
