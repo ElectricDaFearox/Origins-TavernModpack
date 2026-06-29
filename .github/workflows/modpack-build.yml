@@ -3,7 +3,7 @@ name: Build Modpack
 on:
   push:
     branches:
-      - dev
+      - crash-with-portinglib
 
 jobs:
   build:
