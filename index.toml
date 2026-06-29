@@ -7410,11 +7410,11 @@ hash = "581e2ba1cbd3e0d2d0afb975c7cd2c2f195bf59131252d3c9bc2b4592bc52668"
 
 [[files]]
 file = "datapacks/tweaks/data/minecraft/default_components/copper_axe.json"
-hash = "b764557fd9624d2869096bb9718e5d3fea07c63192e97042f77b1d85943f0867"
+hash = "7e0c06314a06e91056eac2d3d785a897b6f4a5cb09b0f631877125a702076f4f"
 
 [[files]]
 file = "datapacks/tweaks/data/minecraft/default_components/copper_hoe.json"
-hash = "37e4916eaa620292ea849b97b2fb646db4110082e84c542bbe6f4bd2b1543c6b"
+hash = "3118a66c7ba3d273cf203d64ce122b953b33ce49ffc8819a5b9ce24ca46d7951"
 
 [[files]]
 file = "datapacks/tweaks/data/minecraft/default_components/copper_pickaxe.json"
@@ -7422,7 +7422,7 @@ hash = "00467b17a037a2de5f44b6153a784e0feb0e4b80a4d6e21f0e269c395d391fb8"
 
 [[files]]
 file = "datapacks/tweaks/data/minecraft/default_components/copper_shovel.json"
-hash = "2a0835e26a5b6edadc95f209dcd3737e05984830196ecd4388807eacf0ee15fe"
+hash = "d53b49fc468cdb1390618691e9f5731456fe66f791f53ab1e56a35beb5eb9e84"
 
 [[files]]
 file = "datapacks/tweaks/data/minecraft/default_components/copper_sword.json"
