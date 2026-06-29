@@ -7679,12 +7679,7 @@ metafile = true
 
 [[files]]
 file = "mods/lenient-death.pw.toml"
-hash = "82bfb10bd1c988a7d2f0b76e47269b2ef7904a492af326f6a430485fc8b39b67"
-metafile = true
-
-[[files]]
-file = "mods/lets-do-herbalbrews.pw.toml"
-hash = "a1192043e4afbe464b82ffd422a1dbd28b2c943e1614a80b5e276678c1ba7ecf"
+hash = "f075e4a3e7b8bf2a9847eedf8c49ca8c6100f7c6c221ae21314dc6f32338caf9"
 metafile = true
 
 [[files]]
