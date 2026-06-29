@@ -1,0 +1,37 @@
+{
+  "add": {
+    "minecraft:max_damage": 192,
+    "minecraft:repairable": {
+      "items": "minecraft:copper_ingot"
+    },
+    "minecraft:enchantable": {
+      "value": 9
+    },
+    "minecraft:tool": {
+      "default_mining_speed": 1.0,
+      "damage_per_block": 1,
+      "rules": [
+        {
+          "blocks": [
+            "minecraft:gold_ore",
+            "minecraft:deepslate_gold_ore",
+            "minecraft:nether_gold_ore",
+            "minecraft:gold_block",
+            "minecraft:raw_gold_block"
+          ],
+          "speed": 4.5,
+          "correct_for_drops": true
+        },
+        {
+          "blocks": "#minecraft:needs_stone_tool",
+          "speed": 5.0,
+          "correct_for_drops": true
+        },
+        {
+          "blocks": "#minecraft:mineable/pickaxe",
+          "speed": 5.0
+        }
+      ]
+    }
+  }
+}

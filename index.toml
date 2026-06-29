@@ -7491,8 +7491,8 @@ hash = "d056036f71ac0fe66147f415e0142c1fd8889c065b7f1e5880ad3d46c583136f"
 metafile = true
 
 [[files]]
-file = "mods/defaulted.pw.toml"
-hash = "d03a75b8fe96f5f08fe178a41a0fc668395797f45b453ec4a542b3922f7df2a5"
+file = "mods/default-components.pw.toml"
+hash = "64e964d14a41968ac3ba4549100f0055c9837b1f4f0c30d410139f27938a0f9f"
 metafile = true
 
 [[files]]
