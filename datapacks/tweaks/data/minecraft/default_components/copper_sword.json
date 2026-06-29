@@ -1,11 +1,5 @@
 {
   "add": {
-    "minecraft:max_damage": 192,
-    "minecraft:repairable": {
-      "items": "minecraft:copper_ingot"
-    },
-    "minecraft:enchantable": {
-      "value": 9
-    }
+    "minecraft:max_damage": 192
   }
 }
