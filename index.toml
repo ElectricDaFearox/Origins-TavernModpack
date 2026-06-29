@@ -7524,7 +7524,7 @@ metafile = true
 
 [[files]]
 file = "mods/default-components.pw.toml"
-hash = "64e964d14a41968ac3ba4549100f0055c9837b1f4f0c30d410139f27938a0f9f"
+hash = "473ed2565d9a9b52db510e769f0e5565060a471ef4f4a9938c17904f9f3b600d"
 metafile = true
 
 [[files]]
