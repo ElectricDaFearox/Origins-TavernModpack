@@ -7426,7 +7426,7 @@ hash = "d53b49fc468cdb1390618691e9f5731456fe66f791f53ab1e56a35beb5eb9e84"
 
 [[files]]
 file = "datapacks/tweaks/data/minecraft/default_components/copper_sword.json"
-hash = "ffb2eb19c461ecf92d430c570036fdef38db896e30e8d540518cc010c2cc57d0"
+hash = "0ae55d22a279a6a10825dc208c5474bca6eabbcca1675c3cd67b9f336fac2f30"
 
 [[files]]
 file = "datapacks/tweaks/data/minecraft/default_components/wooden_pickaxe.json"
@@ -7669,7 +7669,7 @@ metafile = true
 
 [[files]]
 file = "mods/kilt.pw.toml"
-hash = "31b937bc5fb96370b4c0b4fb8eff289973bac7df91f80843195b57aa9782ba50"
+hash = "c48746f836e04a71e797e47bd3baaba58f5c2c074dfef059c088f65ea3b51cec"
 metafile = true
 
 [[files]]
@@ -7680,11 +7680,6 @@ metafile = true
 [[files]]
 file = "mods/lenient-death.pw.toml"
 hash = "f075e4a3e7b8bf2a9847eedf8c49ca8c6100f7c6c221ae21314dc6f32338caf9"
-metafile = true
-
-[[files]]
-file = "mods/lets-do-herbalbrews.pw.toml"
-hash = "a1192043e4afbe464b82ffd422a1dbd28b2c943e1614a80b5e276678c1ba7ecf"
 metafile = true
 
 [[files]]
