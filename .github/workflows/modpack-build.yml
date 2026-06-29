@@ -18,17 +18,26 @@ jobs:
         with:
           go-version: "stable"
 
-      # Install packwiz to compile the mrpack
       - name: Install packwiz
         run: go install github.com/packwiz/packwiz@latest
 
-      # Export to .mrpack (assumes packwiz files are in the repository root)
-      - name: Export Modpack
-        run: ~/go/bin/packwiz mr export --output build.mrpack
+      # Read the 'name' field from pack.toml, strip out special characters, and save it
+      - name: Get Modpack Name
+        id: get_name
+        run: |
+          # Read name key, lowercase it, and swap spaces for dashes
+          RAW_NAME=$(yq '.name' pack.toml)
+          CLEAN_NAME=$(echo "$RAW_NAME" | tr '[:upper:]' '[:lower:]' | sed 's/[^a-zA-Z0-9]/-/g' | sed 's/-\{2,\}/-/g')
+          echo "pack_name=${CLEAN_NAME}" >> $GITHUB_OUTPUT
 
-      # Upload the compiled file as a workflow artifact
+      # Export using your dynamically read name
+      - name: Export Modpack
+        run: |
+          ~/go/bin/packwiz mr export --output "${{ steps.get_name.outputs.pack_name }}.mrpack"
+
+      # Upload the artifact named after your pack
       - name: Upload Modpack Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: modpack-mrpack
-          path: build.mrpack
+          name: ${{ steps.get_name.outputs.pack_name }}-mrpack
+          path: ${{ steps.get_name.outputs.pack_name }}.mrpack
