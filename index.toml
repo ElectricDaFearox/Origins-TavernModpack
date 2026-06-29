@@ -7409,27 +7409,27 @@ file = "datapacks/ruinedportals/pack.png"
 hash = "581e2ba1cbd3e0d2d0afb975c7cd2c2f195bf59131252d3c9bc2b4592bc52668"
 
 [[files]]
-file = "datapacks/tweaks/data/minecraft/default_componnents/copper_axe.json"
+file = "datapacks/tweaks/data/minecraft/default_components/copper_axe.json"
 hash = "b764557fd9624d2869096bb9718e5d3fea07c63192e97042f77b1d85943f0867"
 
 [[files]]
-file = "datapacks/tweaks/data/minecraft/default_componnents/copper_hoe.json"
+file = "datapacks/tweaks/data/minecraft/default_components/copper_hoe.json"
 hash = "37e4916eaa620292ea849b97b2fb646db4110082e84c542bbe6f4bd2b1543c6b"
 
 [[files]]
-file = "datapacks/tweaks/data/minecraft/default_componnents/copper_pickaxe.json"
+file = "datapacks/tweaks/data/minecraft/default_components/copper_pickaxe.json"
 hash = "fa520475ef93be1d53e7e86d31846f98127d1f07c976265223fbea4257505f5f"
 
 [[files]]
-file = "datapacks/tweaks/data/minecraft/default_componnents/copper_shovel.json"
+file = "datapacks/tweaks/data/minecraft/default_components/copper_shovel.json"
 hash = "2a0835e26a5b6edadc95f209dcd3737e05984830196ecd4388807eacf0ee15fe"
 
 [[files]]
-file = "datapacks/tweaks/data/minecraft/default_componnents/copper_sword.json"
+file = "datapacks/tweaks/data/minecraft/default_components/copper_sword.json"
 hash = "ffb2eb19c461ecf92d430c570036fdef38db896e30e8d540518cc010c2cc57d0"
 
 [[files]]
-file = "datapacks/tweaks/data/minecraft/default_componnents/wooden_pickaxe.json"
+file = "datapacks/tweaks/data/minecraft/default_components/wooden_pickaxe.json"
 hash = "ed9304639be8f6136d5ffe5e09032baa4020d7d139b84cf4b3036cb5dfc0fd1f"
 
 [[files]]
