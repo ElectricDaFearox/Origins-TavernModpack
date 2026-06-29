@@ -17,13 +17,13 @@
           "correct_for_drops": true
         },
         {
-          "blocks": "#minecraft:needs_stone_tool",
-          "speed": 5.0,
-          "correct_for_drops": true
+          "blocks": "#minecraft:incorrect_for_stone_tool",
+          "correct_for_drops": false
         },
         {
           "blocks": "#minecraft:mineable/pickaxe",
-          "speed": 5.0
+          "speed": 5.0,
+          "correct_for_drops": true
         }
       ]
     }
