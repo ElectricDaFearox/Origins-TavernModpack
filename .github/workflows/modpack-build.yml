@@ -13,31 +13,28 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up Go
+      - name: Set up Go & Install packwiz
         uses: actions/setup-go@v5
         with:
           go-version: "stable"
+          cache: false # Optional: speeds up builds if run frequently
 
-      - name: Install packwiz
-        run: go install github.com/packwiz/packwiz@latest
-
-      # Read the 'name' field from pack.toml, strip out special characters, and save it
-      - name: Get Modpack Name
-        id: get_name
+      - name: Build Modpack
+        id: build_pack
         run: |
-          # Read name key, lowercase it, and swap spaces for dashes
+          # Install packwiz
+          go install github.com/packwiz/packwiz@latest
+
+          # Read, clean, and format the modpack name from pack.toml
           RAW_NAME=$(yq '.name' pack.toml)
           CLEAN_NAME=$(echo "$RAW_NAME" | tr '[:upper:]' '[:lower:]' | sed 's/[^a-zA-Z0-9]/-/g' | sed 's/-\{2,\}/-/g')
           echo "pack_name=${CLEAN_NAME}" >> $GITHUB_OUTPUT
 
-      # Export using your dynamically read name
-      - name: Export Modpack
-        run: |
-          ~/go/bin/packwiz mr export --output "${{ steps.get_name.outputs.pack_name }}.mrpack"
+          # Export to .mrpack
+          ~/go/bin/packwiz mr export --output "${CLEAN_NAME}.mrpack"
 
-      # Upload the artifact named after your pack
       - name: Upload Modpack Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: ${{ steps.get_name.outputs.pack_name }}-mrpack
-          path: ${{ steps.get_name.outputs.pack_name }}.mrpack
+          name: ${{ steps.build_pack.outputs.pack_name }}-mrpack
+          path: ${{ steps.build_pack.outputs.pack_name }}.mrpack
