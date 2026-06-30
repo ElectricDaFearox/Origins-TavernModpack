@@ -31,11 +31,6 @@
     "additionaladditions:patina_block",
     "supplementaries:wrench",
     "additionaladditions:wrench",
-    "fixedminecraft:azalea_chest_boat",
-    "minecraft:stone_shovel",
-    "minecraft:stone_pickaxe",
-    "minecraft:stone_axe",
-    "minecraft:stone_hoe",
-    "minecraft:stone_sword"
+    "fixedminecraft:azalea_chest_boat"
   ]
 }

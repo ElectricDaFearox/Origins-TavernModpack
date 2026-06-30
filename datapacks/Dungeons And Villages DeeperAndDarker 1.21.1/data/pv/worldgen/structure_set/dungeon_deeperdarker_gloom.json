@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "pv:dungeon_deeperdarker_gloom",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 654367,
+    "spacing": 20,
+    "separation": 15
+  }
+}

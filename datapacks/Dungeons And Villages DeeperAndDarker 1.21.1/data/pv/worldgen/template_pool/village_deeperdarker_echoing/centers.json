@@ -1,0 +1,13 @@
+{
+	"name": "pv:village_deeperdarker_echoing/centers",
+	"fallback": "minecraft:empty",
+	"elements": [{
+		"weight": 1,
+		"element": {
+			"location": "pv:village_deeperdarker_echoing/centers/center_1",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	}]
+}

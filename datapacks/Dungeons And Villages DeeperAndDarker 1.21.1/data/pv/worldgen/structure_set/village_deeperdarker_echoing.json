@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "pv:village_deeperdarker_echoing",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 5373248,
+    "spacing": 48,
+    "separation": 30
+  }
+}

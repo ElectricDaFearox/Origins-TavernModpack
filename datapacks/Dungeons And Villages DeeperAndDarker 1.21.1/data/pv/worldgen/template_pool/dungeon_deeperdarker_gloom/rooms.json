@@ -1,0 +1,132 @@
+{
+  "name": "pv:dungeon_deeperdarker_gloom/rooms",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "pv:dungeon_deeperdarker_gloom/rooms/room_1",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	    {
+      "weight": 1,
+      "element": {
+        "location": "pv:dungeon_deeperdarker_gloom/rooms/room_2",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	    {
+      "weight": 1,
+      "element": {
+        "location": "pv:dungeon_deeperdarker_gloom/rooms/room_3",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	    {
+      "weight": 1,
+      "element": {
+        "location": "pv:dungeon_deeperdarker_gloom/rooms/room_4",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	    {
+      "weight": 1,
+      "element": {
+        "location": "pv:dungeon_deeperdarker_gloom/rooms/room_5",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	    {
+      "weight": 1,
+      "element": {
+        "location": "pv:dungeon_deeperdarker_gloom/rooms/room_6",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	    {
+      "weight": 1,
+      "element": {
+        "location": "pv:dungeon_deeperdarker_gloom/rooms/room_7",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	    {
+      "weight": 1,
+      "element": {
+        "location": "pv:dungeon_deeperdarker_gloom/rooms/room_8",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	    {
+      "weight": 1,
+      "element": {
+        "location": "pv:dungeon_deeperdarker_gloom/rooms/room_9",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	    {
+      "weight": 1,
+      "element": {
+        "location": "pv:dungeon_deeperdarker_gloom/rooms/room_10",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	    {
+      "weight": 1,
+      "element": {
+        "location": "pv:dungeon_deeperdarker_gloom/rooms/room_11",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+		    {
+      "weight": 1,
+      "element": {
+        "location": "pv:dungeon_deeperdarker_gloom/rooms/room_12",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+		    {
+      "weight": 1,
+      "element": {
+        "location": "pv:dungeon_deeperdarker_gloom/rooms/room_13",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+		    {
+      "weight": 1,
+      "element": {
+        "location": "pv:dungeon_deeperdarker_gloom/rooms/room_14",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+	]
+}

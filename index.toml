@@ -1,6 +1,10 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/betterdays-common.toml"
+hash = "144742412a241e405bfe88029486c99dd5520c876af2b060690436d72fb64696"
+
+[[files]]
 file = "config/friendsandfoes.json"
 hash = "226e9240d299ed525b62682f590e8b49d54dccc602587ebf9f80ba786b9ac751"
 
@@ -14,7 +18,15 @@ hash = "b5bf52db39dcf7e52e4c2feefd80dd104d977c8e71d827a76d1f5b5138baa265"
 
 [[files]]
 file = "config/reliable_remover.json"
-hash = "733d560a49bc38d6adda8b32292bccf9cd1fa3ca13328d5231d429b963e4e854"
+hash = "257fd8d2ad9d1a4d39b3b84a590986e672a9a29dde156fc849660dffefc1788e"
+
+[[files]]
+file = "config/sereneseasons/fertility.toml"
+hash = "722f7545a5a592f0aed25ae8dd0a4f53f7abaf0bb53da96417d87e9096e75631"
+
+[[files]]
+file = "config/sereneseasons/seasons.toml"
+hash = "08a875bbe278455ced4fbc9bcd3e19bb670e0db23d6bf3f95e3fe65597411336"
 
 [[files]]
 file = "config/vanillabackport-common.toml"
@@ -23,6 +35,246 @@ hash = "558e02a4f8c0198655233e173847f4955da206bd6b6c1ed2b9a21945181817ed"
 [[files]]
 file = "config/wayfinder/wayfinder.json"
 hash = "e8de6af42afc0080cf62bef2b4a6fdad5b24e5174e8b61c7282729d0c4d96dde"
+
+[[files]]
+file = "datapacks/Dungeons And Villages DeeperAndDarker 1.21.1/data/pv/loot_table/dungeon/sculk_dungeon.json"
+hash = "b1ce24efa6c684b7e8c7e5a63b15d6eabc7c4eedb4e36229de1b6295d30ef04d"
+
+[[files]]
+file = "datapacks/Dungeons And Villages DeeperAndDarker 1.21.1/data/pv/structure/dungeon_deeperdarker_gloom/centers/center_1.nbt"
+hash = "651a27970ce6af514cf4252521f8a63b120d5dd8bbed58db7c27267fc005d2f5"
+
+[[files]]
+file = "datapacks/Dungeons And Villages DeeperAndDarker 1.21.1/data/pv/structure/dungeon_deeperdarker_gloom/rooms/room_1.nbt"
+hash = "ce734217882c96fd8c51bec0f784721603cf72dfd14eb30b051aedfa6465c50f"
+
+[[files]]
+file = "datapacks/Dungeons And Villages DeeperAndDarker 1.21.1/data/pv/structure/dungeon_deeperdarker_gloom/rooms/room_10.nbt"
+hash = "cdd22188d28b0549de273d588748432a6732e150dc842b0d30a5ddc83aba1227"
+
+[[files]]
+file = "datapacks/Dungeons And Villages DeeperAndDarker 1.21.1/data/pv/structure/dungeon_deeperdarker_gloom/rooms/room_11.nbt"
+hash = "cbbc1a7726d9e1d190c89c6d8c39399699cb829675dccbf1a6c5fff14593fe13"
+
+[[files]]
+file = "datapacks/Dungeons And Villages DeeperAndDarker 1.21.1/data/pv/structure/dungeon_deeperdarker_gloom/rooms/room_12.nbt"
+hash = "4ba2d5e8e3afe011e563d3b7f7e9ed52c77506e5f79f2bca1dab5ebe8f324d91"
+
+[[files]]
+file = "datapacks/Dungeons And Villages DeeperAndDarker 1.21.1/data/pv/structure/dungeon_deeperdarker_gloom/rooms/room_13.nbt"
+hash = "e901e93dbb12ba8a45102e77f3db15132a4f4e6c0d6f96014f86ba3b5226cdf3"
+
+[[files]]
+file = "datapacks/Dungeons And Villages DeeperAndDarker 1.21.1/data/pv/structure/dungeon_deeperdarker_gloom/rooms/room_14.nbt"
+hash = "3d6028d3eb57a18b4589979f57a9d0d6d6d85228364e3bde3c69703494e27046"
+
+[[files]]
+file = "datapacks/Dungeons And Villages DeeperAndDarker 1.21.1/data/pv/structure/dungeon_deeperdarker_gloom/rooms/room_2.nbt"
+hash = "58b00492d45192f545b1845badc7263e8a81c7149fcd726005d5af32789d98ec"
+
+[[files]]
+file = "datapacks/Dungeons And Villages DeeperAndDarker 1.21.1/data/pv/structure/dungeon_deeperdarker_gloom/rooms/room_3.nbt"
+hash = "69771f6b2ad299ca67cae451d0f1e47b9c0dab30aab6e4d73c9603abc00038fa"
+
+[[files]]
+file = "datapacks/Dungeons And Villages DeeperAndDarker 1.21.1/data/pv/structure/dungeon_deeperdarker_gloom/rooms/room_4.nbt"
+hash = "47c1bdb907ef6eaec459ca5a43fe118b44de514a8522814408c30a2c4f868ed0"
+
+[[files]]
+file = "datapacks/Dungeons And Villages DeeperAndDarker 1.21.1/data/pv/structure/dungeon_deeperdarker_gloom/rooms/room_5.nbt"
+hash = "1125443be905631a446cadcee62e7f231343311359647242ac5063a85d3bc216"
+
+[[files]]
+file = "datapacks/Dungeons And Villages DeeperAndDarker 1.21.1/data/pv/structure/dungeon_deeperdarker_gloom/rooms/room_6.nbt"
+hash = "1047f83e057ab2e7fcf29f5b98450b9c573af4bd456bf88a8ec7daa3c38e9650"
+
+[[files]]
+file = "datapacks/Dungeons And Villages DeeperAndDarker 1.21.1/data/pv/structure/dungeon_deeperdarker_gloom/rooms/room_7.nbt"
+hash = "518fe76560e1464aa0108f1488124d16dd6179e24a482834c2fe11c8a8884bab"
+
+[[files]]
+file = "datapacks/Dungeons And Villages DeeperAndDarker 1.21.1/data/pv/structure/dungeon_deeperdarker_gloom/rooms/room_8.nbt"
+hash = "97a395ef6c948740d8655ee6a5e868d14a07de0c89646819500f7293f73a602b"
+
+[[files]]
+file = "datapacks/Dungeons And Villages DeeperAndDarker 1.21.1/data/pv/structure/dungeon_deeperdarker_gloom/rooms/room_9.nbt"
+hash = "fb8b4cfb94a374206b8671d37f751461110e4d51f35889c272b80fde2f1953d3"
+
+[[files]]
+file = "datapacks/Dungeons And Villages DeeperAndDarker 1.21.1/data/pv/structure/dungeon_deeperdarker_sculk/centers/center_1.nbt"
+hash = "e8fc23c097cb5b6d68be2086411048d6ca72cb5f3deb4102ec4d99f16dde5e17"
+
+[[files]]
+file = "datapacks/Dungeons And Villages DeeperAndDarker 1.21.1/data/pv/structure/dungeon_deeperdarker_sculk/hidden_rooms/room_1.nbt"
+hash = "1a18b0fb173da53084949c0781dfa2508cd9c4fd2917f47fee080c39fbb58540"
+
+[[files]]
+file = "datapacks/Dungeons And Villages DeeperAndDarker 1.21.1/data/pv/structure/dungeon_deeperdarker_sculk/rooms/room_1.nbt"
+hash = "e6393b65c1a0038c2c89919b7a5d34d0a5d82c976cdaf9f8a8fd83d0e57e7ed5"
+
+[[files]]
+file = "datapacks/Dungeons And Villages DeeperAndDarker 1.21.1/data/pv/structure/dungeon_deeperdarker_sculk/rooms/room_10.nbt"
+hash = "4b7350aeefbeeefe2031bbb5e54b215c4e26480a4c2d1658ae311f2f596c657a"
+
+[[files]]
+file = "datapacks/Dungeons And Villages DeeperAndDarker 1.21.1/data/pv/structure/dungeon_deeperdarker_sculk/rooms/room_11.nbt"
+hash = "67db31b50beea9a975c608dc90724a1eed49dab8c27da47e81e55cc396b10127"
+
+[[files]]
+file = "datapacks/Dungeons And Villages DeeperAndDarker 1.21.1/data/pv/structure/dungeon_deeperdarker_sculk/rooms/room_12.nbt"
+hash = "c568db6828a7edc6f0d79c77084864d0f7869da21733d7c91cb35a2deb6df89c"
+
+[[files]]
+file = "datapacks/Dungeons And Villages DeeperAndDarker 1.21.1/data/pv/structure/dungeon_deeperdarker_sculk/rooms/room_13.nbt"
+hash = "f658fbfdd6627f1a5e5d860ffac57fcfd92e0c6b89a9995cb95854171d69554c"
+
+[[files]]
+file = "datapacks/Dungeons And Villages DeeperAndDarker 1.21.1/data/pv/structure/dungeon_deeperdarker_sculk/rooms/room_14.nbt"
+hash = "bdae22312f77c8c163f10bf2b4495e81230e4f5121a55067b2a22979ee1b9a43"
+
+[[files]]
+file = "datapacks/Dungeons And Villages DeeperAndDarker 1.21.1/data/pv/structure/dungeon_deeperdarker_sculk/rooms/room_15.nbt"
+hash = "324bec9d983d635b6f613b8a1559fd0c43869089ef426a488fd3db50920d41ca"
+
+[[files]]
+file = "datapacks/Dungeons And Villages DeeperAndDarker 1.21.1/data/pv/structure/dungeon_deeperdarker_sculk/rooms/room_16.nbt"
+hash = "c9a13cf1bee69ae7479ae0f871d0cf5c77ef0f853ffd89e5225b406b82c9dd23"
+
+[[files]]
+file = "datapacks/Dungeons And Villages DeeperAndDarker 1.21.1/data/pv/structure/dungeon_deeperdarker_sculk/rooms/room_17.nbt"
+hash = "1ab82134614b6b6189293688ce115f91c700159ba808d6526ec8d02f06ce0db4"
+
+[[files]]
+file = "datapacks/Dungeons And Villages DeeperAndDarker 1.21.1/data/pv/structure/dungeon_deeperdarker_sculk/rooms/room_2.nbt"
+hash = "be45da9e22f735690e3b41d1fc25b73117ec11f7dfbca190220555fe3613c302"
+
+[[files]]
+file = "datapacks/Dungeons And Villages DeeperAndDarker 1.21.1/data/pv/structure/dungeon_deeperdarker_sculk/rooms/room_3.nbt"
+hash = "df22500762301340a741f803466724ce84da0172e700315c0684fa4d9bd11e5e"
+
+[[files]]
+file = "datapacks/Dungeons And Villages DeeperAndDarker 1.21.1/data/pv/structure/dungeon_deeperdarker_sculk/rooms/room_4.nbt"
+hash = "e6a496643946892e4e6a0a4f2c18cac66cdf18f23df2c812b538f89c4df3e340"
+
+[[files]]
+file = "datapacks/Dungeons And Villages DeeperAndDarker 1.21.1/data/pv/structure/dungeon_deeperdarker_sculk/rooms/room_5.nbt"
+hash = "2eefca2edb4e4c096b6b3a311b1aaa2a77aaf9d7f867b070f4d0829ce3fcad79"
+
+[[files]]
+file = "datapacks/Dungeons And Villages DeeperAndDarker 1.21.1/data/pv/structure/dungeon_deeperdarker_sculk/rooms/room_6.nbt"
+hash = "a55ca886eff09c558e0842c553d1edc2082600ce576a7d33327385c618a71515"
+
+[[files]]
+file = "datapacks/Dungeons And Villages DeeperAndDarker 1.21.1/data/pv/structure/dungeon_deeperdarker_sculk/rooms/room_7.nbt"
+hash = "31ad38ef9430bcf437bdafecaed6516c19d872651743318c239adc39c5c85377"
+
+[[files]]
+file = "datapacks/Dungeons And Villages DeeperAndDarker 1.21.1/data/pv/structure/dungeon_deeperdarker_sculk/rooms/room_8.nbt"
+hash = "9d8a93a050e4e31e7689d51650268347e799a0d643549bb8a979121e483a38f6"
+
+[[files]]
+file = "datapacks/Dungeons And Villages DeeperAndDarker 1.21.1/data/pv/structure/dungeon_deeperdarker_sculk/rooms/room_9.nbt"
+hash = "d17117d5517a4aaff8b03f4cbe0dfb92a9d87bb1b11a8efee7f9136c248bde95"
+
+[[files]]
+file = "datapacks/Dungeons And Villages DeeperAndDarker 1.21.1/data/pv/structure/village_deeperdarker_echoing/centers/center_1.nbt"
+hash = "5ccb3fe71009337a58d98a36aec15b2c1e5e8b4ce69b9d72b5a7b199496c9246"
+
+[[files]]
+file = "datapacks/Dungeons And Villages DeeperAndDarker 1.21.1/data/pv/structure/village_deeperdarker_echoing/house/house_1.nbt"
+hash = "f9251832397561225fa33763cf26d1526be7ce315c9fe9b68c7290656613c53b"
+
+[[files]]
+file = "datapacks/Dungeons And Villages DeeperAndDarker 1.21.1/data/pv/structure/village_deeperdarker_echoing/house/house_2.nbt"
+hash = "28db139c0718d6bf50765a682be4d0b8e8ff8513f903bc2d8e90a7de18843dec"
+
+[[files]]
+file = "datapacks/Dungeons And Villages DeeperAndDarker 1.21.1/data/pv/structure/village_deeperdarker_echoing/house/house_3.nbt"
+hash = "5238e279be95667955dfad11153408225a8750b143bda0aa7735d634bfa73cbc"
+
+[[files]]
+file = "datapacks/Dungeons And Villages DeeperAndDarker 1.21.1/data/pv/structure/village_deeperdarker_echoing/house/house_4.nbt"
+hash = "2797ef29ecc0718b4bf9e21b01f0017ea37ceefe0c7cc9596e3ccb928b0268dd"
+
+[[files]]
+file = "datapacks/Dungeons And Villages DeeperAndDarker 1.21.1/data/pv/structure/village_deeperdarker_echoing/house/house_5.nbt"
+hash = "7670a296573ab722899fea45325ea4036c520532dbb8c9e0b80c055892740cbc"
+
+[[files]]
+file = "datapacks/Dungeons And Villages DeeperAndDarker 1.21.1/data/pv/structure/village_deeperdarker_echoing/house/house_6.nbt"
+hash = "7814598d6d96d080ec548db5cd25b0fd4ded713841c007853819b55356c00a4b"
+
+[[files]]
+file = "datapacks/Dungeons And Villages DeeperAndDarker 1.21.1/data/pv/structure/village_deeperdarker_echoing/roads/road_1.nbt"
+hash = "65e5bc9d3eabf3348b078f5e215034bd89aade7319bfe327583044edb43d2223"
+
+[[files]]
+file = "datapacks/Dungeons And Villages DeeperAndDarker 1.21.1/data/pv/structure/village_deeperdarker_echoing/roads/road_2.nbt"
+hash = "6cb94bed82a180e3dfe6d6de06d4eb5abdc5774be0c7f6948522a9be96ba6b0a"
+
+[[files]]
+file = "datapacks/Dungeons And Villages DeeperAndDarker 1.21.1/data/pv/worldgen/structure/dungeon_deeperdarker_gloom.json"
+hash = "59b592fb148f38342af23d091cb1ab6601e14b6a77fa6c3bef9c8e2289461e27"
+
+[[files]]
+file = "datapacks/Dungeons And Villages DeeperAndDarker 1.21.1/data/pv/worldgen/structure/dungeon_deeperdarker_sculk.json"
+hash = "2b7d351164daadc7c80a2cf86a43e40ad7583c33afa82adcbf6e817cb07c758f"
+
+[[files]]
+file = "datapacks/Dungeons And Villages DeeperAndDarker 1.21.1/data/pv/worldgen/structure/village_deeperdarker_echoing.json"
+hash = "dc52994a0423365df1251947ece5e84250098399b4fe214c5fdb984c2e9ac520"
+
+[[files]]
+file = "datapacks/Dungeons And Villages DeeperAndDarker 1.21.1/data/pv/worldgen/structure_set/dungeon_deeperdarker_gloom.json"
+hash = "349c085c87562bb222051db505d0c0232aa22911f0d9204db91fc60efc7d09ea"
+
+[[files]]
+file = "datapacks/Dungeons And Villages DeeperAndDarker 1.21.1/data/pv/worldgen/structure_set/dungeon_deeperdarker_sculk.json"
+hash = "f14de9a026c5679a121be5aa330c7899709762cb68dce2de062e00e19e0a296c"
+
+[[files]]
+file = "datapacks/Dungeons And Villages DeeperAndDarker 1.21.1/data/pv/worldgen/structure_set/village_deeperdarker_echoing.json"
+hash = "4f7f50b1d9e668d1d4357455e6f77a988f2a3ae2e197cdcdb5c4684313524c08"
+
+[[files]]
+file = "datapacks/Dungeons And Villages DeeperAndDarker 1.21.1/data/pv/worldgen/template_pool/dungeon_deeperdarker_gloom/centers.json"
+hash = "f0155b77159abf7ebe5e3458ede17a3fa7ff54cece4c1815a2bafbd8da4b5603"
+
+[[files]]
+file = "datapacks/Dungeons And Villages DeeperAndDarker 1.21.1/data/pv/worldgen/template_pool/dungeon_deeperdarker_gloom/rooms.json"
+hash = "774dc1206bc0ca4fcad1cc4207099fef5edf418ba731f42191d3a8391cadd18e"
+
+[[files]]
+file = "datapacks/Dungeons And Villages DeeperAndDarker 1.21.1/data/pv/worldgen/template_pool/dungeon_deeperdarker_sculk/centers.json"
+hash = "d41d115a1eab0da860e3c606ccabb33cd80ad3335566216df9f10340be03d739"
+
+[[files]]
+file = "datapacks/Dungeons And Villages DeeperAndDarker 1.21.1/data/pv/worldgen/template_pool/dungeon_deeperdarker_sculk/hidden_rooms.json"
+hash = "f56195724fec169e51e9efaf7b22415a56584e819c54f5aa8177d815b74c9aab"
+
+[[files]]
+file = "datapacks/Dungeons And Villages DeeperAndDarker 1.21.1/data/pv/worldgen/template_pool/dungeon_deeperdarker_sculk/rooms.json"
+hash = "9f566711f8ad98bb1d2bbac2275a762e95f6712e4478a60fda86c0729d78185d"
+
+[[files]]
+file = "datapacks/Dungeons And Villages DeeperAndDarker 1.21.1/data/pv/worldgen/template_pool/village_deeperdarker_echoing/centers.json"
+hash = "b4728e550dc2228df80e9091387f1f8051c523c9c46973e48340cd3d4e21ad84"
+
+[[files]]
+file = "datapacks/Dungeons And Villages DeeperAndDarker 1.21.1/data/pv/worldgen/template_pool/village_deeperdarker_echoing/house.json"
+hash = "c07fff5a5ed040b80efcb23c83feec05463cd6fbd1bd7f376b7681cc4bc326fb"
+
+[[files]]
+file = "datapacks/Dungeons And Villages DeeperAndDarker 1.21.1/data/pv/worldgen/template_pool/village_deeperdarker_echoing/roads.json"
+hash = "8508659b43806e62adfcc527a07ae88b019633670e5e3b0a1654d647821cb1d0"
+
+[[files]]
+file = "datapacks/Dungeons And Villages DeeperAndDarker 1.21.1/pack.jpg"
+hash = "75786cbc5fda5df32032d87aba7abc7842a019365b559c77ac4c7b400978c27c"
+
+[[files]]
+file = "datapacks/Dungeons And Villages DeeperAndDarker 1.21.1/pack.mcmeta"
+hash = "ded05f2f2858e09cb32c5977396c40d9160bd9b74e8468f0b44208fb6b204aba"
 
 [[files]]
 file = "datapacks/Dungeons+ V1.10.1/data/dungeons_plus/function/load.mcfunction"
@@ -7468,6 +7720,11 @@ hash = "1102440dd2533ba3a154419bb95ff1f81b858201eb0c44d2a2eea486c74e565a"
 metafile = true
 
 [[files]]
+file = "mods/auroraslanterns.pw.toml"
+hash = "3c22eaa2470d77f1ec55acdfba17a07aef9d6b3c5add762cb281613af4b589cc"
+metafile = true
+
+[[files]]
 file = "mods/beans-backpacks.pw.toml"
 hash = "fc0f9d112fbf97303fae1a3595d8a145303c0e42680ab4a2b66db0a92b552781"
 metafile = true
@@ -7489,22 +7746,12 @@ metafile = true
 
 [[files]]
 file = "mods/block-pack.pw.toml"
-hash = "b764318ec2706614ff181628c103aeb1129fe926c029654f3263b4edb10a6482"
-metafile = true
-
-[[files]]
-file = "mods/bountiful.pw.toml"
-hash = "67c1118cf73f03d05acf04cecd18990f8e7be6f2b7a80a40f1e4b9a58f3fb8f6"
+hash = "e81f0f61ce58313a4dc0eea546fcd2201766b7c4d48306111b8295b256063700"
 metafile = true
 
 [[files]]
 file = "mods/chunksmith.pw.toml"
 hash = "826bba2c652107e8b8bec60111d2b5294c388d61c9626f3a8131e85a67423877"
-metafile = true
-
-[[files]]
-file = "mods/civillis.pw.toml"
-hash = "a0bc89951fbe84d090311998dbc1379f041cec19a3dbe13243b2b8a07bd04fb5"
 metafile = true
 
 [[files]]
@@ -7515,6 +7762,11 @@ metafile = true
 [[files]]
 file = "mods/copper-age-backport.pw.toml"
 hash = "f2105c917ddf8b9dc12d2de5ffc991923a2a2a3230507a9dcc53ccde7a7c8737"
+metafile = true
+
+[[files]]
+file = "mods/cristel-lib.pw.toml"
+hash = "9237aaade3556e8a6694764b250abdaa7cd67876615f8f424eca6861b17c70c9"
 metafile = true
 
 [[files]]
@@ -7628,11 +7880,6 @@ hash = "1d6e976fdd44ef22a1e4479662e2dd409707b81d34a428c083df3201d31e244c"
 metafile = true
 
 [[files]]
-file = "mods/geckolib.pw.toml"
-hash = "d7c13dfec5f62eef0906adf8814e989fd914f5b9c2f4b9c3064b6fa3a4c5bd78"
-metafile = true
-
-[[files]]
 file = "mods/glitchcore.pw.toml"
 hash = "e7a737720192a1ec35fbc8d8061f7373fd0a900806882d43e30511967e9a06d0"
 metafile = true
@@ -7663,11 +7910,6 @@ hash = "a0a5d3084008e93a08d09de7ceccbb6c255dc8f2e42367a1a13d38c2bf016496"
 metafile = true
 
 [[files]]
-file = "mods/kambrik.pw.toml"
-hash = "39c8caa5ad25fa8f6d341ef1f829602f6eaa14831209f8a1744b61c05dce1382"
-metafile = true
-
-[[files]]
 file = "mods/kilt.pw.toml"
 hash = "c48746f836e04a71e797e47bd3baaba58f5c2c074dfef059c088f65ea3b51cec"
 metafile = true
@@ -7680,6 +7922,11 @@ metafile = true
 [[files]]
 file = "mods/lenient-death.pw.toml"
 hash = "f075e4a3e7b8bf2a9847eedf8c49ca8c6100f7c6c221ae21314dc6f32338caf9"
+metafile = true
+
+[[files]]
+file = "mods/lets-do-herbalbrews.pw.toml"
+hash = "a1192043e4afbe464b82ffd422a1dbd28b2c943e1614a80b5e276678c1ba7ecf"
 metafile = true
 
 [[files]]
@@ -7824,7 +8071,7 @@ metafile = true
 
 [[files]]
 file = "mods/sound-physics-remastered.pw.toml"
-hash = "4ea85fa7d750bf5a167fe9652f2ac896d12ab068dacb8b04539e316ba5b74042"
+hash = "eba12953aaebcd6fa20ec0ab05732b9c779138f0819bfa234186bc23a861b6ef"
 metafile = true
 
 [[files]]
@@ -7835,6 +8082,11 @@ metafile = true
 [[files]]
 file = "mods/supplementaries.pw.toml"
 hash = "d11ba6eed5574b8ab37951137a6757213ee8019e04a9fccba2042d0e39aab696"
+metafile = true
+
+[[files]]
+file = "mods/towns-and-towers.pw.toml"
+hash = "0191ac9c9609abc17e76933c69884b5176303139f2d388df2167b3b29273c9aa"
 metafile = true
 
 [[files]]
@@ -7855,11 +8107,6 @@ metafile = true
 [[files]]
 file = "mods/vanillabackport.pw.toml"
 hash = "0865bcf91d32cd710ac30a282a3c2202816670942c5175f7f475a29aeb3fe19b"
-metafile = true
-
-[[files]]
-file = "mods/wayfinder.pw.toml"
-hash = "800a4c3795befa1b3d4b9f92c85e2316a2700690ccc4851f3d85e684154db964"
 metafile = true
 
 [[files]]

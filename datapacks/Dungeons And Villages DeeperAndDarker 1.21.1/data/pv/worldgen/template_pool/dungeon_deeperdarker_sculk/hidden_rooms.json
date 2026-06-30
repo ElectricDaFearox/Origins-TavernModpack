@@ -1,0 +1,15 @@
+{
+  "name": "pv:dungeon_deeperdarker_sculk/rooms",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "pv:dungeon_deeperdarker_sculk/hidden_rooms/room_1",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+	]
+}
