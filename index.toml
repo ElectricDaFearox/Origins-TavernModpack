@@ -33,10 +33,6 @@ file = "config/vanillabackport-common.toml"
 hash = "558e02a4f8c0198655233e173847f4955da206bd6b6c1ed2b9a21945181817ed"
 
 [[files]]
-file = "config/wayfinder/wayfinder.json"
-hash = "e8de6af42afc0080cf62bef2b4a6fdad5b24e5174e8b61c7282729d0c4d96dde"
-
-[[files]]
 file = "datapacks/Dungeons And Villages DeeperAndDarker 1.21.1/data/pv/loot_table/dungeon/sculk_dungeon.json"
 hash = "b1ce24efa6c684b7e8c7e5a63b15d6eabc7c4eedb4e36229de1b6295d30ef04d"
 
