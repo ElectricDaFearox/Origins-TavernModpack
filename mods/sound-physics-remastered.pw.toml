@@ -1,5 +1,5 @@
 name = "Sound Physics Remastered"
-side = "both"
+side = "client"
 filename = "sound-physics-remastered-fabric-1.21.1-1.5.1.jar"
 
 [update.modrinth]
