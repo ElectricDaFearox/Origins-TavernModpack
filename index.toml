@@ -8072,12 +8072,12 @@ metafile = true
 
 [[files]]
 file = "mods/stormies-spiders.pw.toml"
-hash = "2a0a92bb371850213eaf8c3bd96c4c6090949f6cac333db3a6cd28683b8903e8"
+hash = "4fadd6c8609878ef2b3f917a445a6cb0a4c9a785b9996684b64e2133ba5d2212"
 metafile = true
 
 [[files]]
 file = "mods/supplementaries.pw.toml"
-hash = "d11ba6eed5574b8ab37951137a6757213ee8019e04a9fccba2042d0e39aab696"
+hash = "a77620d6804a7b60bdce1503558de43c163e8344be03a75a1e288313a535f0db"
 metafile = true
 
 [[files]]
