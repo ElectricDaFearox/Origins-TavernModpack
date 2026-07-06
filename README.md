@@ -1,4 +1,4 @@
-# Your Packwiz Modpack
-This is a modpack created by PW-GUI via packwiz.
+# Echoing Hearts SMP
+A modpack created by Electric, designed for Origins. Including mods that expand vanilla gameplay, enhancing overall quality of game and new dimension.
 
-You can switch over to **Plain Text** above if you'd like to modify this file!
+This modpack is a bit kitchen sink.
