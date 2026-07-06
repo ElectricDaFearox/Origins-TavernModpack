@@ -7781,11 +7781,6 @@ hash = "8b1b8f60b0b3f437eb213c47f0a76eb1c32bdcff3a4d6e1d7e60a8e3ac5822c6"
 metafile = true
 
 [[files]]
-file = "mods/dungeons-dimensions-nether.pw.toml"
-hash = "83e9a57ea429b594c8cc290ba6ac3079a80e02f01687cc1833c238081d028471"
-metafile = true
-
-[[files]]
 file = "mods/emi.pw.toml"
 hash = "a0a3d38daafb58117aaf29bb0b0520534abb7175e8d98f63cb47a65c75afac79"
 metafile = true
@@ -7851,8 +7846,8 @@ hash = "177dc9572f464fdb10ae8a9e3de3566c4cec7195146f5336f3fa4bf441fbd17e"
 metafile = true
 
 [[files]]
-file = "mods/fixed-minecraft.pw.toml"
-hash = "09c573530b4ae440a9fe479f19a1019db27185c1d05cb09e5bdbc6e624fa50c6"
+file = "mods/fixed.pw.toml"
+hash = "ae5def205199b0eb772667fd7ca25a0839128cb6e015dc282578e84c19922af3"
 metafile = true
 
 [[files]]

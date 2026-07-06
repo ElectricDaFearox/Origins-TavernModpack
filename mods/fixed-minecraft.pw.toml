@@ -1,8 +1,0 @@
-name = "Fixed Minecraft"
-filename = "fixedminecraft-1.6.6-1.21.1-custom.jar"
-side = "both"
-
-[download]
-url = "https://assets.aluki.gay/CompiledMods/TavernOrigins/fixedminecraft-1.6.6-1.21.1-custom.jar"
-hash-format = "sha256"
-hash = "0ef5af36c690dad0dfc14b870cd30bfb3c1fe2a3b013d033a068fc8f5e57dc2a"
