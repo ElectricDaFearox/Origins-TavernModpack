@@ -30,12 +30,8 @@ jobs:
           RAW_NAME=$(yq '.name' pack.toml)
                     CLEAN_NAME=$(echo "$RAW_NAME" | tr '[:upper:]' '[:lower:]' | sed 's/[^a-zA-Z0-9]/-/g' | sed 's/-\{2,\}/-/g')
           
-                    # Create server build directory in the parent folder
                     mkdir ../server_build
-                    
-                    # Copy everything except server_build and git files using tar
                     tar --exclude='../server_build' --exclude='.git' -cf - . | (cd ../server_build && tar -xf -)
-                    
                     cd ../server_build
           
                     # Remove client-only mods based on their .pw.toml side configuration
@@ -43,16 +39,16 @@ jobs:
                       SIDE=$(yq '.side // "both"' "$file")
                       if [ "$SIDE" = "client" ]; then
                         echo "Removing client-only mod: $file"
-                        rm "$file"
+                        # Get the jar filename BEFORE deleting the toml
                         JAR_FILE=$(yq '.filename' "$file")
+                        rm "$file"
                         [ -f "mods/$JAR_FILE" ] && rm "mods/$JAR_FILE"
                       fi
                     done
           
-                    # Zip up the server folder
                     zip -r "${GITHUB_WORKSPACE}/${CLEAN_NAME}-server.zip" .
                     cd ..
-                    rm -rf server_build  
+                    rm -rf server_build
 
       - name: Upload Client Artifact
         uses: actions/upload-artifact@v4
