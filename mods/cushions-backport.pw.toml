@@ -1,0 +1,13 @@
+name = "Cushion Backport"
+filename = "cushionbackport-1.21.1-Fabric-1.0.5.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/DBGOO7gw/versions/3XEQqHaZ/cushionbackport-1.21.1-Fabric-1.0.5.jar"
+hash-format = "sha512"
+hash = "4e493d117ddd1738e2771dfcd82972830a9cdccb082e28012b6f7e1b4ed16f5805647b7416ffe607a380e2985f1899a8d5f6df8ed3dfac495be358304f0ce6ef"
+
+[update]
+[update.modrinth]
+mod-id = "DBGOO7gw"
+version = "3XEQqHaZ"
