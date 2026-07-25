@@ -1,13 +1,13 @@
 name = "Envelope"
-filename = "envelope-fabric-1.21.1-0.6.2.jar"
+filename = "envelope-fabric-1.21.1-0.7.1.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/bINSbhYK/versions/I8CWYSaY/envelope-fabric-1.21.1-0.6.2.jar"
+url = "https://cdn.modrinth.com/data/bINSbhYK/versions/eKwt0p10/envelope-fabric-1.21.1-0.7.1.jar"
 hash-format = "sha512"
-hash = "cfce637159dca596c73e3e552dc68fc69524d761a85e0afd6684cbf480d79a74bca8f246d85fca682a4f1ee6d967d643aa385fe8f482bd233e4e8d32e04e3f8c"
+hash = "332c6c901d72dfa0438229e104c8f3550edd550aff49c24a92777ea1085ea66540f39212829d09918bfe4d71df6eda00dd74b8ce92a1bae6ba2bd67bd8e836a4"
 
 [update]
 [update.modrinth]
 mod-id = "bINSbhYK"
-version = "I8CWYSaY"
+version = "eKwt0p10"

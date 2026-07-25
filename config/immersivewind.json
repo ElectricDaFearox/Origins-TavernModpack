@@ -7,7 +7,7 @@
   "fogThunderMultiplier": 0.0,
   "rainBoxSize": 15,
   "rainBoxHeight": 15,
-  "rainParticleCount": 100.0,
+  "rainParticleCount": 30.0,
   "debugMode": false,
   "particleDebugMode": false,
   "particleWhitelist": [
