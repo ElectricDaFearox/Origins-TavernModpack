@@ -25,36 +25,34 @@ jobs:
           sudo wget https://github.com/mikefarah/yq/releases/download/v4.44.1/yq_linux_amd64 -O /usr/bin/yq
           sudo chmod +x /usr/bin/yq
 
-      - name: Build Modpacks
+      - name: Build Modpack
         run: |
           RAW_NAME=$(yq '.name' pack.toml)
-          CLEAN_NAME=$(echo "$RAW_NAME" | tr '[:upper:]' '[:lower:]' | sed 's/[^a-zA-Z0-9]/-/g' | sed 's/-\{2,\}/-/g')
-
-          # 1. Export Client .mrpack
-          ~/go/bin/packwiz mr export --output "${CLEAN_NAME}-client.mrpack"
-
-          # 2. Build Server Zip
-          # Create a server directory and copy everything over
-          mkdir server_build
-          cp -r * server_build/
-          cd server_build
-
-          # Remove client-only mods based on their .pw.toml side configuration
-          find mods -name "*.pw.toml" | while read file; do
-            SIDE=$(yq '.side // "both"' "$file")
-            if [ "$SIDE" = "client" ]; then
-              echo "Removing client-only mod: $file"
-              rm "$file"
-              # Also remove the actual jar if specified in the toml
-              JAR_FILE=$(yq '.filename' "$file")
-              [ -f "mods/$JAR_FILE" ] && rm "mods/$JAR_FILE"
-            fi
-          done
-
-          # Zip up the server folder
-          zip -r "../${CLEAN_NAME}-server.zip" . -x "server_build*" ".git*"
-          cd ..
-          rm -rf server_build
+                    CLEAN_NAME=$(echo "$RAW_NAME" | tr '[:upper:]' '[:lower:]' | sed 's/[^a-zA-Z0-9]/-/g' | sed 's/-\{2,\}/-/g')
+          
+                    # Create server build directory in the parent folder
+                    mkdir ../server_build
+                    
+                    # Copy everything except server_build and git files using tar
+                    tar --exclude='../server_build' --exclude='.git' -cf - . | (cd ../server_build && tar -xf -)
+                    
+                    cd ../server_build
+          
+                    # Remove client-only mods based on their .pw.toml side configuration
+                    find mods -name "*.pw.toml" | while read file; do
+                      SIDE=$(yq '.side // "both"' "$file")
+                      if [ "$SIDE" = "client" ]; then
+                        echo "Removing client-only mod: $file"
+                        rm "$file"
+                        JAR_FILE=$(yq '.filename' "$file")
+                        [ -f "mods/$JAR_FILE" ] && rm "mods/$JAR_FILE"
+                      fi
+                    done
+          
+                    # Zip up the server folder
+                    zip -r "${GITHUB_WORKSPACE}/${CLEAN_NAME}-server.zip" .
+                    cd ..
+                    rm -rf server_build  
 
       - name: Upload Client Artifact
         uses: actions/upload-artifact@v4
