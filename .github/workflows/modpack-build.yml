@@ -30,11 +30,31 @@ jobs:
           RAW_NAME=$(yq '.name' pack.toml)
           CLEAN_NAME=$(echo "$RAW_NAME" | tr '[:upper:]' '[:lower:]' | sed 's/[^a-zA-Z0-9]/-/g' | sed 's/-\{2,\}/-/g')
 
-          # Export client .mrpack (includes client + both sides)
+          # 1. Export Client .mrpack
           ~/go/bin/packwiz mr export --output "${CLEAN_NAME}-client.mrpack"
 
-          # Export server zip (includes server + both sides)
-          ~/go/bin/packwiz server export --output "${CLEAN_NAME}-server.zip"
+          # 2. Build Server Zip
+          # Create a server directory and copy everything over
+          mkdir server_build
+          cp -r * server_build/
+          cd server_build
+
+          # Remove client-only mods based on their .pw.toml side configuration
+          find mods -name "*.pw.toml" | while read file; do
+            SIDE=$(yq '.side // "both"' "$file")
+            if [ "$SIDE" = "client" ]; then
+              echo "Removing client-only mod: $file"
+              rm "$file"
+              # Also remove the actual jar if specified in the toml
+              JAR_FILE=$(yq '.filename' "$file")
+              [ -f "mods/$JAR_FILE" ] && rm "mods/$JAR_FILE"
+            fi
+          done
+
+          # Zip up the server folder
+          zip -r "../${CLEAN_NAME}-server.zip" . -x "server_build*" ".git*"
+          cd ..
+          rm -rf server_build
 
       - name: Upload Client Artifact
         uses: actions/upload-artifact@v4
