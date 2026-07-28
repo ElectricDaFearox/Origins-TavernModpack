@@ -1,13 +1,13 @@
 name = "Echoing Hearths"
 author = "OhItsElectric"
-version = "0.2.5"
+version = "0.2.6"
 description = "Echoing HearthsSMP, a modpack for group of Friends of the Tavern"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "3a63419b407b109014bcbd1875849522100d5fad97ecdadcab3c93ba3cbe8f84"
+hash = "5305b8693e5de5997cdc57ac4a097fd333b0e438561a65530595e6009dda21da"
 
 [versions]
 fabric = "0.19.3"
