@@ -17,24 +17,38 @@ jobs:
         uses: actions/setup-go@v5
         with:
           go-version: "stable"
-          cache: false # Optional: speeds up builds if run frequently
+          cache: false
+
+      - name: Extract modpack info from pack.toml
+        id: pack_info
+        run: |
+          VERSION=$(yq '.version' pack.toml | tr -d '"')
+          RAW_NAME=$(yq '.name' pack.toml)
+          CLEAN_NAME=$(echo "$RAW_NAME" | tr '[:upper:]' '[:lower:]' | sed 's/[^a-zA-Z0-9]/-/g' | sed 's/-\{2,\}/-/g')
+          
+          echo "version=${VERSION}" >> $GITHUB_OUTPUT
+          echo "pack_name=${CLEAN_NAME}" >> $GITHUB_OUTPUT
+          echo "Version extracted: ${VERSION}"
+
+      - name: Update version in README.md
+        run: |
+          sed -i "s|{{VERSION}}|${{ steps.pack_info.outputs.version }}|g" README.md
+          echo "Updated README with version: ${{ steps.pack_info.outputs.version }}"
 
       - name: Build Modpack
         id: build_pack
         run: |
-          # Install packwiz
           go install github.com/packwiz/packwiz@latest
-
-          # Read, clean, and format the modpack name from pack.toml
-          RAW_NAME=$(yq '.name' pack.toml)
-          CLEAN_NAME=$(echo "$RAW_NAME" | tr '[:upper:]' '[:lower:]' | sed 's/[^a-zA-Z0-9]/-/g' | sed 's/-\{2,\}/-/g')
-          echo "pack_name=${CLEAN_NAME}" >> $GITHUB_OUTPUT
-
-          # Export to .mrpack
-          ~/go/bin/packwiz mr export --output "${CLEAN_NAME}.mrpack"
+          ~/go/bin/packwiz mr export --output "${{ steps.pack_info.outputs.pack_name }}.mrpack"
 
       - name: Upload Modpack Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: ${{ steps.build_pack.outputs.pack_name }}-mrpack
-          path: ${{ steps.build_pack.outputs.pack_name }}.mrpack
+          name: ${{ steps.pack_info.outputs.pack_name }}-mrpack
+          path: ${{ steps.pack_info.outputs.pack_name }}.mrpack
+
+      - name: Commit updated README
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update README version to ${{ steps.pack_info.outputs.version }}"
+          file_pattern: README.md
