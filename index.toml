@@ -7054,11 +7054,6 @@ hash = "b451c2ee9e2a093073c3b7c99053b8974733b703516f03504f8a35e879f51b19"
 metafile = true
 
 [[files]]
-file = "mods/altorigingui.pw.toml"
-hash = "f7b23d48b83ab42bb9d08ad1f42c0987ea4fc001696f6c544061e92d8f6ebfc5"
-metafile = true
-
-[[files]]
 file = "mods/architectury-api.pw.toml"
 hash = "1102440dd2533ba3a154419bb95ff1f81b858201eb0c44d2a2eea486c74e565a"
 metafile = true
