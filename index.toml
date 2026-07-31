@@ -7094,6 +7094,11 @@ hash = "15b44f72536a7b33c67347ea3f1a1357a431c13392439bdc99e7ebc75c31d735"
 metafile = true
 
 [[files]]
+file = "mods/chisels-bits-for-fabric.pw.toml"
+hash = "d0453234a01c6b3dfc90c9aa829bf5e49a779afa4910d2ea27a4708911e4c4ec"
+metafile = true
+
+[[files]]
 file = "mods/chunksmith.pw.toml"
 hash = "826bba2c652107e8b8bec60111d2b5294c388d61c9626f3a8131e85a67423877"
 metafile = true
