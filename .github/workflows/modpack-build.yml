@@ -5,6 +5,9 @@ on:
     branches:
       - "**"
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -12,6 +15,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Go & Install packwiz
         uses: actions/setup-go@v5
@@ -19,7 +24,7 @@ jobs:
           go-version: "stable"
           cache: false
 
-      - name: Extract modpack info from pack.toml
+      - name: Extract modpack info
         id: pack_info
         run: |
           VERSION=$(yq '.version' pack.toml | tr -d '"')
@@ -28,12 +33,18 @@ jobs:
           
           echo "version=${VERSION}" >> $GITHUB_OUTPUT
           echo "pack_name=${CLEAN_NAME}" >> $GITHUB_OUTPUT
-          echo "Version extracted: ${VERSION}"
+          echo "version=${VERSION}" >> $GITHUB_ENV
 
       - name: Update version in README.md
         run: |
-          sed -i "s|{{VERSION}}|${{ steps.pack_info.outputs.version }}|g" README.md
-          echo "Updated README with version: ${{ steps.pack_info.outputs.version }}"
+          if grep -q "{{VERSION}}" README.md; then
+            sed -i "s|{{VERSION}}|${{ steps.pack_info.outputs.version }}|g" README.md
+            echo "README updated with version ${{ steps.pack_info.outputs.version }}"
+            echo "UPDATED=true" >> $GITHUB_ENV
+          else
+            echo "No {{VERSION}} placeholder found in README.md"
+            echo "UPDATED=false" >> $GITHUB_ENV
+          fi
 
       - name: Build Modpack
         id: build_pack
@@ -48,7 +59,10 @@ jobs:
           path: ${{ steps.pack_info.outputs.pack_name }}.mrpack
 
       - name: Commit updated README
+        if: env.UPDATED == 'true'
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: update README version to ${{ steps.pack_info.outputs.version }}"
           file_pattern: README.md
+          commit_user_name: github-actions[bot]
+          commit_user_email: 41898282+github-actions[bot]@users.noreply.github.com
