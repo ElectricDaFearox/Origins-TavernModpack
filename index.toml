@@ -7114,6 +7114,11 @@ hash = "9237aaade3556e8a6694764b250abdaa7cd67876615f8f424eca6861b17c70c9"
 metafile = true
 
 [[files]]
+file = "mods/critters-and-companions.pw.toml"
+hash = "f886fb250389ebd99c30c9b19a35297bfc78c8bdd758416beca850a0bd8a5325"
+metafile = true
+
+[[files]]
 file = "mods/cushions-backport.pw.toml"
 hash = "f44046923afb4df7a50e5749d588c739687fa2b6f77f98a8b96404cafb1a4bd2"
 metafile = true
@@ -7170,7 +7175,7 @@ metafile = true
 
 [[files]]
 file = "mods/fabric-api.pw.toml"
-hash = "8b055e1997973e615d20848f0c7d0712ebad4aa24ab8a3ee6d9682ea53642309"
+hash = "0f6ef76068ccf1e3607722151921861e27783c6951b2e7a724eccce3951d6447"
 metafile = true
 
 [[files]]
@@ -7224,8 +7229,18 @@ hash = "1d6e976fdd44ef22a1e4479662e2dd409707b81d34a428c083df3201d31e244c"
 metafile = true
 
 [[files]]
+file = "mods/geckolib.pw.toml"
+hash = "3d26ad5d3f7693336b18c894f37978f7490d284f7f3b19b46d0527a7938789fc"
+metafile = true
+
+[[files]]
 file = "mods/glitchcore.pw.toml"
 hash = "e7a737720192a1ec35fbc8d8061f7373fd0a900806882d43e30511967e9a06d0"
+metafile = true
+
+[[files]]
+file = "mods/good-ending.pw.toml"
+hash = "abf17ac80abb86eace3b0137bad90180b14f7659d6bb94bf9892aaa14fbd7d6c"
 metafile = true
 
 [[files]]
@@ -7236,6 +7251,11 @@ metafile = true
 [[files]]
 file = "mods/handcrafted.pw.toml"
 hash = "2600fb5f2efa6dffd1bcc04eea4c2646c101da4320da0c88d5616d5c2f41a439"
+metafile = true
+
+[[files]]
+file = "mods/hostile-harmony.pw.toml"
+hash = "568784e7d3870cb70b67bda8d6aa88b1855b2cd9397e43ff24dd570deee7c208"
 metafile = true
 
 [[files]]
@@ -7251,11 +7271,6 @@ metafile = true
 [[files]]
 file = "mods/it-takes-a-pillage-continuation.pw.toml"
 hash = "a0a5d3084008e93a08d09de7ceccbb6c255dc8f2e42367a1a13d38c2bf016496"
-metafile = true
-
-[[files]]
-file = "mods/kilt.pw.toml"
-hash = "c48746f836e04a71e797e47bd3baaba58f5c2c074dfef059c088f65ea3b51cec"
 metafile = true
 
 [[files]]
@@ -7301,11 +7316,6 @@ metafile = true
 [[files]]
 file = "mods/mmv-moogs-missing-villages.pw.toml"
 hash = "76a6cd5149ebf07e22eeeaf81850632aa832cc919641758cb8be4c722ef076d9"
-metafile = true
-
-[[files]]
-file = "mods/mob-civil-war.pw.toml"
-hash = "96e370a890b1d449a51ce909dff55481b572f61bd67b7ab4cfc4c9006f23bc59"
 metafile = true
 
 [[files]]
@@ -7364,33 +7374,13 @@ hash = "a9895f374799473636e55c281c5ce6220ab707d06c575b85e2f68d0f3f949a90"
 metafile = true
 
 [[files]]
-file = "mods/resourceful-lib-neoforge.pw.toml"
-hash = "ceb78761974c9fa7bdc6e9dc6711646856aa24bcadf08c7d6bf18e4d1f97eff6"
-metafile = true
-
-[[files]]
 file = "mods/resourceful-lib.pw.toml"
 hash = "d3f633dd12cd039a4e58dd398d1c80a324b0d78b9da5b3972b69640bfed211ed"
 metafile = true
 
 [[files]]
-file = "mods/sable-aabb-fix-neoforge.pw.toml"
-hash = "3c4657b2f48625b786f1ec80857d50eb997f388491aed21cc9cb4265f2169da2"
-metafile = true
-
-[[files]]
-file = "mods/sable-neoforge.pw.toml"
-hash = "f5442766a134f03184569f5938c021f15de6cc3f7dde91cf16f4461003578f97"
-metafile = true
-
-[[files]]
-file = "mods/sable.pw.toml"
-hash = "45ddb6939d33d5c4ec4c861746ce986afe5a0f06c5ea45b27c9380b72777a4ce"
-metafile = true
-
-[[files]]
 file = "mods/scholar.pw.toml"
-hash = "029429520421d3642bc9b4fefbec58b4431eba12ca46700512fea6c60ba3a0ca"
+hash = "12c15d17b22665856d6a959808242053a936ffc0a103001e27ea973066aaffac"
 metafile = true
 
 [[files]]
@@ -7425,12 +7415,12 @@ metafile = true
 
 [[files]]
 file = "mods/streams-reflowing.pw.toml"
-hash = "231d9efede58480380880ec3be7eee2186c0747684f3512c6139df3c19ab075c"
+hash = "075bf45276b0c70a0759bea2bd10616fd71c2d658846352c29065383db7b807c"
 metafile = true
 
 [[files]]
 file = "mods/supplementaries.pw.toml"
-hash = "da577331b73c4d9d62c696d9a14f192a20eeb6d7a47fb44fe4eda38e78576c81"
+hash = "2a6edead986b99e72ffe8fed2a0a538b3a03600ed4048027a30c329f24c73c6b"
 metafile = true
 
 [[files]]
@@ -7446,11 +7436,6 @@ metafile = true
 [[files]]
 file = "mods/trailier-tales.pw.toml"
 hash = "b45fcd239d9787c7f3d104c300cc61979e7f0cd8363d59716b603d4adb36b202"
-metafile = true
-
-[[files]]
-file = "mods/tree-physics.pw.toml"
-hash = "6fda3c1472da6ca5e61eee8ba97283a2be100c136702002b63285cc259f2ba77"
 metafile = true
 
 [[files]]

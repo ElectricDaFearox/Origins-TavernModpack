@@ -1,8 +1,0 @@
-name = "Kilt (Locally Compiled)"
-filename = "Kilt-21.1.5+build.03319c-local.jar"
-side = "both"
-
-[download]
-url = "https://assets.aluki.gay/CompiledMods/TavernOrigins/Kilt-21.1.5%2Bbuild.03319c-local.jar"
-hash-format = "sha256"
-hash = "7d3930abe6acbef7d2ef5632cd767ca322e7d65154af69e8616f69f308dcac63"

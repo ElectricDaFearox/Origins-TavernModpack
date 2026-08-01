@@ -1,8 +1,0 @@
-name = "Sable AABB Fix Neoforge"
-filename = "sablefix-2.1.0.jar"
-side = "both"
-
-[download]
-url = "https://cdn.modrinth.com/data/RWDZX4wK/versions/nvo7N9tK/sablefix-2.1.0.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=neoforge"
-hash-format = "sha256"
-hash = "99cc46a850a3bc58a1ba3f3d343d6cff1e4038c3a793e885f38d1180fbd1dcb8"

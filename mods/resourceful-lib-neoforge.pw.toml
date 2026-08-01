@@ -1,8 +1,0 @@
-name = "Resourceful Lib Neoforge"
-side = "both"
-filename = "resourcefullib-neoforge-1.21-3.0.12.jar"
-
-[download]
-hash-format = "sha256"
-url = "https://cdn.modrinth.com/data/G1hIVOrD/versions/x99nCLTm/resourcefullib-neoforge-1.21-3.0.12.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=neoforge"
-hash = "5e36f2c69de008dc5795f730c84ab767688f15c810944b585485349a0c911261"
