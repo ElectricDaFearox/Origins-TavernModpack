@@ -7005,6 +7005,18 @@ file = "datapacks/netherfortressoverhaul/pack.png"
 hash = "2d9726a5ab2cd4e80097fdfe892df0a966ff6233340a28a0ce2d75b722ccd716"
 
 [[files]]
+file = "datapacks/tweaks/data/beansbackpacks/recipe/gold_backpack.json"
+hash = "59b1c9660f104b16e978faefd264c75a1982164603fac4d30a5f072624b56816"
+
+[[files]]
+file = "datapacks/tweaks/data/beansbackpacks/recipe/iron_backpack.json"
+hash = "591570de3e488a23e5dca9fbd91bbcd6cc882e78e2ded736abeea8446e4682d0"
+
+[[files]]
+file = "datapacks/tweaks/data/direbats/loot_table/entities/direbat.json"
+hash = "19c397650587cdefb3bc688a499e7db56a56b3990f4639d4e7f7aa63b82b50c7"
+
+[[files]]
 file = "datapacks/tweaks/data/minecraft/default_components/copper_axe.json"
 hash = "7e0c06314a06e91056eac2d3d785a897b6f4a5cb09b0f631877125a702076f4f"
 
@@ -7037,6 +7049,10 @@ file = "datapacks/tweaks/data/minecraft/recipe/mapink.json"
 hash = "6ff98550f945c46218ada2d318d7a5ded48819edeb5af6cf3e89750c63e840e0"
 
 [[files]]
+file = "datapacks/tweaks/data/tweaks/advancements/skeleton_hit_with_book.json"
+hash = "d7490d9f65ce735eb2cfc77eb3bfbe41a42f2af4c80bf540f8a98670e649b807"
+
+[[files]]
 file = "datapacks/tweaks/data/tweaks/civil_zone_policies/bastille.json"
 hash = "c0525ad34c20e769f34156bb356188aca0b1ce9c94981f07f20c016ef5bc9936"
 
@@ -7064,8 +7080,8 @@ hash = "3c22eaa2470d77f1ec55acdfba17a07aef9d6b3c5add762cb281613af4b589cc"
 metafile = true
 
 [[files]]
-file = "mods/bean-s-backpack.pw.toml"
-hash = "80f4d5ce76e7eb5e2b5e864de15f9da15830a944502ef3a85f8bd029489fd8d1"
+file = "mods/beans-backpacks.pw.toml"
+hash = "adafe1b8370a8a4ab85035b1d36aed00756809c86ceafbc79f90020d9fc15041"
 metafile = true
 
 [[files]]
