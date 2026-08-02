@@ -7064,8 +7064,8 @@ hash = "3c22eaa2470d77f1ec55acdfba17a07aef9d6b3c5add762cb281613af4b589cc"
 metafile = true
 
 [[files]]
-file = "mods/beans-backpacks-3.pw.toml"
-hash = "3835b3a1805e1cc38e44c1a1b852f60099e7302d0ede58c65b82ee7d42662c82"
+file = "mods/bean-s-backpack.pw.toml"
+hash = "80f4d5ce76e7eb5e2b5e864de15f9da15830a944502ef3a85f8bd029489fd8d1"
 metafile = true
 
 [[files]]
@@ -7134,6 +7134,11 @@ hash = "473ed2565d9a9b52db510e769f0e5565060a471ef4f4a9938c17904f9f3b600d"
 metafile = true
 
 [[files]]
+file = "mods/direbats.pw.toml"
+hash = "9869b5abd434a30dbb4eb091afc5bc907fe4ade3a3f5314651a2a45e1e2dac9b"
+metafile = true
+
+[[files]]
 file = "mods/distraction-free-recipes.pw.toml"
 hash = "8b1b8f60b0b3f437eb213c47f0a76eb1c32bdcff3a4d6e1d7e60a8e3ac5822c6"
 metafile = true
@@ -7181,11 +7186,6 @@ metafile = true
 [[files]]
 file = "mods/fabric-language-kotlin.pw.toml"
 hash = "2a760e528bf27c3eb4ae7c06200d91ee9c2849295addaa2add05495c7dee9528"
-metafile = true
-
-[[files]]
-file = "mods/fairylights.pw.toml"
-hash = "43f13e02a07f55f14a6f7827ba9b22d490e4c2dda0c0c35f588f68638937112d"
 metafile = true
 
 [[files]]
@@ -7266,6 +7266,11 @@ metafile = true
 [[files]]
 file = "mods/immersivethunder-reforged.pw.toml"
 hash = "3c41e1a5bc16222717350322a85e26575073e3bbfda5d9076ee6b043c7f58143"
+metafile = true
+
+[[files]]
+file = "mods/improved-village-placement.pw.toml"
+hash = "83caabe14d8eab40b5617693fb6286f62d204ea2205a2fa74c891abd95b2a3eb"
 metafile = true
 
 [[files]]
@@ -7405,7 +7410,7 @@ metafile = true
 
 [[files]]
 file = "mods/sound-physics-perfected.pw.toml"
-hash = "51735eff33c58bb17c8946df40b08b32ba0f69cedb76443c38061dffdc5b6a54"
+hash = "d73c8bca68094f1249d7e71e764ea04506028832dd7cbf63ab821845dc64ea5a"
 metafile = true
 
 [[files]]
