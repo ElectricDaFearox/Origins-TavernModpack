@@ -18,8 +18,6 @@
   "showEmiChatMessages": true,
   "reloadAfterRemoval": false,
   "blacklistedItems": [
-    "supplmentaries:lunch_basket",
-    "",
     "beansbackpacks:empty_ender_pouch",
     "beansbackpacks:bundle",
     "beansbackpacks:lunch_box",
@@ -31,6 +29,9 @@
     "additionaladditions:patina_block",
     "supplementaries:wrench",
     "additionaladditions:wrench",
-    "fixedminecraft:azalea_chest_boat"
+    "fixedminecraft:azalea_chest_boat",
+    "beansbackpacks:alchemy_bag",
+    "goodending:cattail",
+    "fixedminecraft:redstone_lantern"
   ]
 }

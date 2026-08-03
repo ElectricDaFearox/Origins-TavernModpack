@@ -1,13 +1,13 @@
-name = "Echoing Hearths"
+name = "Transfigured"
 author = "OhItsElectric"
-version = "0.2.8.3"
-description = "Echoing HearthsSMP, a modpack for group of Friends of the Tavern"
+version = "0.2.9"
+description = "TransfiguredSMP, a modpack for group of Friends of the Tavern"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "6a6e845a5049ce6c9a673d8a61c247bf4c03ac32689abbe05e10954ef4c076ae"
+hash = "c9631504003abb4e020718db53e0174c23c5dea6daf9b51e280149f97e415cc2"
 
 [versions]
 fabric = "0.19.3"

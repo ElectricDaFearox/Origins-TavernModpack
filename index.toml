@@ -18,7 +18,7 @@ hash = "290a2089bc2db7de5c43c4ca2895b181e66e2aae224a43d14b0b01b873ded7a8"
 
 [[files]]
 file = "config/reliable_remover.json"
-hash = "257fd8d2ad9d1a4d39b3b84a590986e672a9a29dde156fc849660dffefc1788e"
+hash = "ac2191adf230aa29d698707dfaefd8ebd2042ab5910440a257a7ad67bed3971b"
 
 [[files]]
 file = "config/sereneseasons/fertility.toml"
