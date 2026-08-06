@@ -1,68 +1,152 @@
-name: Build Modpack
+name: Build Modpack & Deploy Website
 
 on:
   push:
     branches:
       - "**"
+  workflow_dispatch:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Set up Go & Install packwiz
+      - name: Set up Go
         uses: actions/setup-go@v5
         with:
-          go-version: "stable"
-          cache: false
+          go-version: stable
 
-      - name: Extract modpack info
-        id: pack_info
+      - name: Get modpack info
+        id: info
         run: |
           VERSION=$(yq '.version' pack.toml | tr -d '"')
-          RAW_NAME=$(yq '.name' pack.toml)
-          CLEAN_NAME=$(echo "$RAW_NAME" | tr '[:upper:]' '[:lower:]' | sed 's/[^a-zA-Z0-9]/-/g' | sed 's/-\{2,\}/-/g')
-          
+          NAME=$(yq '.name' pack.toml)
+          CLEAN=$(echo "$NAME" | tr '[:upper:]' '[:lower:]' | sed 's/[^a-z0-9]/-/g' | sed 's/--*/-/g')
+
           echo "version=${VERSION}" >> $GITHUB_OUTPUT
-          echo "pack_name=${CLEAN_NAME}" >> $GITHUB_OUTPUT
-          echo "version=${VERSION}" >> $GITHUB_ENV
+          echo "name=${CLEAN}" >> $GITHUB_OUTPUT
+          echo "full_name=${NAME}" >> $GITHUB_OUTPUT
 
-      - name: Update version in README.md
-        run: |
-          if grep -q "{{VERSION}}" README.md; then
-            sed -i "s|{{VERSION}}|${{ steps.pack_info.outputs.version }}|g" README.md
-            echo "README updated with version ${{ steps.pack_info.outputs.version }}"
-            echo "UPDATED=true" >> $GITHUB_ENV
-          else
-            echo "No {{VERSION}} placeholder found in README.md"
-            echo "UPDATED=false" >> $GITHUB_ENV
-          fi
-
-      - name: Build Modpack
-        id: build_pack
+      - name: Build modpack files
         run: |
           go install github.com/packwiz/packwiz@latest
-          ~/go/bin/packwiz mr export --output "${{ steps.pack_info.outputs.pack_name }}.mrpack"
 
-      - name: Upload Modpack Artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: ${{ steps.pack_info.outputs.pack_name }}-mrpack
-          path: ${{ steps.pack_info.outputs.pack_name }}.mrpack
+          ~/go/bin/packwiz mr export --output "${{ steps.info.outputs.name }}.mrpack"
+          ~/go/bin/packwiz export --output "${{ steps.info.outputs.name }}-client.zip"
+          ~/go/bin/packwiz export --server --output "${{ steps.info.outputs.name }}-server.zip"
 
-      - name: Commit updated README
-        if: env.UPDATED == 'true'
-        uses: stefanzweifel/git-auto-commit-action@v5
+      - name: Create website
+        run: |
+          mkdir -p _site
+
+          # Copy all build outputs + pack.toml
+          cp pack.toml _site/
+          cp *.mrpack *.zip _site/ 2>/dev/null || true
+
+          cat > _site/index.html << 'EOF'
+          <!DOCTYPE html>
+          <html lang="en">
+          <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>{{FULL_NAME}} - Downloads</title>
+            <style>
+              body {
+                font-family: system-ui, sans-serif;
+                max-width: 820px;
+                margin: 40px auto;
+                padding: 30px;
+                line-height: 1.6;
+                color: #ddd;
+                background: #0d1117;
+              }
+              h1 { color: #58a6ff; }
+              .version { color: #8b949e; }
+              .card {
+                background: #161b22;
+                border: 1px solid #30363d;
+                border-radius: 12px;
+                padding: 24px;
+                margin: 24px 0;
+              }
+              .btn {
+                display: inline-block;
+                background: #238636;
+                color: white;
+                padding: 14px 24px;
+                border-radius: 8px;
+                text-decoration: none;
+                font-weight: 600;
+                margin: 8px 8px 8px 0;
+              }
+              .btn:hover { background: #2ea44f; }
+              .direct-url {
+                font-family: monospace;
+                background: #21262d;
+                padding: 12px;
+                border-radius: 6px;
+                word-break: break-all;
+                margin: 12px 0;
+                font-size: 0.95em;
+              }
+              .copy-hint { font-size: 0.85em; color: #8b949e; }
+            </style>
+          </head>
+          <body>
+            <h1>{{FULL_NAME}}</h1>
+            <p class="version">Version {{VERSION}} • Updated {{DATE}}</p>
+
+            <div class="card">
+              <h2>Direct pack.toml URL (for launcher)</h2>
+              <p>Right-click the link below and choose <strong>"Copy link address"</strong>:</p>
+              <div class="direct-url">
+                https://electricdafearox.github.io/Origins-Tweaks/pack.toml
+              </div>
+              <a href="pack.toml" class="btn">↓ Download pack.toml</a>
+              <p class="copy-hint">Tip: Right click → Copy link address</p>
+            </div>
+
+            <div class="card">
+              <h2>Client Downloads</h2>
+              <a href="{{NAME}}.mrpack" class="btn">↓ {{NAME}}.mrpack</a>
+              <a href="{{NAME}}-client.zip" class="btn">↓ {{NAME}}-client.zip</a>
+            </div>
+
+            <div class="card">
+              <h2>Server Download</h2>
+              <a href="{{NAME}}-server.zip" class="btn">↓ {{NAME}}-server.zip</a>
+            </div>
+
+            <p style="color:#8b949e; text-align:center; margin-top:40px;">
+              This page is automatically updated whenever you push changes.
+            </p>
+          </body>
+          </html>
+          EOF
+
+          # Replace placeholders
+          sed -i "s|{{FULL_NAME}}|${{ steps.info.outputs.full_name }}|g" _site/index.html
+          sed -i "s|{{NAME}}|${{ steps.info.outputs.name }}|g" _site/index.html
+          sed -i "s|{{VERSION}}|${{ steps.info.outputs.version }}|g" _site/index.html
+          sed -i "s|{{DATE}}|$(date +'%b %d, %Y')|g" _site/index.html
+
+      - name: Upload Pages Artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          commit_message: "chore: update README version to ${{ steps.pack_info.outputs.version }}"
-          file_pattern: README.md
-          commit_user_name: github-actions[bot]
-          commit_user_email: 41898282+github-actions[bot]@users.noreply.github.com
+          path: _site
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
