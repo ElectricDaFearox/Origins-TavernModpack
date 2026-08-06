@@ -3,4 +3,4 @@ A modpack created by Electric, designed for Origins. Including mods that expand 
 
 This modpack is a bit kitchen sink.
 
-**Current Version:** `0.2.9`
+**Current Version:** `0.3.0`
