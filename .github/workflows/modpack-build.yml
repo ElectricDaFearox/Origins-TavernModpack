@@ -16,7 +16,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -44,15 +44,13 @@ jobs:
         run: |
           go install github.com/packwiz/packwiz@latest
 
-            ~/go/bin/packwiz mr export --output "${{ steps.info.outputs.name }}.mrpack"
-            ~/go/bin/packwiz curseforge export --output "${{ steps.info.outputs.name }}-client.zip"
-            ~/go/bin/packwiz curseforge export --side server --output "${{ steps.info.outputs.name }}-server.zip"
+          ~/go/bin/packwiz mr export --output "${{ steps.info.outputs.name }}.mrpack"
+          ~/go/bin/packwiz curseforge export --output "${{ steps.info.outputs.name }}-client.zip"
+          ~/go/bin/packwiz curseforge export --side server --output "${{ steps.info.outputs.name }}-server.zip"
 
       - name: Create website
         run: |
           mkdir -p _site
-
-          # Copy all build outputs + pack.toml
           cp pack.toml _site/
           cp *.mrpack *.zip _site/ 2>/dev/null || true
 
@@ -64,44 +62,13 @@ jobs:
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>{{FULL_NAME}} - Downloads</title>
             <style>
-              body {
-                font-family: system-ui, sans-serif;
-                max-width: 820px;
-                margin: 40px auto;
-                padding: 30px;
-                line-height: 1.6;
-                color: #ddd;
-                background: #0d1117;
-              }
+              body { font-family: system-ui, sans-serif; max-width: 820px; margin: 40px auto; padding: 30px; line-height: 1.6; color: #ddd; background: #0d1117; }
               h1 { color: #58a6ff; }
               .version { color: #8b949e; }
-              .card {
-                background: #161b22;
-                border: 1px solid #30363d;
-                border-radius: 12px;
-                padding: 24px;
-                margin: 24px 0;
-              }
-              .btn {
-                display: inline-block;
-                background: #238636;
-                color: white;
-                padding: 14px 24px;
-                border-radius: 8px;
-                text-decoration: none;
-                font-weight: 600;
-                margin: 8px 8px 8px 0;
-              }
+              .card { background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 24px; margin: 24px 0; }
+              .btn { display: inline-block; background: #238636; color: white; padding: 14px 24px; border-radius: 8px; text-decoration: none; font-weight: 600; margin: 8px 8px 8px 0; }
               .btn:hover { background: #2ea44f; }
-              .direct-url {
-                font-family: monospace;
-                background: #21262d;
-                padding: 12px;
-                border-radius: 6px;
-                word-break: break-all;
-                margin: 12px 0;
-                font-size: 0.95em;
-              }
+              .direct-url { font-family: monospace; background: #21262d; padding: 12px; border-radius: 6px; word-break: break-all; margin: 12px 0; font-size: 0.95em; }
               .copy-hint { font-size: 0.85em; color: #8b949e; }
             </style>
           </head>
@@ -111,12 +78,10 @@ jobs:
 
             <div class="card">
               <h2>Direct pack.toml URL (for launcher)</h2>
-              <p>Right-click the link below and choose <strong>"Copy link address"</strong>:</p>
-              <div class="direct-url">
-                https://electricdafearox.github.io/Origins-Tweaks/pack.toml
-              </div>
+              <p>Right-click and select <strong>"Copy link address"</strong>:</p>
+              <div class="direct-url">https://electricdafearox.github.io/Origins-Tweaks/pack.toml</div>
               <a href="pack.toml" class="btn">↓ Download pack.toml</a>
-              <p class="copy-hint">Tip: Right click → Copy link address</p>
+              <p class="copy-hint">Tip: Right click the link above → Copy link address</p>
             </div>
 
             <div class="card">
@@ -130,14 +95,13 @@ jobs:
               <a href="{{NAME}}-server.zip" class="btn">↓ {{NAME}}-server.zip</a>
             </div>
 
-            <p style="color:#8b949e; text-align:center; margin-top:40px;">
-              This page is automatically updated whenever you push changes.
+            <p style="color:#8b949e; text-align:center; margin-top:50px;">
+              This page is automatically updated on every push.
             </p>
           </body>
           </html>
           EOF
 
-          # Replace placeholders
           sed -i "s|{{FULL_NAME}}|${{ steps.info.outputs.full_name }}|g" _site/index.html
           sed -i "s|{{NAME}}|${{ steps.info.outputs.name }}|g" _site/index.html
           sed -i "s|{{VERSION}}|${{ steps.info.outputs.version }}|g" _site/index.html
@@ -148,5 +112,13 @@ jobs:
         with:
           path: _site
 
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
       - name: Deploy to GitHub Pages
+        id: deployment
         uses: actions/deploy-pages@v4
