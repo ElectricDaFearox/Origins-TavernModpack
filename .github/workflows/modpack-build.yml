@@ -7,21 +7,13 @@ on:
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: true
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - name: Set up Go
         uses: actions/setup-go@v5
@@ -49,11 +41,11 @@ jobs:
 
       - name: Create website
         run: |
-          mkdir -p _site
-          cp pack.toml _site/
-          cp *.mrpack *.zip _site/ 2>/dev/null || true
+          mkdir -p public
+          cp pack.toml public/
+          cp *.mrpack *.zip public/ 2>/dev/null || true
 
-          cat > _site/index.html << 'EOF'
+          cat > public/index.html << 'EOF'
           <!DOCTYPE html>
           <html lang="en">
           <head>
@@ -101,27 +93,15 @@ jobs:
           </html>
           EOF
 
-          sed -i "s|{{FULL_NAME}}|${{ steps.info.outputs.full_name }}|g" _site/index.html
-          sed -i "s|{{NAME}}|${{ steps.info.outputs.name }}|g" _site/index.html
-          sed -i "s|{{VERSION}}|${{ steps.info.outputs.version }}|g" _site/index.html
-          sed -i "s|{{DATE}}|$(date +'%b %d, %Y')|g" _site/index.html
+          sed -i "s|{{FULL_NAME}}|${{ steps.info.outputs.full_name }}|g" public/index.html
+          sed -i "s|{{NAME}}|${{ steps.info.outputs.name }}|g" public/index.html
+          sed -i "s|{{VERSION}}|${{ steps.info.outputs.version }}|g" public/index.html
+          sed -i "s|{{DATE}}|$(date +'%b %d, %Y')|g" public/index.html
 
-      - name: Upload Pages Artifact
-        uses: actions/upload-pages-artifact@v3
+      - name: Deploy to gh-pages branch
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          path: _site
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-    permissions:
-      pages: write
-      id-token: write
-    steps:
-      - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          timeout: 600000
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          publish_branch: gh-pages
+          force_orphan: true
