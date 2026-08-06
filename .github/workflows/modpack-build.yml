@@ -40,9 +40,11 @@ jobs:
         run: |
           mkdir -p public
 
-          cp pack.toml public/
-          cp index.toml public/ 2>/dev/null || echo "No index.toml found"
-          cp "${{ steps.info.outputs.name }}.mrpack" public/ || true
+          cp pack.toml public/ || echo "pack.toml not found"
+          cp index.toml public/ 2>/dev/null || echo "index.toml not found"
+          cp "${{ steps.info.outputs.name }}.mrpack" public/ || echo "mrpack not created"
+
+          ls -lh public/
 
           cat > public/index.html << 'EOF'
           <!DOCTYPE html>
@@ -52,61 +54,29 @@ jobs:
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>{{FULL_NAME}} - Modpack</title>
             <style>
-              body {
-                font-family: system-ui, sans-serif;
-                max-width: 900px;
-                margin: 40px auto;
-                padding: 30px;
-                line-height: 1.6;
-                color: #ddd;
-                background: #0d1117;
-              }
+              body { font-family: system-ui, sans-serif; max-width: 900px; margin: 40px auto; padding: 30px; line-height: 1.6; color: #ddd; background: #0d1117; }
               h1 { color: #58a6ff; }
               .version { color: #8b949e; font-size: 1.1em; }
-              .card {
-                background: #161b22;
-                border: 1px solid #30363d;
-                border-radius: 12px;
-                padding: 24px;
-                margin: 24px 0;
-              }
-              .btn {
-                display: inline-block;
-                background: #238636;
-                color: white;
-                padding: 14px 28px;
-                border-radius: 8px;
-                text-decoration: none;
-                font-weight: 600;
-                margin: 6px 10px 6px 0;
-              }
+              .card { background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 24px; margin: 24px 0; }
+              .btn { display: inline-block; background: #238636; color: white; padding: 14px 28px; border-radius: 8px; text-decoration: none; font-weight: 600; margin: 6px 10px 6px 0; }
               .btn:hover { background: #2ea44f; }
-              .url-box {
-                font-family: monospace;
-                background: #21262d;
-                padding: 12px;
-                border-radius: 6px;
-                word-break: break-all;
-                margin: 10px 0;
-                font-size: 0.95em;
-              }
-              .note { color: #f85149; font-size: 0.9em; }
+              .url-box { font-family: monospace; background: #21262d; padding: 12px; border-radius: 6px; word-break: break-all; margin: 10px 0; font-size: 0.95em; }
               .success { color: #39d353; }
             </style>
           </head>
           <body>
             <h1>{{FULL_NAME}}</h1>
-            <p class="version">Version {{VERSION}} • Updated {{DATE}}</p>
+            <p class="version">Version {{VERSION}} • Updated {{DATE}} (Clean Deploy)</p>
 
             <div class="card">
-              <h2>Recommended Download (Prism / Modrinth)</h2>
+              <h2>Recommended Download</h2>
               <a href="{{NAME}}.mrpack" class="btn">↓ Download {{NAME}}.mrpack</a>
-              <p class="success">This is the best format for most users.</p>
+              <p class="success">Best for Prism Launcher and Modrinth App</p>
             </div>
 
             <div class="card">
-              <h2>Alternative: pack.toml / index.toml</h2>
-              <p>These are mainly used by some server launchers or advanced users.</p>
+              <h2>pack.toml & index.toml</h2>
+              <p>For server launchers or advanced use:</p>
 
               <p><strong>pack.toml</strong></p>
               <div class="url-box">https://electricdafearox.github.io/Origins-TavernModpack/pack.toml</div>
@@ -117,8 +87,8 @@ jobs:
               <a href="index.toml" class="btn">↓ Download index.toml</a>
             </div>
 
-            <p style="color:#8b949e; text-align:center; margin-top:60px; font-size:0.9em;">
-              This page is automatically generated on every push.
+            <p style="color:#8b949e; text-align:center; margin-top:60px;">
+              Last updated: {{DATE}} • Clean deployment
             </p>
           </body>
           </html>
@@ -129,7 +99,7 @@ jobs:
           sed -i "s|{{VERSION}}|${{ steps.info.outputs.version }}|g" public/index.html
           sed -i "s|{{DATE}}|$(date +'%b %d, %Y')|g" public/index.html
 
-      - name: Deploy to gh-pages branch
+      - name: Deploy with clean history
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
