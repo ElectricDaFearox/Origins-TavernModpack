@@ -44,9 +44,9 @@ jobs:
         run: |
           go install github.com/packwiz/packwiz@latest
 
-          ~/go/bin/packwiz mr export --output "${{ steps.info.outputs.name }}.mrpack"
-          ~/go/bin/packwiz export --output "${{ steps.info.outputs.name }}-client.zip"
-          ~/go/bin/packwiz export --server --output "${{ steps.info.outputs.name }}-server.zip"
+            ~/go/bin/packwiz mr export --output "${{ steps.info.outputs.name }}.mrpack"
+            ~/go/bin/packwiz curseforge export --output "${{ steps.info.outputs.name }}-client.zip"
+            ~/go/bin/packwiz curseforge export --side server --output "${{ steps.info.outputs.name }}-server.zip"
 
       - name: Create website
         run: |
