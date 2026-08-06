@@ -40,11 +40,8 @@ jobs:
         run: |
           mkdir -p public
 
-          # Copy both important files
           cp pack.toml public/
-          cp index.toml public/ 2>/dev/null || echo "⚠️  index.toml not found - skipping"
-
-          # Copy mrpack if it was created
+          cp index.toml public/ 2>/dev/null || echo "No index.toml found"
           cp "${{ steps.info.outputs.name }}.mrpack" public/ || true
 
           cat > public/index.html << 'EOF'
@@ -57,7 +54,7 @@ jobs:
             <style>
               body {
                 font-family: system-ui, sans-serif;
-                max-width: 820px;
+                max-width: 900px;
                 margin: 40px auto;
                 padding: 30px;
                 line-height: 1.6;
@@ -65,7 +62,7 @@ jobs:
                 background: #0d1117;
               }
               h1 { color: #58a6ff; }
-              .version { color: #8b949e; }
+              .version { color: #8b949e; font-size: 1.1em; }
               .card {
                 background: #161b22;
                 border: 1px solid #30363d;
@@ -77,23 +74,23 @@ jobs:
                 display: inline-block;
                 background: #238636;
                 color: white;
-                padding: 14px 24px;
+                padding: 14px 28px;
                 border-radius: 8px;
                 text-decoration: none;
                 font-weight: 600;
-                margin: 8px 8px 8px 0;
+                margin: 6px 10px 6px 0;
               }
               .btn:hover { background: #2ea44f; }
-              .direct-url {
+              .url-box {
                 font-family: monospace;
                 background: #21262d;
                 padding: 12px;
                 border-radius: 6px;
                 word-break: break-all;
-                margin: 12px 0;
+                margin: 10px 0;
                 font-size: 0.95em;
               }
-              .copy-hint { font-size: 0.85em; color: #8b949e; }
+              .note { color: #f85149; font-size: 0.9em; }
               .success { color: #39d353; }
             </style>
           </head>
@@ -102,27 +99,26 @@ jobs:
             <p class="version">Version {{VERSION}} • Updated {{DATE}}</p>
 
             <div class="card">
-              <h2>Direct Import Links</h2>
-              <p class="success">✅ These links can be used directly in Prism Launcher or Modrinth App:</p>
-
-              <p><strong>pack.toml</strong></p>
-              <div class="direct-url">https://electricdafearox.github.io/Origins-TavernModpack/pack.toml</div>
-              <a href="pack.toml" class="btn">↓ Download pack.toml</a>
-
-              <p style="margin-top: 25px;"><strong>index.toml</strong></p>
-              <div class="direct-url">https://electricdafearox.github.io/Origins-TavernModpack/index.toml</div>
-              <a href="index.toml" class="btn">↓ Download index.toml</a>
-
-              <p class="copy-hint">Right-click any link above → "Copy link address"</p>
+              <h2>Recommended Download (Prism / Modrinth)</h2>
+              <a href="{{NAME}}.mrpack" class="btn">↓ Download {{NAME}}.mrpack</a>
+              <p class="success">This is the best format for most users.</p>
             </div>
 
             <div class="card">
-              <h2>Client Download</h2>
-              <a href="{{NAME}}.mrpack" class="btn">↓ {{NAME}}.mrpack</a>
+              <h2>Alternative: pack.toml / index.toml</h2>
+              <p>These are mainly used by some server launchers or advanced users.</p>
+
+              <p><strong>pack.toml</strong></p>
+              <div class="url-box">https://electricdafearox.github.io/Origins-TavernModpack/pack.toml</div>
+              <a href="pack.toml" class="btn">↓ Download pack.toml</a>
+
+              <p style="margin-top: 20px;"><strong>index.toml</strong></p>
+              <div class="url-box">https://electricdafearox.github.io/Origins-TavernModpack/index.toml</div>
+              <a href="index.toml" class="btn">↓ Download index.toml</a>
             </div>
 
             <p style="color:#8b949e; text-align:center; margin-top:60px; font-size:0.9em;">
-              This site is automatically generated and updated on every push.
+              This page is automatically generated on every push.
             </p>
           </body>
           </html>
@@ -133,7 +129,7 @@ jobs:
           sed -i "s|{{VERSION}}|${{ steps.info.outputs.version }}|g" public/index.html
           sed -i "s|{{DATE}}|$(date +'%b %d, %Y')|g" public/index.html
 
-      - name: Deploy to GitHub Pages
+      - name: Deploy to gh-pages branch
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
