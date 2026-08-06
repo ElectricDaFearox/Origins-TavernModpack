@@ -31,18 +31,20 @@ jobs:
           echo "name=${CLEAN}" >> $GITHUB_OUTPUT
           echo "full_name=${NAME}" >> $GITHUB_OUTPUT
 
-      - name: Build modpack files
+      - name: Build modpack
         run: |
           go install github.com/packwiz/packwiz@latest
-
           ~/go/bin/packwiz mr export --output "${{ steps.info.outputs.name }}.mrpack"
-          ~/go/bin/packwiz curseforge export --output "${{ steps.info.outputs.name }}-client.zip"
-          ~/go/bin/packwiz curseforge export --side server --output "${{ steps.info.outputs.name }}-server.zip"
 
-      - name: Prepare website (exclude large zips)
+      - name: Prepare GitHub Pages
         run: |
           mkdir -p public
+
+          # Copy both important files
           cp pack.toml public/
+          cp index.toml public/ 2>/dev/null || echo "⚠️  index.toml not found - skipping"
+
+          # Copy mrpack if it was created
           cp "${{ steps.info.outputs.name }}.mrpack" public/ || true
 
           cat > public/index.html << 'EOF'
@@ -51,17 +53,48 @@ jobs:
           <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>{{FULL_NAME}} - Downloads</title>
+            <title>{{FULL_NAME}} - Modpack</title>
             <style>
-              body { font-family: system-ui, sans-serif; max-width: 820px; margin: 40px auto; padding: 30px; line-height: 1.6; color: #ddd; background: #0d1117; }
+              body {
+                font-family: system-ui, sans-serif;
+                max-width: 820px;
+                margin: 40px auto;
+                padding: 30px;
+                line-height: 1.6;
+                color: #ddd;
+                background: #0d1117;
+              }
               h1 { color: #58a6ff; }
               .version { color: #8b949e; }
-              .card { background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 24px; margin: 24px 0; }
-              .btn { display: inline-block; background: #238636; color: white; padding: 14px 24px; border-radius: 8px; text-decoration: none; font-weight: 600; margin: 8px 8px 8px 0; }
+              .card {
+                background: #161b22;
+                border: 1px solid #30363d;
+                border-radius: 12px;
+                padding: 24px;
+                margin: 24px 0;
+              }
+              .btn {
+                display: inline-block;
+                background: #238636;
+                color: white;
+                padding: 14px 24px;
+                border-radius: 8px;
+                text-decoration: none;
+                font-weight: 600;
+                margin: 8px 8px 8px 0;
+              }
               .btn:hover { background: #2ea44f; }
-              .direct-url { font-family: monospace; background: #21262d; padding: 12px; border-radius: 6px; word-break: break-all; margin: 12px 0; font-size: 0.95em; }
+              .direct-url {
+                font-family: monospace;
+                background: #21262d;
+                padding: 12px;
+                border-radius: 6px;
+                word-break: break-all;
+                margin: 12px 0;
+                font-size: 0.95em;
+              }
               .copy-hint { font-size: 0.85em; color: #8b949e; }
-              .note { color: #f85149; font-size: 0.9em; }
+              .success { color: #39d353; }
             </style>
           </head>
           <body>
@@ -69,27 +102,27 @@ jobs:
             <p class="version">Version {{VERSION}} • Updated {{DATE}}</p>
 
             <div class="card">
-              <h2>Direct pack.toml URL (for launcher)</h2>
-              <p>Right-click and select <strong>"Copy link address"</strong>:</p>
+              <h2>Direct Import Links</h2>
+              <p class="success">✅ These links can be used directly in Prism Launcher or Modrinth App:</p>
+
+              <p><strong>pack.toml</strong></p>
               <div class="direct-url">https://electricdafearox.github.io/Origins-TavernModpack/pack.toml</div>
               <a href="pack.toml" class="btn">↓ Download pack.toml</a>
-              <p class="copy-hint">Tip: Right click the link above → Copy link address</p>
+
+              <p style="margin-top: 25px;"><strong>index.toml</strong></p>
+              <div class="direct-url">https://electricdafearox.github.io/Origins-TavernModpack/index.toml</div>
+              <a href="index.toml" class="btn">↓ Download index.toml</a>
+
+              <p class="copy-hint">Right-click any link above → "Copy link address"</p>
             </div>
 
             <div class="card">
               <h2>Client Download</h2>
               <a href="{{NAME}}.mrpack" class="btn">↓ {{NAME}}.mrpack</a>
-              <p class="note">The full client .zip is too large to host here. Use the .mrpack instead.</p>
             </div>
 
-            <div class="card">
-              <h2>Server Download</h2>
-              <p class="note">The server .zip is too large to host on GitHub Pages.<br>
-              You can build it locally with: <code>packwiz curseforge export --side server</code></p>
-            </div>
-
-            <p style="color:#8b949e; text-align:center; margin-top:50px;">
-              This page is automatically updated on every push.
+            <p style="color:#8b949e; text-align:center; margin-top:60px; font-size:0.9em;">
+              This site is automatically generated and updated on every push.
             </p>
           </body>
           </html>
@@ -100,7 +133,7 @@ jobs:
           sed -i "s|{{VERSION}}|${{ steps.info.outputs.version }}|g" public/index.html
           sed -i "s|{{DATE}}|$(date +'%b %d, %Y')|g" public/index.html
 
-      - name: Deploy to gh-pages branch
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
