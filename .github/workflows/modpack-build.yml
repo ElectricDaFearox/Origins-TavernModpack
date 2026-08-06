@@ -39,11 +39,11 @@ jobs:
           ~/go/bin/packwiz curseforge export --output "${{ steps.info.outputs.name }}-client.zip"
           ~/go/bin/packwiz curseforge export --side server --output "${{ steps.info.outputs.name }}-server.zip"
 
-      - name: Create website
+      - name: Prepare website (exclude large zips)
         run: |
           mkdir -p public
           cp pack.toml public/
-          cp *.mrpack *.zip public/ 2>/dev/null || true
+          cp "${{ steps.info.outputs.name }}.mrpack" public/ || true
 
           cat > public/index.html << 'EOF'
           <!DOCTYPE html>
@@ -61,6 +61,7 @@ jobs:
               .btn:hover { background: #2ea44f; }
               .direct-url { font-family: monospace; background: #21262d; padding: 12px; border-radius: 6px; word-break: break-all; margin: 12px 0; font-size: 0.95em; }
               .copy-hint { font-size: 0.85em; color: #8b949e; }
+              .note { color: #f85149; font-size: 0.9em; }
             </style>
           </head>
           <body>
@@ -70,20 +71,21 @@ jobs:
             <div class="card">
               <h2>Direct pack.toml URL (for launcher)</h2>
               <p>Right-click and select <strong>"Copy link address"</strong>:</p>
-              <div class="direct-url">https://electricdafearox.github.io/Origins-Tweaks/pack.toml</div>
+              <div class="direct-url">https://electricdafearox.github.io/Origins-TavernModpack/pack.toml</div>
               <a href="pack.toml" class="btn">↓ Download pack.toml</a>
               <p class="copy-hint">Tip: Right click the link above → Copy link address</p>
             </div>
 
             <div class="card">
-              <h2>Client Downloads</h2>
+              <h2>Client Download</h2>
               <a href="{{NAME}}.mrpack" class="btn">↓ {{NAME}}.mrpack</a>
-              <a href="{{NAME}}-client.zip" class="btn">↓ {{NAME}}-client.zip</a>
+              <p class="note">The full client .zip is too large to host here. Use the .mrpack instead.</p>
             </div>
 
             <div class="card">
               <h2>Server Download</h2>
-              <a href="{{NAME}}-server.zip" class="btn">↓ {{NAME}}-server.zip</a>
+              <p class="note">The server .zip is too large to host on GitHub Pages.<br>
+              You can build it locally with: <code>packwiz curseforge export --side server</code></p>
             </div>
 
             <p style="color:#8b949e; text-align:center; margin-top:50px;">
