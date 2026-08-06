@@ -1,13 +1,13 @@
 name = "Transfigured"
 author = "OhItsElectric"
-version = "0.2.9"
+version = "0.3.0"
 description = "TransfiguredSMP, a modpack for group of Friends of the Tavern"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "c9631504003abb4e020718db53e0174c23c5dea6daf9b51e280149f97e415cc2"
+hash = "8452e3f46066cfa0bb7a523854c127b729017ab8eef6e99c68d76d1c9ca12301"
 
 [versions]
 fabric = "0.19.3"

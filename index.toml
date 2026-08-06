@@ -7065,6 +7065,10 @@ file = "datapacks/tweaks/pack.mcmeta"
 hash = "0a8b983b66f18caf183d6046b04996b6364b4a8fe41d7e252a386a3d4285b731"
 
 [[files]]
+file = "icon.png"
+hash = "9659c1564d25c4fa19a79c02645dde694919599f48fc6f7926ef256f4011a492"
+
+[[files]]
 file = "mods/addadd.pw.toml"
 hash = "b451c2ee9e2a093073c3b7c99053b8974733b703516f03504f8a35e879f51b19"
 metafile = true
@@ -7436,12 +7440,12 @@ metafile = true
 
 [[files]]
 file = "mods/streams-reflowing.pw.toml"
-hash = "075bf45276b0c70a0759bea2bd10616fd71c2d658846352c29065383db7b807c"
+hash = "5e54230c0defec516c44e1b786cc9c0223d98b17f9d6f7348f9fb950b1c9a40f"
 metafile = true
 
 [[files]]
 file = "mods/supplementaries.pw.toml"
-hash = "2a6edead986b99e72ffe8fed2a0a538b3a03600ed4048027a30c329f24c73c6b"
+hash = "ce74258e1127e45e90a6b2337c5fe57b3619c3d947e2fef357c18d80f74aba02"
 metafile = true
 
 [[files]]
