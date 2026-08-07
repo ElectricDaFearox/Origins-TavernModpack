@@ -2,18 +2,20 @@ name: Build Modpack & Deploy Website
 
 on:
   push:
-    branches: [ main, master, dev ]
+    branches: [ dev ]
   workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: Checkout dev branch
         uses: actions/checkout@v4
+        with:
+          ref: dev
 
       - name: Set up Go
         uses: actions/setup-go@v5
@@ -25,26 +27,21 @@ jobs:
         run: |
           VERSION=$(yq '.version' pack.toml | tr -d '"')
           NAME=$(yq '.name' pack.toml)
-          CLEAN=$(echo "$NAME" | tr '[:upper:]' '[:lower:]' | sed 's/[^a-z0-9]/-/g' | sed 's/--*/-/g')
-
           echo "version=${VERSION}" >> $GITHUB_OUTPUT
-          echo "name=${CLEAN}" >> $GITHUB_OUTPUT
-          echo "full_name=${NAME}" >> $GITHUB_OUTPUT
+          echo "name=${NAME}" >> $GITHUB_OUTPUT
 
-      - name: Build modpack
+      - name: Build .mrpack
         run: |
           go install github.com/packwiz/packwiz@latest
           ~/go/bin/packwiz mr export --output "${{ steps.info.outputs.name }}.mrpack"
 
-      - name: Prepare GitHub Pages
+      - name: Create website
         run: |
           mkdir -p public
 
-          cp pack.toml public/ || echo "pack.toml not found"
-          cp index.toml public/ 2>/dev/null || echo "index.toml not found"
-          cp "${{ steps.info.outputs.name }}.mrpack" public/ || echo "mrpack not created"
-
-          ls -lh public/
+          cp pack.toml public/
+          cp index.toml public/ 2>/dev/null || true
+          cp *.mrpack public/ 2>/dev/null || true
 
           cat > public/index.html << 'EOF'
           <!DOCTYPE html>
@@ -52,54 +49,88 @@ jobs:
           <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>{{FULL_NAME}} - Modpack</title>
+            <title>{{NAME}} - Modpack</title>
             <style>
-              body { font-family: system-ui, sans-serif; max-width: 900px; margin: 40px auto; padding: 30px; line-height: 1.6; color: #ddd; background: #0d1117; }
+              body {
+                font-family: system-ui, sans-serif;
+                max-width: 900px;
+                margin: 40px auto;
+                padding: 40px 20px;
+                background: #0d1117;
+                color: #ddd;
+                line-height: 1.6;
+              }
               h1 { color: #58a6ff; }
-              .version { color: #8b949e; font-size: 1.1em; }
-              .card { background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 24px; margin: 24px 0; }
-              .btn { display: inline-block; background: #238636; color: white; padding: 14px 28px; border-radius: 8px; text-decoration: none; font-weight: 600; margin: 6px 10px 6px 0; }
+              .card {
+                background: #161b22;
+                border: 1px solid #30363d;
+                border-radius: 12px;
+                padding: 24px;
+                margin: 20px 0;
+              }
+              .link-box {
+                font-family: monospace;
+                background: #21262d;
+                padding: 16px;
+                border-radius: 8px;
+                word-break: break-all;
+                font-size: 1.05em;
+                margin: 12px 0;
+                color: #58a6ff;
+              }
+              .btn {
+                background: #238636;
+                color: white;
+                padding: 14px 28px;
+                border-radius: 8px;
+                text-decoration: none;
+                font-weight: bold;
+                display: inline-block;
+                margin-top: 10px;
+              }
               .btn:hover { background: #2ea44f; }
-              .url-box { font-family: monospace; background: #21262d; padding: 12px; border-radius: 6px; word-break: break-all; margin: 10px 0; font-size: 0.95em; }
-              .success { color: #39d353; }
+              .note { color: #8b949e; font-size: 0.95em; }
             </style>
           </head>
           <body>
-            <h1>{{FULL_NAME}}</h1>
-            <p class="version">Version {{VERSION}} • Updated {{DATE}} (Clean Deploy)</p>
+            <h1>{{NAME}}</h1>
+            <p class="note">Version {{VERSION}} • Updated {{DATE}}</p>
 
             <div class="card">
-              <h2>Recommended Download</h2>
-              <a href="{{NAME}}.mrpack" class="btn">↓ Download {{NAME}}.mrpack</a>
-              <p class="success">Best for Prism Launcher and Modrinth App</p>
+              <h2>Direct pack.toml URL (Recommended)</h2>
+              <div class="link-box">
+                https://raw.githubusercontent.com/ElectricDaFearox/Origins-TavernModpack/refs/heads/dev/pack.toml
+              </div>
+              <a href="pack.toml" class="btn">↓ Download pack.toml</a>
+              <p class="note">Right-click the box above → "Copy link address"<br>
+              This is the link you should use in Prism Launcher, Modrinth App, and server launchers.</p>
             </div>
 
             <div class="card">
-              <h2>pack.toml & index.toml</h2>
-              <p>For server launchers or advanced use:</p>
-
-              <p><strong>pack.toml</strong></p>
-              <div class="url-box">https://electricdafearox.github.io/Origins-TavernModpack/pack.toml</div>
-              <a href="pack.toml" class="btn">↓ Download pack.toml</a>
-
-              <p style="margin-top: 20px;"><strong>index.toml</strong></p>
-              <div class="url-box">https://electricdafearox.github.io/Origins-TavernModpack/index.toml</div>
+              <h2>index.toml</h2>
+              <div class="link-box">
+                https://raw.githubusercontent.com/ElectricDaFearox/Origins-TavernModpack/refs/heads/dev/index.toml
+              </div>
               <a href="index.toml" class="btn">↓ Download index.toml</a>
             </div>
 
-            <p style="color:#8b949e; text-align:center; margin-top:60px;">
-              Last updated: {{DATE}} • Clean deployment
+            <div class="card">
+              <h2>.mrpack Download</h2>
+              <a href="{{NAME}}.mrpack" class="btn">↓ Download {{NAME}}.mrpack</a>
+            </div>
+
+            <p style="text-align:center; color:#8b949e; margin-top:50px;">
+              This page is automatically updated when you push to the dev branch.
             </p>
           </body>
           </html>
           EOF
 
-          sed -i "s|{{FULL_NAME}}|${{ steps.info.outputs.full_name }}|g" public/index.html
           sed -i "s|{{NAME}}|${{ steps.info.outputs.name }}|g" public/index.html
           sed -i "s|{{VERSION}}|${{ steps.info.outputs.version }}|g" public/index.html
-          sed -i "s|{{DATE}}|$(date +'%b %d, %Y')|g" public/index.html
+          sed -i "s|{{DATE}}|$(date +'%b %d, %Y at %H:%M UTC')|g" public/index.html
 
-      - name: Deploy with clean history
+      - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
