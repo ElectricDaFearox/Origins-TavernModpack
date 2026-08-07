@@ -7339,6 +7339,11 @@ hash = "737e2f5b2f56f410aa59fa89245314ab104f1882f816a5da068401da7b0a4a3d"
 metafile = true
 
 [[files]]
+file = "mods/millager.pw.toml"
+hash = "5e031ae77f64400ef69b74985571cff7c1a051c534f309af4cc0dc3af208ec82"
+metafile = true
+
+[[files]]
 file = "mods/mmv-moogs-missing-villages.pw.toml"
 hash = "76a6cd5149ebf07e22eeeaf81850632aa832cc919641758cb8be4c722ef076d9"
 metafile = true
@@ -7389,6 +7394,11 @@ hash = "246e7782ef2cab501af48f56353de9d6a46f3479dcb12f282152eeacd03b7e60"
 metafile = true
 
 [[files]]
+file = "mods/polymorph.pw.toml"
+hash = "8a64fdd5384cd26c91475a423f3bec24dd4d98796df7683a5070ef105d421ba4"
+metafile = true
+
+[[files]]
 file = "mods/reliable-recipes.pw.toml"
 hash = "f535b577b1eb3430aa9a2ab0c2362867526ec5c2eff9cb021e65d17c192d0f00"
 metafile = true
@@ -7396,6 +7406,11 @@ metafile = true
 [[files]]
 file = "mods/reliable-remover.pw.toml"
 hash = "a9895f374799473636e55c281c5ce6220ab707d06c575b85e2f68d0f3f949a90"
+metafile = true
+
+[[files]]
+file = "mods/rens-timber.pw.toml"
+hash = "ca0f8fa5f614a4806796299dd791601c839d6a294e40ebda7831167091397b24"
 metafile = true
 
 [[files]]
@@ -7444,6 +7459,11 @@ hash = "5e54230c0defec516c44e1b786cc9c0223d98b17f9d6f7348f9fb950b1c9a40f"
 metafile = true
 
 [[files]]
+file = "mods/structurify.pw.toml"
+hash = "0afa9fc8fd41f6b46710725e68e0b8eb8785a7fc56a711af2e84155cb612f90a"
+metafile = true
+
+[[files]]
 file = "mods/supplementaries.pw.toml"
 hash = "ce74258e1127e45e90a6b2337c5fe57b3619c3d947e2fef357c18d80f74aba02"
 metafile = true
@@ -7471,6 +7491,11 @@ metafile = true
 [[files]]
 file = "mods/vanillabackport.pw.toml"
 hash = "0865bcf91d32cd710ac30a282a3c2202816670942c5175f7f475a29aeb3fe19b"
+metafile = true
+
+[[files]]
+file = "mods/vexxed.pw.toml"
+hash = "7ba19fb3a25b652831f49758bc278acd829d046aa1c4cbbf951929f80626673f"
 metafile = true
 
 [[files]]
@@ -7507,3 +7532,7 @@ metafile = true
 file = "mods/zfastnoise.pw.toml"
 hash = "d7d7ec685479f2db034eb64766e322f22d9a7f65de3e1aaaa33bd004f9b85f02"
 metafile = true
+
+[[files]]
+file = "server-icon.png"
+hash = "360ecedf6cb299fe2ed6acebfe019ef908fbff2afebaeb32fa33d6e38c1b0a9d"
