@@ -30,10 +30,18 @@ jobs:
           echo "version=${VERSION}" >> $GITHUB_OUTPUT
           echo "name=${NAME}" >> $GITHUB_OUTPUT
 
-      - name: Build .mrpack
+      - name: Build modpack files
         run: |
           go install github.com/packwiz/packwiz@latest
+
+          # Recommended .mrpack for clients
           ~/go/bin/packwiz mr export --output "${{ steps.info.outputs.name }}.mrpack"
+
+          # CurseForge Client
+          ~/go/bin/packwiz curseforge export --output "${{ steps.info.outputs.name }}-curseforge-client.zip"
+
+          # CurseForge Server
+          ~/go/bin/packwiz curseforge export --server --output "${{ steps.info.outputs.name }}-curseforge-server.zip"
 
       - name: Create website
         run: |
@@ -42,6 +50,7 @@ jobs:
           cp pack.toml public/
           cp index.toml public/ 2>/dev/null || true
           cp *.mrpack public/ 2>/dev/null || true
+          cp *.zip public/ 2>/dev/null || true
 
           cat > public/index.html << 'EOF'
           <!DOCTYPE html>
@@ -53,7 +62,7 @@ jobs:
             <style>
               body {
                 font-family: system-ui, sans-serif;
-                max-width: 900px;
+                max-width: 1000px;
                 margin: 40px auto;
                 padding: 40px 20px;
                 background: #0d1117;
@@ -86,10 +95,31 @@ jobs:
                 text-decoration: none;
                 font-weight: bold;
                 display: inline-block;
-                margin-top: 10px;
+                margin: 10px 8px 10px 0;
               }
               .btn:hover { background: #2ea44f; }
+              .btn-recommended {
+                background: #3b82f6;
+                font-size: 1.1em;
+              }
+              .btn-recommended:hover { background: #60a5fa; }
               .note { color: #8b949e; font-size: 0.95em; }
+              .badge {
+                display: inline-block;
+                background: #238636;
+                color: white;
+                font-size: 0.75em;
+                padding: 3px 10px;
+                border-radius: 9999px;
+                margin-left: 10px;
+              }
+              .server-tag {
+                background: #f59e0b;
+                color: #000;
+                font-size: 0.8em;
+                padding: 2px 9px;
+                border-radius: 9999px;
+              }
             </style>
           </head>
           <body>
@@ -97,30 +127,39 @@ jobs:
             <p class="note">Version {{VERSION}} • Updated {{DATE}}</p>
 
             <div class="card">
-              <h2>Direct pack.toml URL (Recommended)</h2>
+              <h2>Recommended — .mrpack <span class="badge">RECOMMENDED</span></h2>
+              <p class="note">Best for <strong>Prism Launcher</strong> and <strong>Modrinth App</strong>.<br>Easy install + automatic updates.</p>
+              <a href="{{NAME}}.mrpack" class="btn btn-recommended">↓ Download {{NAME}}.mrpack</a>
+            </div>
+
+            <div class="card">
+              <h2>CurseForge Client</h2>
+              <p class="note">For the CurseForge launcher (Client side).</p>
+              <a href="{{NAME}}-curseforge-client.zip" class="btn">↓ Download {{NAME}}-curseforge-client.zip</a>
+            </div>
+
+            <div class="card">
+              <h2>CurseForge Server <span class="server-tag">SERVER</span></h2>
+              <p class="note">For the CurseForge launcher (Server side).</p>
+              <a href="{{NAME}}-curseforge-server.zip" class="btn">↓ Download {{NAME}}-curseforge-server.zip</a>
+            </div>
+
+            <div class="card">
+              <h2>pack.toml — For Server Installers</h2>
               <div class="link-box">
                 https://raw.githubusercontent.com/ElectricDaFearox/Origins-TavernModpack/refs/heads/dev/pack.toml
               </div>
               <a href="pack.toml" class="btn">↓ Download pack.toml</a>
-              <p class="note">Right-click the box above → "Copy link address"<br>
-              This is the link you should use in Prism Launcher, Modrinth App, and server launchers.</p>
+              <p class="note">Use this file with server installers and tools that support packwiz (e.g. server launchers, Docker, Pterodactyl, etc).</p>
             </div>
 
             <div class="card">
               <h2>index.toml</h2>
-              <div class="link-box">
-                https://raw.githubusercontent.com/ElectricDaFearox/Origins-TavernModpack/refs/heads/dev/index.toml
-              </div>
               <a href="index.toml" class="btn">↓ Download index.toml</a>
             </div>
 
-            <div class="card">
-              <h2>.mrpack Download</h2>
-              <a href="{{NAME}}.mrpack" class="btn">↓ Download {{NAME}}.mrpack</a>
-            </div>
-
-            <p style="text-align:center; color:#8b949e; margin-top:50px;">
-              This page is automatically updated when you push to the dev branch.
+            <p style="text-align:center; color:#8b949e; margin-top:60px;">
+              This page is automatically updated when you push to the <strong>dev</strong> branch.
             </p>
           </body>
           </html>
