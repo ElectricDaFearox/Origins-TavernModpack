@@ -34,14 +34,14 @@ jobs:
         run: |
           go install github.com/packwiz/packwiz@latest
 
-          # Recommended .mrpack for clients
+          # Recommended .mrpack for clients (Prism + Modrinth)
           ~/go/bin/packwiz mr export --output "${{ steps.info.outputs.name }}.mrpack"
 
           # CurseForge Client
           ~/go/bin/packwiz curseforge export --output "${{ steps.info.outputs.name }}-curseforge-client.zip"
 
-          # CurseForge Server
-          ~/go/bin/packwiz curseforge export --server --output "${{ steps.info.outputs.name }}-curseforge-server.zip"
+          # CurseForge Server - using --side server instead of --server
+          ~/go/bin/packwiz curseforge export --side server --output "${{ steps.info.outputs.name }}-curseforge-server.zip"
 
       - name: Create website
         run: |
@@ -140,7 +140,7 @@ jobs:
 
             <div class="card">
               <h2>CurseForge Server <span class="server-tag">SERVER</span></h2>
-              <p class="note">For the CurseForge launcher (Server side).</p>
+              <p class="note">For the CurseForge launcher (Server side). Uses --side server.</p>
               <a href="{{NAME}}-curseforge-server.zip" class="btn">↓ Download {{NAME}}-curseforge-server.zip</a>
             </div>
 
@@ -150,7 +150,7 @@ jobs:
                 https://raw.githubusercontent.com/ElectricDaFearox/Origins-TavernModpack/refs/heads/dev/pack.toml
               </div>
               <a href="pack.toml" class="btn">↓ Download pack.toml</a>
-              <p class="note">Use this file with server installers and tools that support packwiz (e.g. server launchers, Docker, Pterodactyl, etc).</p>
+              <p class="note">Recommended for server installers, Docker setups, Pterodactyl, and other server tools that support packwiz.</p>
             </div>
 
             <div class="card">
