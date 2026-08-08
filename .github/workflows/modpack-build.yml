@@ -50,26 +50,24 @@ jobs:
             pack.toml
             index.toml
           retention-days: 90
-          if-no-files-found: error
 
     outputs:
       name: ${{ steps.info.outputs.name }}
       version: ${{ steps.info.outputs.version }}
       artifact_name: ${{ steps.info.outputs.artifact_name }}
+      run_id: ${{ github.run_id }}
 
   deploy:
     needs: build
     runs-on: ubuntu-latest
     steps:
-      - name: Download artifacts
-        uses: actions/download-artifact@v4
-        with:
-          name: ${{ needs.build.outputs.artifact_name }}
-          path: public
-
       - name: Create website
         run: |
-          cat > public/index.html << 'EOF'
+          NAME="${{ needs.build.outputs.name }}"
+          RUN_ID="${{ needs.build.outputs.run_id }}"
+          REPO="ElectricDaFearox/Origins-TavernModpack"
+
+          cat > index.html << 'EOF'
           <!DOCTYPE html>
           <html lang="en">
           <head>
@@ -91,33 +89,24 @@ jobs:
                 background: #161b22;
                 border: 1px solid #30363d;
                 border-radius: 12px;
-                padding: 24px;
-                margin: 20px 0;
-              }
-              .link-box {
-                font-family: monospace;
-                background: #21262d;
-                padding: 16px;
-                border-radius: 8px;
-                word-break: break-all;
-                font-size: 1.05em;
-                margin: 12px 0;
-                color: #58a6ff;
+                padding: 28px;
+                margin: 24px 0;
               }
               .btn {
                 background: #238636;
                 color: white;
-                padding: 14px 28px;
+                padding: 16px 32px;
                 border-radius: 8px;
                 text-decoration: none;
                 font-weight: bold;
                 display: inline-block;
                 margin: 12px 8px 12px 0;
+                transition: all 0.2s;
               }
-              .btn:hover { background: #2ea44f; }
+              .btn:hover { background: #2ea44f; transform: translateY(-2px); }
               .btn-recommended {
                 background: #3b82f6;
-                font-size: 1.1em;
+                font-size: 1.15em;
               }
               .btn-recommended:hover { background: #60a5fa; }
               .note { color: #8b949e; font-size: 0.95em; }
@@ -125,21 +114,22 @@ jobs:
                 display: inline-block;
                 background: #238636;
                 color: white;
-                font-size: 0.75em;
-                padding: 3px 10px;
+                font-size: 0.8em;
+                padding: 4px 12px;
                 border-radius: 9999px;
-                margin-left: 10px;
+                margin-left: 12px;
               }
               .server-tag {
                 background: #f59e0b;
                 color: #000;
-                font-size: 0.8em;
-                padding: 2px 9px;
+                font-size: 0.85em;
+                padding: 3px 10px;
                 border-radius: 9999px;
               }
               .warning {
                 color: #f59e0b;
                 font-size: 0.9em;
+                margin-top: 8px;
               }
             </style>
           </head>
@@ -149,34 +139,33 @@ jobs:
 
             <div class="card">
               <h2>Recommended — .mrpack <span class="badge">RECOMMENDED</span></h2>
-              <p class="note">Best for <strong>Prism Launcher</strong> and <strong>Modrinth App</strong>.<br>Easy install + automatic updates.</p>
-              <a href="https://github.com/ElectricDaFearox/Origins-TavernModpack/actions/workflows/Build%20Modpack%20&%20Deploy%20Website.yml"
+              <p class="note">Best for <strong>Prism Launcher</strong>, <strong>Modrinth App</strong>, and most users.<br>Supports automatic updates.</p>
+              <a href="https://nightly.link/${REPO}/workflows/Build%20Modpack%20&%20Deploy%20Website/${RUN_ID}/${NAME}-build/${NAME}.mrpack"
                  class="btn btn-recommended" target="_blank">↓ Download {{NAME}}.mrpack</a>
-              <p class="warning">Note: Large files are hosted as GitHub Artifacts. You may need to be logged into GitHub to download.</p>
             </div>
 
             <div class="card">
               <h2>CurseForge Client</h2>
-              <p class="note">For the CurseForge launcher (Client side).</p>
-              <a href="https://github.com/ElectricDaFearox/Origins-TavernModpack/actions/workflows/Build%20Modpack%20&%20Deploy%20Website.yml"
+              <p class="note">For CurseForge Launcher (Client).</p>
+              <a href="https://nightly.link/${REPO}/workflows/Build%20Modpack%20&%20Deploy%20Website/${RUN_ID}/${NAME}-build/${NAME}-curseforge-client.zip"
                  class="btn" target="_blank">↓ Download {{NAME}}-curseforge-client.zip</a>
             </div>
 
             <div class="card">
               <h2>CurseForge Server <span class="server-tag">SERVER</span></h2>
-              <p class="note">For the CurseForge launcher (Server side). pack.toml is intended for server installers.</p>
-              <a href="https://github.com/ElectricDaFearox/Origins-TavernModpack/actions/workflows/Build%20Modpack%20&%20Deploy%20Website.yml"
+              <p class="note">For CurseForge Launcher (Server). Also useful for manual server setup.</p>
+              <a href="https://nightly.link/${REPO}/workflows/Build%20Modpack%20&%20Deploy%20Website/${RUN_ID}/${NAME}-build/${NAME}-curseforge-server.zip"
                  class="btn" target="_blank">↓ Download {{NAME}}-curseforge-server.zip</a>
             </div>
 
             <div class="card">
               <h2>pack.toml — For Server Installers</h2>
-              <div class="link-box">
+              <div class="link-box" style="background:#21262d; padding:16px; border-radius:8px; font-family:monospace; word-break:break-all;">
                 https://raw.githubusercontent.com/ElectricDaFearox/Origins-TavernModpack/refs/heads/dev/pack.toml
               </div>
               <a href="https://raw.githubusercontent.com/ElectricDaFearox/Origins-TavernModpack/refs/heads/dev/pack.toml"
                  class="btn" target="_blank">↓ Download pack.toml</a>
-              <p class="note">Use this with server installers, Docker, Pterodactyl, and other packwiz-compatible server tools.</p>
+              <p class="note">Use this with server installers, Pterodactyl, Docker, and other packwiz-based tools.</p>
             </div>
 
             <div class="card">
@@ -185,17 +174,21 @@ jobs:
                  class="btn" target="_blank">↓ Download index.toml</a>
             </div>
 
-            <p style="text-align:center; color:#8b949e; margin-top:50px;">
-              This page is automatically updated when you push to the <strong>dev</strong> branch.<br>
-              <strong>All modpack files are now served via GitHub Artifacts due to repository size limits.</strong>
+            <p style="text-align:center; color:#8b949e; margin-top:60px;">
+              This page is automatically updated on every push to <strong>dev</strong>.<br>
+              Large files are served via <strong>nightly.link</strong> (GitHub Artifacts).
             </p>
           </body>
           </html>
           EOF
 
-          sed -i "s|{{NAME}}|${{ needs.build.outputs.name }}|g" public/index.html
-          sed -i "s|{{VERSION}}|${{ needs.build.outputs.version }}|g" public/index.html
-          sed -i "s|{{DATE}}|$(date +'%b %d, %Y at %H:%M UTC')|g" public/index.html
+          # Replace placeholders
+          sed -i "s|{{NAME}}|$NAME|g" index.html
+          sed -i "s|{{VERSION}}|${{ needs.build.outputs.version }}|g" index.html
+          sed -i "s|{{DATE}}|$(date +'%b %d, %Y at %H:%M UTC')|g" index.html
+
+          mkdir -p public
+          mv index.html public/
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v4
