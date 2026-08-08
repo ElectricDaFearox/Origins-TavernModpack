@@ -7,9 +7,10 @@ on:
 
 permissions:
   contents: write
+  actions: read
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout dev branch
@@ -29,29 +30,45 @@ jobs:
           NAME=$(yq '.name' pack.toml)
           echo "version=${VERSION}" >> $GITHUB_OUTPUT
           echo "name=${NAME}" >> $GITHUB_OUTPUT
+          echo "artifact_name=${NAME}-build" >> $GITHUB_OUTPUT
 
       - name: Build modpack files
         run: |
           go install github.com/packwiz/packwiz@latest
 
-          # Recommended .mrpack for clients (Prism + Modrinth)
           ~/go/bin/packwiz mr export --output "${{ steps.info.outputs.name }}.mrpack"
-
-          # CurseForge Client
           ~/go/bin/packwiz curseforge export --output "${{ steps.info.outputs.name }}-curseforge-client.zip"
-
-          # CurseForge Server - using --side server instead of --server
           ~/go/bin/packwiz curseforge export --side server --output "${{ steps.info.outputs.name }}-curseforge-server.zip"
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ steps.info.outputs.artifact_name }}
+          path: |
+            *.mrpack
+            *-curseforge-*.zip
+            pack.toml
+            index.toml
+          retention-days: 90
+          if-no-files-found: error
+
+    outputs:
+      name: ${{ steps.info.outputs.name }}
+      version: ${{ steps.info.outputs.version }}
+      artifact_name: ${{ steps.info.outputs.artifact_name }}
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: ${{ needs.build.outputs.artifact_name }}
+          path: public
 
       - name: Create website
         run: |
-          mkdir -p public
-
-          cp pack.toml public/
-          cp index.toml public/ 2>/dev/null || true
-          cp *.mrpack public/ 2>/dev/null || true
-          cp *.zip public/ 2>/dev/null || true
-
           cat > public/index.html << 'EOF'
           <!DOCTYPE html>
           <html lang="en">
@@ -95,7 +112,7 @@ jobs:
                 text-decoration: none;
                 font-weight: bold;
                 display: inline-block;
-                margin: 10px 8px 10px 0;
+                margin: 12px 8px 12px 0;
               }
               .btn:hover { background: #2ea44f; }
               .btn-recommended {
@@ -120,6 +137,10 @@ jobs:
                 padding: 2px 9px;
                 border-radius: 9999px;
               }
+              .warning {
+                color: #f59e0b;
+                font-size: 0.9em;
+              }
             </style>
           </head>
           <body>
@@ -129,19 +150,23 @@ jobs:
             <div class="card">
               <h2>Recommended — .mrpack <span class="badge">RECOMMENDED</span></h2>
               <p class="note">Best for <strong>Prism Launcher</strong> and <strong>Modrinth App</strong>.<br>Easy install + automatic updates.</p>
-              <a href="{{NAME}}.mrpack" class="btn btn-recommended">↓ Download {{NAME}}.mrpack</a>
+              <a href="https://github.com/ElectricDaFearox/Origins-TavernModpack/actions/workflows/Build%20Modpack%20&%20Deploy%20Website.yml"
+                 class="btn btn-recommended" target="_blank">↓ Download {{NAME}}.mrpack</a>
+              <p class="warning">Note: Large files are hosted as GitHub Artifacts. You may need to be logged into GitHub to download.</p>
             </div>
 
             <div class="card">
               <h2>CurseForge Client</h2>
               <p class="note">For the CurseForge launcher (Client side).</p>
-              <a href="{{NAME}}-curseforge-client.zip" class="btn">↓ Download {{NAME}}-curseforge-client.zip</a>
+              <a href="https://github.com/ElectricDaFearox/Origins-TavernModpack/actions/workflows/Build%20Modpack%20&%20Deploy%20Website.yml"
+                 class="btn" target="_blank">↓ Download {{NAME}}-curseforge-client.zip</a>
             </div>
 
             <div class="card">
               <h2>CurseForge Server <span class="server-tag">SERVER</span></h2>
-              <p class="note">For the CurseForge launcher (Server side). Uses --side server.</p>
-              <a href="{{NAME}}-curseforge-server.zip" class="btn">↓ Download {{NAME}}-curseforge-server.zip</a>
+              <p class="note">For the CurseForge launcher (Server side). pack.toml is intended for server installers.</p>
+              <a href="https://github.com/ElectricDaFearox/Origins-TavernModpack/actions/workflows/Build%20Modpack%20&%20Deploy%20Website.yml"
+                 class="btn" target="_blank">↓ Download {{NAME}}-curseforge-server.zip</a>
             </div>
 
             <div class="card">
@@ -149,24 +174,27 @@ jobs:
               <div class="link-box">
                 https://raw.githubusercontent.com/ElectricDaFearox/Origins-TavernModpack/refs/heads/dev/pack.toml
               </div>
-              <a href="pack.toml" class="btn">↓ Download pack.toml</a>
-              <p class="note">Recommended for server installers, Docker setups, Pterodactyl, and other server tools that support packwiz.</p>
+              <a href="https://raw.githubusercontent.com/ElectricDaFearox/Origins-TavernModpack/refs/heads/dev/pack.toml"
+                 class="btn" target="_blank">↓ Download pack.toml</a>
+              <p class="note">Use this with server installers, Docker, Pterodactyl, and other packwiz-compatible server tools.</p>
             </div>
 
             <div class="card">
               <h2>index.toml</h2>
-              <a href="index.toml" class="btn">↓ Download index.toml</a>
+              <a href="https://raw.githubusercontent.com/ElectricDaFearox/Origins-TavernModpack/refs/heads/dev/index.toml"
+                 class="btn" target="_blank">↓ Download index.toml</a>
             </div>
 
-            <p style="text-align:center; color:#8b949e; margin-top:60px;">
-              This page is automatically updated when you push to the <strong>dev</strong> branch.
+            <p style="text-align:center; color:#8b949e; margin-top:50px;">
+              This page is automatically updated when you push to the <strong>dev</strong> branch.<br>
+              <strong>All modpack files are now served via GitHub Artifacts due to repository size limits.</strong>
             </p>
           </body>
           </html>
           EOF
 
-          sed -i "s|{{NAME}}|${{ steps.info.outputs.name }}|g" public/index.html
-          sed -i "s|{{VERSION}}|${{ steps.info.outputs.version }}|g" public/index.html
+          sed -i "s|{{NAME}}|${{ needs.build.outputs.name }}|g" public/index.html
+          sed -i "s|{{VERSION}}|${{ needs.build.outputs.version }}|g" public/index.html
           sed -i "s|{{DATE}}|$(date +'%b %d, %Y at %H:%M UTC')|g" public/index.html
 
       - name: Deploy to gh-pages
