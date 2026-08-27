@@ -1,0 +1,13 @@
+name = "Atmospheric Nether"
+filename = "atmospheric-nether-fabric-2.0.0_1.21.0-1.jar"
+side = "server"
+
+[download]
+url = "https://cdn.modrinth.com/data/KD9xXJbY/versions/ajRREI7S/atmospheric-nether-fabric-2.0.0_1.21.0-1.jar"
+hash-format = "sha512"
+hash = "0290988906d96028699d8779118133ec21096b0bae85505110efc637933fb19c7a695780a1898de618b8fe174dec541f6c5990e006500b645fe8cff7efad055f"
+
+[update]
+[update.modrinth]
+mod-id = "KD9xXJbY"
+version = "ajRREI7S"

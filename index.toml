@@ -7469,6 +7469,11 @@ hash = "d73c8bca68094f1249d7e71e764ea04506028832dd7cbf63ab821845dc64ea5a"
 metafile = true
 
 [[files]]
+file = "mods/sparsestructures.pw.toml"
+hash = "510290c5af225092f5b1de78cfc6df4062bf4027db45676e48d7458b37953837"
+metafile = true
+
+[[files]]
 file = "mods/stormies-spiders.pw.toml"
 hash = "4fadd6c8609878ef2b3f917a445a6cb0a4c9a785b9996684b64e2133ba5d2212"
 metafile = true
