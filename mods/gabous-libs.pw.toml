@@ -1,13 +1,13 @@
 name = "Gabou's Libs - New logo LIZZARRDD"
-filename = "gaboulibs-fabric-1.7.2.jar"
+filename = "gaboulibs-fabric-1.8.7.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/N8aGZtvj/versions/4T6fS96a/gaboulibs-fabric-1.7.2.jar"
+url = "https://cdn.modrinth.com/data/N8aGZtvj/versions/rEm7uZcY/gaboulibs-fabric-1.8.7.jar"
 hash-format = "sha512"
-hash = "ecabb27fff67ffbf4068aef36a2f5eecda99af17e7a050ece106e7f56450b44cb85de10fb4efc4c0efe8b29af61cfcd68060b2031743090fae06e2bff56cefc5"
+hash = "7b408e8b9e88d6b5b1388bfbe23b626acf5b04c37c5819ae8bbaa527dffc3d94bbf8a580663a7af8e1d1201e08b0d7a27487462f6dca3073554650c5cd6fcda5"
 
 [update]
 [update.modrinth]
 mod-id = "N8aGZtvj"
-version = "4T6fS96a"
+version = "rEm7uZcY"

@@ -7084,8 +7084,8 @@ hash = "3c22eaa2470d77f1ec55acdfba17a07aef9d6b3c5add762cb281613af4b589cc"
 metafile = true
 
 [[files]]
-file = "mods/beans-backpacks.pw.toml"
-hash = "adafe1b8370a8a4ab85035b1d36aed00756809c86ceafbc79f90020d9fc15041"
+file = "mods/beans-backpacks-3.pw.toml"
+hash = "0607440aa91982a12d293712bddda0732108e1ddc13895bbd9f32f77cc0624ec"
 metafile = true
 
 [[files]]
@@ -7105,7 +7105,7 @@ metafile = true
 
 [[files]]
 file = "mods/c2me-fabric.pw.toml"
-hash = "15b44f72536a7b33c67347ea3f1a1357a431c13392439bdc99e7ebc75c31d735"
+hash = "742112e9a70435126ef930bad4bbd9d9e036f8f4fe681b08ad470d1b3209f9b8"
 metafile = true
 
 [[files]]
@@ -7135,7 +7135,7 @@ metafile = true
 
 [[files]]
 file = "mods/critters-and-companions.pw.toml"
-hash = "f886fb250389ebd99c30c9b19a35297bfc78c8bdd758416beca850a0bd8a5325"
+hash = "7f652440c98748f1c8e4787b00e1ad88520be08f9039eeff4bca1f41b71ffcab"
 metafile = true
 
 [[files]]
@@ -7185,7 +7185,7 @@ metafile = true
 
 [[files]]
 file = "mods/envelope.pw.toml"
-hash = "a804fb92a383685539282742024e1b82cb4d7b87114a4c2892c042a611f64b1c"
+hash = "fbb69fda1e3dcdde723f00121da75bfbf36053939615d906d3604c1809848c97"
 metafile = true
 
 [[files]]
@@ -7210,7 +7210,7 @@ metafile = true
 
 [[files]]
 file = "mods/farmers-delight-refabricated.pw.toml"
-hash = "4e94f635510d86d01a94bbc78eb471632ebe203b58b88490a73a785d733e42ed"
+hash = "995014c1a601152fe8e01745d1a8f236a331dd07f0dcde814b8b5d4caa75186e"
 metafile = true
 
 [[files]]
@@ -7235,7 +7235,7 @@ metafile = true
 
 [[files]]
 file = "mods/friends-and-foes.pw.toml"
-hash = "0c2f42374022bcbd3b15b6432cca31dda311e2bd26ab5b02f3d036c90c32e399"
+hash = "4307f143e64fe953798e35a013d87b802fc960cf3609793683505d34e12154bd"
 metafile = true
 
 [[files]]
@@ -7245,7 +7245,7 @@ metafile = true
 
 [[files]]
 file = "mods/gabous-libs.pw.toml"
-hash = "1d6e976fdd44ef22a1e4479662e2dd409707b81d34a428c083df3201d31e244c"
+hash = "06a4a11cff3e7544652783b72d5c3925589b33b48e7c5ddf04a4ec184c1c3a3c"
 metafile = true
 
 [[files]]
@@ -7335,12 +7335,12 @@ metafile = true
 
 [[files]]
 file = "mods/lithostitched.pw.toml"
-hash = "737e2f5b2f56f410aa59fa89245314ab104f1882f816a5da068401da7b0a4a3d"
+hash = "1214190903d0b7f92eedb4979feda67640ad6e6cde8a1731c11808895700a0a8"
 metafile = true
 
 [[files]]
 file = "mods/millager.pw.toml"
-hash = "5e031ae77f64400ef69b74985571cff7c1a051c534f309af4cc0dc3af208ec82"
+hash = "2ad78840e9227ed1f4bbfbc53f90b005d55fe9af3af53fc75436a827f527aee4"
 metafile = true
 
 [[files]]
@@ -7420,7 +7420,7 @@ metafile = true
 
 [[files]]
 file = "mods/scholar.pw.toml"
-hash = "12c15d17b22665856d6a959808242053a936ffc0a103001e27ea973066aaffac"
+hash = "c25f0c235430ed4daa49b53551045980816925fd13a6b289ea1a6ce3db0421a2"
 metafile = true
 
 [[files]]
@@ -7435,7 +7435,7 @@ metafile = true
 
 [[files]]
 file = "mods/simple-voice-chat.pw.toml"
-hash = "b07c9051dc5854862f6f16691ccd0b781d41684aaff05341fbd449c572b5aefa"
+hash = "6c236a3eb1252f7a2e1dba35fb301d41f788358320aad4f2ce97b5dd2d79db3e"
 metafile = true
 
 [[files]]
@@ -7455,17 +7455,12 @@ metafile = true
 
 [[files]]
 file = "mods/streams-reflowing.pw.toml"
-hash = "5e54230c0defec516c44e1b786cc9c0223d98b17f9d6f7348f9fb950b1c9a40f"
-metafile = true
-
-[[files]]
-file = "mods/structurify.pw.toml"
-hash = "0afa9fc8fd41f6b46710725e68e0b8eb8785a7fc56a711af2e84155cb612f90a"
+hash = "677dd08d5d53df6ffe35a3d10b09e4f35b576cd46f262baecc62f73ec8a61adc"
 metafile = true
 
 [[files]]
 file = "mods/supplementaries.pw.toml"
-hash = "ce74258e1127e45e90a6b2337c5fe57b3619c3d947e2fef357c18d80f74aba02"
+hash = "766f198efc56fa0ea829f15d9029bdb0179147c7c26520b01eb5422af3a38bec"
 metafile = true
 
 [[files]]

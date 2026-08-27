@@ -1,8 +1,0 @@
-name = "Beans Backpacks"
-filename = "beansbackpacks-1.21-f-0.13.5-beta.jar"
-side = "both"
-
-[download]
-url = "https://assets.aluki.gay/CompiledMods/TavernOrigins/beansbackpacks-1.21-f-0.13.5-beta.jar"
-hash-format = "sha256"
-hash = "d11dddc9bf62d6b9bc105cff33bddffaf773bbf28bdf9c177e47357c450ff363"
