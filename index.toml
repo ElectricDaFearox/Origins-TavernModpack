@@ -7079,6 +7079,11 @@ hash = "1102440dd2533ba3a154419bb95ff1f81b858201eb0c44d2a2eea486c74e565a"
 metafile = true
 
 [[files]]
+file = "mods/atmospheric-nether-mod.pw.toml"
+hash = "a00c9879ea2289b529201bd5bfcdd7b61cd58bdb74becad7547ce4259ff7c93c"
+metafile = true
+
+[[files]]
 file = "mods/auroraslanterns.pw.toml"
 hash = "3c22eaa2470d77f1ec55acdfba17a07aef9d6b3c5add762cb281613af4b589cc"
 metafile = true
@@ -7101,6 +7106,11 @@ metafile = true
 [[files]]
 file = "mods/betterdays.pw.toml"
 hash = "90b20da761c0ec799b348871b32751dc954bcb1cca80c7b759cb5caf5dfce8f3"
+metafile = true
+
+[[files]]
+file = "mods/biolith.pw.toml"
+hash = "b4d4a1b9d1bf113cd8030e3ec2b7b4349905be6a6279e3c3633ca0d54d972562"
 metafile = true
 
 [[files]]
@@ -7279,6 +7289,11 @@ hash = "568784e7d3870cb70b67bda8d6aa88b1855b2cd9397e43ff24dd570deee7c208"
 metafile = true
 
 [[files]]
+file = "mods/hybrid-aquatic.pw.toml"
+hash = "bb1667c0928b618e3db98ed6c3e05d42c65b6fc7be2d0addc191915be19f218e"
+metafile = true
+
+[[files]]
 file = "mods/immersive-winds.pw.toml"
 hash = "8053381400929774954f569baf89dfd0e14c1e21177b830f26fa17eb9870eb01"
 metafile = true
@@ -7399,6 +7414,11 @@ hash = "8a64fdd5384cd26c91475a423f3bec24dd4d98796df7683a5070ef105d421ba4"
 metafile = true
 
 [[files]]
+file = "mods/regions-unexplored.pw.toml"
+hash = "e14ed16a43069588691512314714ef16d2b82b384afc0ed123aa3b41f6fe0dfc"
+metafile = true
+
+[[files]]
 file = "mods/reliable-recipes.pw.toml"
 hash = "f535b577b1eb3430aa9a2ab0c2362867526ec5c2eff9cb021e65d17c192d0f00"
 metafile = true
@@ -7409,13 +7429,13 @@ hash = "a9895f374799473636e55c281c5ce6220ab707d06c575b85e2f68d0f3f949a90"
 metafile = true
 
 [[files]]
-file = "mods/rens-timber.pw.toml"
-hash = "ca0f8fa5f614a4806796299dd791601c839d6a294e40ebda7831167091397b24"
+file = "mods/resourceful-lib.pw.toml"
+hash = "d3f633dd12cd039a4e58dd398d1c80a324b0d78b9da5b3972b69640bfed211ed"
 metafile = true
 
 [[files]]
-file = "mods/resourceful-lib.pw.toml"
-hash = "d3f633dd12cd039a4e58dd398d1c80a324b0d78b9da5b3972b69640bfed211ed"
+file = "mods/ribbits.pw.toml"
+hash = "e171a4219a5fce5dedd042ebe9b9a8357788f67bbd23569e072b07ac66cefaee"
 metafile = true
 
 [[files]]
@@ -7479,6 +7499,11 @@ hash = "b45fcd239d9787c7f3d104c300cc61979e7f0cd8363d59716b603d4adb36b202"
 metafile = true
 
 [[files]]
+file = "mods/trinkets.pw.toml"
+hash = "860812150cb54f0d9ee1bce7b72798b6cc5f752bb05709f0c60231d054ec281d"
+metafile = true
+
+[[files]]
 file = "mods/txnilib.pw.toml"
 hash = "c751b93e41ab02fde048ba12ae97323aafa125fecdb30edd3c48492b9c85c79a"
 metafile = true
@@ -7491,6 +7516,11 @@ metafile = true
 [[files]]
 file = "mods/vexxed.pw.toml"
 hash = "7ba19fb3a25b652831f49758bc278acd829d046aa1c4cbbf951929f80626673f"
+metafile = true
+
+[[files]]
+file = "mods/when-dungeons-arise.pw.toml"
+hash = "b29babace87ed059ba641c55c4592de6d87ad339852005475bd2c1ac636e5101"
 metafile = true
 
 [[files]]
