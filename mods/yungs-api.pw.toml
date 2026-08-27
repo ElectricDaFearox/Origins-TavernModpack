@@ -1,5 +1,5 @@
 name = "YUNG's API"
-side = "server"
+side = "both"
 filename = "YungsApi-1.21.1-Fabric-5.1.6.jar"
 
 [update.modrinth]

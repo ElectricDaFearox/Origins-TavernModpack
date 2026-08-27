@@ -7075,7 +7075,7 @@ metafile = true
 
 [[files]]
 file = "mods/architectury-api.pw.toml"
-hash = "1102440dd2533ba3a154419bb95ff1f81b858201eb0c44d2a2eea486c74e565a"
+hash = "0fb3808193da9b587367337d12d202d7b006e2522637a6502913d66a84f8626f"
 metafile = true
 
 [[files]]
@@ -7110,7 +7110,7 @@ metafile = true
 
 [[files]]
 file = "mods/biolith.pw.toml"
-hash = "b4d4a1b9d1bf113cd8030e3ec2b7b4349905be6a6279e3c3633ca0d54d972562"
+hash = "d6c54dbfca1e89022b4b9058d93030167f3f0ef8286a3b13172d2d9b6eb2733b"
 metafile = true
 
 [[files]]
@@ -7289,11 +7289,6 @@ hash = "568784e7d3870cb70b67bda8d6aa88b1855b2cd9397e43ff24dd570deee7c208"
 metafile = true
 
 [[files]]
-file = "mods/hybrid-aquatic.pw.toml"
-hash = "bb1667c0928b618e3db98ed6c3e05d42c65b6fc7be2d0addc191915be19f218e"
-metafile = true
-
-[[files]]
 file = "mods/immersive-winds.pw.toml"
 hash = "8053381400929774954f569baf89dfd0e14c1e21177b830f26fa17eb9870eb01"
 metafile = true
@@ -7444,6 +7439,11 @@ hash = "c25f0c235430ed4daa49b53551045980816925fd13a6b289ea1a6ce3db0421a2"
 metafile = true
 
 [[files]]
+file = "mods/seamless-sleep.pw.toml"
+hash = "0dc89ea26182567daa2a0d0fa4f842f0e5062da6d40eb71c968ee94f8924cffd"
+metafile = true
+
+[[files]]
 file = "mods/serene-seasons-plus.pw.toml"
 hash = "493b24d409188d802e765e6082e0e39cae639e20c69775deecb0a78a0dce982e"
 metafile = true
@@ -7491,6 +7491,11 @@ metafile = true
 [[files]]
 file = "mods/switchy.pw.toml"
 hash = "c9e89c2a117b070d48c93db27959481aff7f74be0988ac9795214ab79e948625"
+metafile = true
+
+[[files]]
+file = "mods/tide.pw.toml"
+hash = "6628a68502f27a97fa378e192472cedba6759aa317f8ef735fd2dbfcfaf45ccd"
 metafile = true
 
 [[files]]
@@ -7545,7 +7550,7 @@ metafile = true
 
 [[files]]
 file = "mods/yungs-api.pw.toml"
-hash = "8243c4167ac48756685832dd3ae186bd0a5348c13054383678dea26670f7ea4e"
+hash = "6607933d9ba886f64e8d0783de20753d4bae06fae132e0225ff49d6e861edf8d"
 metafile = true
 
 [[files]]
