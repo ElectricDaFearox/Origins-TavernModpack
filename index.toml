@@ -7299,11 +7299,6 @@ hash = "3c41e1a5bc16222717350322a85e26575073e3bbfda5d9076ee6b043c7f58143"
 metafile = true
 
 [[files]]
-file = "mods/improved-village-placement.pw.toml"
-hash = "83caabe14d8eab40b5617693fb6286f62d204ea2205a2fa74c891abd95b2a3eb"
-metafile = true
-
-[[files]]
 file = "mods/it-takes-a-pillage-continuation.pw.toml"
 hash = "a0a5d3084008e93a08d09de7ceccbb6c255dc8f2e42367a1a13d38c2bf016496"
 metafile = true
@@ -7506,11 +7501,6 @@ metafile = true
 [[files]]
 file = "mods/trailier-tales.pw.toml"
 hash = "b45fcd239d9787c7f3d104c300cc61979e7f0cd8363d59716b603d4adb36b202"
-metafile = true
-
-[[files]]
-file = "mods/trinkets.pw.toml"
-hash = "860812150cb54f0d9ee1bce7b72798b6cc5f752bb05709f0c60231d054ec281d"
 metafile = true
 
 [[files]]
